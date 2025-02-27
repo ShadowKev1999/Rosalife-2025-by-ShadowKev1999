@@ -36,6 +36,7 @@ main()
 	print("Copyright (c) 2014 by GangstaSunny & Tobi_DeKey - Alle Rechte vorbehalten.\n");
 	print("Copyright (c) 2020 by ShadowKev1999 & Reborn - Alle Rechte vorbehalten.\n");
 	print("Copyright (c) 2023 by ShadowKev1999 & c0kkie - Alle Rechte vorbehalten.\n");
+	print("Copyright (c) 2025 by ShadowKev1999 - Alle Rechte vorbehalten.\n");
 }
 
 //HELPERS & UTIL FUNCTIONS
