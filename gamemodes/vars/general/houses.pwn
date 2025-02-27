@@ -1,0 +1,25 @@
+enum HausData {
+	hsBesitzer[24],
+	bool:hsErstellt,
+ 	hsPickup,
+  	Text3D:hsText,
+	hsPreis,
+	hsKasse,
+	hsOrt,
+	hsTyp,
+	hsInterior,
+	hsLocked,
+	hsMietbar,
+	hsMiete,
+	hsHealth,
+	Float:hsPos_X,
+	Float:hsPos_Y,
+	Float:hsPos_Z,
+	Float:hsIPos_X,
+	Float:hsIPos_Y,
+	Float:hsIPos_Z,
+	hsID,
+	hsGruppe,
+	hsGruppeAnzeige
+}
+new HausInfo[MAX_HAUSER][HausData];

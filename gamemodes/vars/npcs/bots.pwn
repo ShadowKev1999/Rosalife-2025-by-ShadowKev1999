@@ -1,0 +1,10 @@
+new BotMichelle;
+new BotEmilio;
+new BotTracy;
+new BotBank[2];
+new BotMaut[8];
+new BotBSN[5];
+new BotCB[5];
+new BotAMMU[MAX_AMMUS];
+new BotSTORE[MAX_STORES];
+new TrainLosSantos, TrainSanFierro, TrainLasVenturas;

@@ -1,0 +1,27 @@
+enum GangZoneData {
+	gzID,
+	bool:gzErstellt,
+	Float:gzX1,
+	Float:gzY1,
+	Float:gzX2,
+	Float:gzY2,
+	Float:gzCTFX,
+	Float:gzCTFY,
+	Float:gzCTFZ,
+	gzBox,
+	gzOwner,
+	gzAttacker,
+	gzOwnerPunkte,
+	gzAttackerPunkte,
+	gzType,
+	gzValue,
+	gzLastFight,
+	gzFightTime,
+	Text3D:gzLabel,
+	gzTimer,
+	gzTimerLast,
+	gzTimerWert,
+	gzCTFTry,
+	gzGebiet
+}
+new GangZoneInfo[MAX_GANGZONES][GangZoneData];

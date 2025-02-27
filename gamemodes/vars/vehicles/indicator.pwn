@@ -1,0 +1,1 @@
+new Indicators_xqz[MAX_VEHICLES][6];

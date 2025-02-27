@@ -1,0 +1,1 @@
+new playerJobSkill[MAX_PLAYERS][MAX_JOBS][2];

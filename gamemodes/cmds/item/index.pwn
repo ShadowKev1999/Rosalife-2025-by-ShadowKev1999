@@ -1,0 +1,1 @@
+#include "cmds/item/item_test.pwn"
