@@ -1,10 +1,10 @@
 //server
 #define MYSQL_HOST 						"127.0.0.1"
-#define MYSQL_USER 						"root"
-#define MYSQL_PASS 						""
-#define MYSQL_DATA						"rosalife-reloaded"
+#define MYSQL_USER 						"rosalife"
+#define MYSQL_PASS 						"8sde7B5Sl!.ryCyu"
+#define MYSQL_DATA						"rosalife"
 
-#define MYSQL_TABLE_DATA                "kevin.sql"
+#define MYSQL_TABLE_DATA                "rosalife-reloaded.sql"
 
 #define SERV_NAME                       "RosaLife Reloaded"
 #define SERV_SLOG                       "Open Beta"
