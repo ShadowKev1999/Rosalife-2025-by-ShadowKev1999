@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet href="file:///C|/Users/Admin/Documents/GitHub/Rosalife-2025-by-ShadowKev1999/qawno/xml/pawndoc.xsl" type="text/xsl"?>
-<doc source="C:\Users\Admin\Documents\GitHub\Rosalife-2025-by-ShadowKev1999\gamemodes\skg.pwn">
+<?xml-stylesheet href="file:///C|/Users/kevin/Documents/GitHub/Rosalife-2025-by-ShadowKev1999/qawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\kevin\Documents\GitHub\Rosalife-2025-by-ShadowKev1999\gamemodes\skg.pwn">
 	<assembly>
 		<name>skg.pwn</name>
 	</assembly>
 
 	<!-- general -->
 	<general>
-		<library name="open.mp" summary="open.mp includes entry point.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="args" summary="Script arguments support functions.">  <license>  (c) Copyright 2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="console" summary="Console output.">  <license>  (c) Copyright 1998-2011, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="core" summary="Core functions.">  <license>  (c) Copyright 1998-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="file" summary="File input/output functions.">  <license>  (c) Copyright 2004-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="time" summary="Float arithmetic.">  <license>  (c) Copyright 1999, Artran, Inc.  Written by Greg Garner (gmg@artran.com)  Modified in March 2001 to include user defined  operators for the floating point functions.  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="string" summary="String functions.">  <license>  (c) Copyright 2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="time" summary="Date/time functions.">  <license>  (c) Copyright 2001-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_core" summary="open.mp core functions and defines.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_player" summary="open.mp player functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_actor" summary="open.mp actor functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_checkpoint" summary="open.mp checkpoint functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_class" summary="open.mp class functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_database" summary="open.mp SQLite functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_dialog" summary="open.mp dialog functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_gangzone" summary="open.mp text draw functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_http" summary="open.mp legacy HTTP include.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p /><p/> <p/><p/> <library name="omp_menu" summary="open.mp menu functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_network" summary="open.mp core functions and defines.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_object" summary="open.mp object functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_pickup" summary="open.mp pickup functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_textdraw" summary="open.mp text draw functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_variable" summary="open.mp global data functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_vehicle" summary="open.mp vehicle functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_textlabel" summary="open.mp 3D text label functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="sscanf"  summary="Extracts structured information from strings."  license="Copyright (c) 2022 Alex &quot;Y_Less&quot; Cole.  Licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This is the <em>sscanf</em> plugin, which provides the <c>sscanf</c>  function to extract basic structured data from strings.  This is slightly  different to regular expressions, but both have their place.  A regular  expression gives you total control over the exact structure of data down  to the character level; however, extracting structured data like numbers  using it is tricky.  Conversely this gives slightly higher-level  <em>specifiers</em> which can easily extract data types, at the expense  of fine-grained control.  To convert a string in to two numbers would  look like:  <code>  new num1, num2;                                                          <br />  sscanf("45 100", "ii", num1, num2);  </code>  <c>ii</c> is the specifier string, which here means "integer integer";  stating that the input string should be two whole numbers in a row (which  is - <c>"45 100"</c>).  <c>num1</c> and <c>num2</c> are the destination  variables to store the found numbers in (after conversion from strings).  You can check if the conversion failed by looking for a non-naught return  value:  <code>  new num1, num2;                                                          <br />  if (sscanf("hello 100", "ii", num1, num2))                               <br />  {                                                                        <br /><indent />  printf("The input was not two numbers.");                            <br />  }  </code>  This will fail because <c>"hello"</c> is not a whole number (or indeed  any type of number at all).  For more information on using the function  refer to the tutorials or the reference documentation in  <a href="https://github.com/Y-Less/sscanf/blob/master/README.md">the  attached readme</a>.  </remarks>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library  name="y_pawndoc"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Fix pawndoc comments."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_globaltags"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Declare GLOBAL_TAG_TYPES to define many tag types for function calls."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_prehook"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="State-based ALS hooking with better control of orderings."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_stripnumbers"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  Removes tag overrides which are actually numbers.  This allows for:  <code>  uvar g_a[MAX_PLAYERS][E_SOME_ENUM]; <br />  uvar g_b[MAX_PLAYERS][42];  </code>  Without stripping you would end with code doing "42:0" or getting a tag  mismatch on "E_SOME_ENUM", both of which are problems.  </remarks>  </library> <p/> <library  name="y_shortvar"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Declares a few variables with very short names, used all over YSI."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_pp"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="More complex processing in the pre-processor."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_als"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Provides a number of macros for making ALS (Advanced Library System) callback hooking simpler."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_scriptinit"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="OnScriptInit, OnCodeInit, and equivalent exit functions."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This file provides <c>OnScriptInit</c> and <c>OnScriptExit</c> which are  called at the start and end of the current script, regardless of what the  type of the script is.  It also provides <c>IS_FILTERSCRIPT</c> as a  (partial) replacement for <c>FILTERSCRIPT</c> which detects what the mode is  at runtime for a more reliable system (but it is a run-time variable, not a  compile-time constant).  </remarks>  </library> <p/> <library  name="y_scriptdata"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Utility functions for information about how and when the script was built."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This file provides <c>OnScriptInit</c> and <c>OnScriptExit</c> which are  called at the start and end of the current script, regardless of what the  type of the script is.  It also provides <c>IS_FILTERSCRIPT</c> as a  (partial) replacement for <c>FILTERSCRIPT</c> which detects what the mode is  at runtime for a more reliable system (but it is a run-time variable, not a  compile-time constant).  </remarks>  </library> <p/> <library  name="y_serverdata"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Utility functions for information about plugin and server options."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This file provides <c>OnScriptInit</c> and <c>OnScriptExit</c> which are  called at the start and end of the current script, regardless of what the  type of the script is.  It also provides <c>IS_FILTERSCRIPT</c> as a  (partial) replacement for <c>FILTERSCRIPT</c> which detects what the mode is  at runtime for a more reliable system (but it is a run-time variable, not a  compile-time constant).  </remarks>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <transition keep="true" target="_script_init_fix_state : true"/>  <transition keep="true" target="_ALS : _ALS_go"/> <p/> <library  name="y_version"  version="0.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Checks online to see if there is a newer version of YSI available."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_debug"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Debugging features, optionally compile-time disabled."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>Ensures debug levels are set and defines debug functions.</p>  <p>General debug levels:</p>  <ul>  <li>-1 - Run-time selected debug level.</li>  <li>0 - No debug information.</li>  <li>1 - Callbacks and timers.</li>  <li>2 - Remote functions.</li>  <li>3 - Stock functions.</li>  <li>4 - Static functions.</li>  <li>5 - Utility functions.</li>  <li>6 - Code.</li>  <li>7 - Loops.</li>  </ul>  <p>If you use <c>Debug_Print0</c> you get an optional debug print  controlled by the global state <c>ysi_debug</c> - which is either on or  off.</p>  </remarks>  </library> <p/> <p/><p/> <library  name="y_cell"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Provides a few functions for manipulating the bits in single cells.  Note that this is distinct  from the y_bit library."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_amx"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Allows a script access to information about itself, such as function names."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This can be used for a range of things, including automatic callback  hooking and testing.  </remarks>  </library> <p/> <p/><p/> <p/><p/> <library  name="y_shortfunc"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Defines new names for native functions."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_utils - misc"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_utils - maths"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - varargs"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - arrays"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - colour"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - conversions"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - encodings"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - strings"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - files"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library>y_utils - files</library>  <summary>  ftouch(filename);  </summary>  <param name="filename">The file to "touch".</param>  <returns>  0 - File already exists.  1 - File was created.  -1 - File was not created.  </returns>  <remarks>  This "touches" a file in the Unix sense of creating it but not opening or  editing it in any way.  </remarks> <p/> <library  name="y_utils - ip"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_utils - names"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - random"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library>y_utils - random</library>  <param name="output">The optional string to write to.</param>  <param name="cased">Allow both upper- and lower-case letters.</param>  <param name="grouped">Groups of characters have equal probability.</param>  <param name="len">The size of the string.</param>  <returns>  A random character.  </returns>  <remarks>  Can be used to return a character or a string.  Use the return value with  no parameters for a single character, or pass a destination array for a  string.  <p />  Selects letters from <c>A</c> to <c>Z</c>, or also <c>a</c> to <c>z</c> if  <c>cased</c> is <c>true</c>.  </remarks> <p/> <library>y_utils - random</library>  <param name="output">The optional string to write to.</param>  <param name="cased">Allow both upper- and lower-case letters.</param>  <param name="grouped">Groups of characters have equal probability.</param>  <param name="len">The size of the string.</param>  <returns>  A random character.  </returns>  <remarks>  Can be used to return a character or a string.  Use the return value with  no parameters for a single character, or pass a destination array for a  string.  <p />  Selects letters from <c>a</c> to <c>z</c>, <c>A</c> to <c>Z</c>, or  numbers; with every character having equal likelihood.  Unless  <c>grouped</c> is true, in which case numbers are just as likely to appear  as upper- or lower-case letters.  </remarks> <p/> <library  name="y_utils - similarity"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - textwrap"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_iterate"  version="0.4"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>  Provides efficient looping through sparse data sets, such as connected  players.  Significantly improved from the original version to be a generic  loop system, rather then purely a player loop system.  When used for  players this has constant time O(n) for number of connected players (n),  unlike standard player loops which are O(MAX_PLAYERS), regardless of the  actual number of connected players.  Even when n is MAX_PLAYERS this is  still faster.  </p>  <p>  For extensive documentation on writing and using iterators, see  <a href="http://forum.sa-mp.com/showthread.php?t=481877">this topic</a>  </p>  </remarks>  <section>  Examples  </section>  <subsection>Basic Iterators</subsection>  <p>  Basic iterators are simply collections of numbers - little more than an array.  A number is either in the array, or not in the array, <em>y_iterate</em> loops  through only the <em>in</em> numbers.</p>  <p><em>Players</em><br /><br />  This code will loop through every player connected to the server.  <code>  foreach (new i : Player)																				<br />  {																				<br /><indent />  printf("player %d is connected", i);																				<br />  }  </code>  </p>  <p><em>Vehicles</em><br /><br />  This code will loop through all the created vehicles on the server (including  those made in other running scripts).  <code>  foreach (new vid : Vehicle)																				<br />  {																				<br /><indent />  printf("vehicleid %d has been created", vid);																				<br />  }  </code>  </p>  <p><em>Create An Iterator</em><br /><br />  To create your own iterator, first declare it, then add things to it, then loop  over it:  <code>  new																				<br /><indent />  Iterator:MyIter&lt;100&gt;; // First declare it (this has room for 100 items numbered 0-99).									 											<br />  // Then add things to it.																				<br />  Iter_Add(MyIter, 0);  // Fine.																				<br />  Iter_Add(MyIter, 55); // Fine.																				<br />  Iter_Add(MyIter, 100); // Will fail.																				<br />  // Then loop over it.																				<br />  foreach (new i : MyIter)																				<br />  {																				<br /><indent />  printf("%d", i); // Will print "0" then "55".																				<br />  }  </code>  </p>  </library> <p/> <library>y_iterate</library>  <param name="expr"><code>var : Iterator</code></param>  <remarks>  </remarks> <p/> The workings of these macros are very extensively documented at:  <a href="http://forum.sa-mp.com/showpost.php?p=2823668" /> <p/> <library>y_iterate</library>  <remarks>  An iterator with an associated array of information.  </remarks> <p/> <library  name="y_timers"  version="2.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  Sets up repeating timers without requiring any SetTimers and arranges  them so that they will be very unlikely to meet (at least for a long  time) using scheduling algorithms to get timers with the same period to  be offset.  Also fixes arrays and strings in timers so they can be passed  properly.  </remarks>  </library> <p/> <library  name="y_malloc"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Functions for using malloc/calloc/free type functions in PAWN."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_thirdpartyinclude"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Include a load of other libraries that YSI depends on, looking in about 27 different likely  locations."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library name="amx_assembly addressof" summary="AMX Assembly Library: `addressof` function address lookup.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly frame_info" summary="AMX Assembly; Function call frame information.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_header" summary="AMX Assembly Library: AMX file header access.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_memory" summary="AMX Assembly Library: AMX data segment manipulation.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_base" summary="AMX Assembly Library: Script load address determination.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library>amx_assembly amx_header</library><p/> <p/><p/> <library>amx_assembly amx_header</library><p/> <library name="amx_assembly opcode" summary="AMX Assembly Library: Information on all PAWN opcodes.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library>amx_assembly opcode</library> <remarks> Separate the macro opcodes for `-O2`. </remarks><p/> <library name="amx_assembly disasm" summary="AMX Assembly Library: Disassemble compiled code.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library>amx_assembly disasm</library><p/> <p/><p/> <library>amx_assembly disasm</library><p/> <library name="amx_assembly addressof_jit" summary="AMX Assembly Library: `addressof` JIT code.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  ///   <remarks>  ///     <c>addressof</c> works by reading data directly out of the stack to get  ///     a return address, then reading information from that location in memory  ///     to get the next <c>CALL</c> OpCode.  This fails with the JIT because the  ///     return address is in the JITed code, not in the original p-code.  ///     Instead, when the JIT is in use, use <em>codescan</em> to convert  ///     runtime <c>addressof</c> calls to startup-time resolutions.  Actually,  ///     there's no reason why this should be restricted to JIT only.  ///   </remarks>  </library> <p/> <p/><p/> <library name="amx_assembly codescan" summary="AMX Assembly Library: Compiled code scanning and pattern  matching.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly asm" summary="AMX Assembly Library: Assembly code generation.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly asm_macros" summary="AMX Assembly Library: `@emit` macros.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly dynamic_call" summary="AMX Assembly; Call arbitrary functions by name.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_jit" summary="AMX Assembly Library: JIT plugin address relocations.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library>amx_assembly codescan</library> <summary> All the information for scanning through an AMX and extracting lots of nice information about it. </summary><p/> <p/><p/> <library>amx_assembly codescan</library><p/> <library name="amx_assembly amx" summary="AMX Assembly Library: `AMX*` struct pointer determination.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly phys_memory" summary="AMX Assembly Library: Read and write real server addresses.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly shellcode" summary="AMX Assembly Library: Execute arbitrary x86 assembly.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly heap_alloc" summary="AMX Assembly Library: Allocate space in the heap.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="code-parse"  summary="Compile-time code analysis and generation"  license="Copyright (c) 2022 Alex &quot;Y_Less&quot; Cole.  Licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This include provides a handy set of macros for advanced compile-time  code analysis and generation.  With this, one can do things like analyse  the parameter types for a function, auto-generate call specifiers, and  otherwise create code-dependent macros.  </remarks>  </library> <p/> <library  name="indirection"  summary="Function pointers and code redirection."  license="Copyright (c) 2022 Alex &quot;Y_Less&quot; Cole.  Licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  Indirection is a system for calling function pointers in a generic and  type-safe way.  Instead of <c>CallLocalFunction</c>, <c>Call</c>,  <c>defer</c>, <c>Callback_Call</c>, or any other method, this gives one  common interface which can be extended by library authors; utilising  tags for compile-time parameters.  </remarks>  </library> <p/> <library  name="y_dumpamx"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Generate a new AMX from the current state of code."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>This library allows you to dump the current state of the AMX to a  file.  If this dumping is done by defining <c>YSI_YES_MODE_CACHE</c>,  then the file will be generated after <c>OnCodeInit</c> is complete, with  all YSI constructs pre-compiled and included in the resulting file.  The  new code will also start up and resume from the point after the dump was  completed.</p>  </remarks>  </library> <p/> <p/><p/> <library  name="y_inline"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This library allows a user to write inline functions in their script.  It  first detects all inline functions and generates data on them, such as  parameter counts and addresses.  When an inline function is passed in  code its current context data is stored.  Finally, when an inline  function is found to be called at some point its current local stack is  stored in global memory.  When the function actually is called, the stack  is restored, and additional parameters which are the inline function  parameters, are passed.  </remarks>  </library> <p/> <library  name="y_va"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This library currently provides two functions - va_printf and va_format  which perform printf and format using variable arguments passed to  another function.  <p />  This is bsed on the variable parameter passing method based on code by  Zeex. See page 15 of the code optimisations topic.  </remarks>  </library> <p/> <library  name="y_cgen"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Reserve space in COD for newly generated code."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_malloc"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Functions for using malloc/calloc/free type functions in PAWN."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_dialog"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Provides functions for dealing with dialogs, without needing to worry about IDs or huge `OnDialogResponse`  callbacks."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_bit"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>  Provides functions for bit manipulation and bit arrays greater than  32-bits.  The arrays are usually bigger than required due to cell  boundaries but this shouldn't cause a major problem (bit tests on the  101st bit of a 100 bit array won't return 0 for out of bounds, but the  129th will).  </p>  <p>  Note that y_commands has a few optimisations which bypass the code in  here so any modifications to bit array layouts will need to be reflected  there.  </p>  </remarks>  </library> <p/> <library  name="y_remote"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Wrapper for `__CallRemoteFunction`.  Enforces some features like no returns and arrays being  followed by their length."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_unique"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Defines a symbol differently every time it is included."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_hooks"  version="2.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Automatically hooks any callbacks with a very simple syntax."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> MySQL plugin R41-4 
+		<library name="open.mp" summary="open.mp includes entry point.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="args" summary="Script arguments support functions.">  <license>  (c) Copyright 2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="console" summary="Console output.">  <license>  (c) Copyright 1998-2011, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="core" summary="Core functions.">  <license>  (c) Copyright 1998-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="file" summary="File input/output functions.">  <license>  (c) Copyright 2004-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="time" summary="Float arithmetic.">  <license>  (c) Copyright 1999, Artran, Inc.  Written by Greg Garner (gmg@artran.com)  Modified in March 2001 to include user defined  operators for the floating point functions.  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="string" summary="String functions.">  <license>  (c) Copyright 2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="time" summary="Date/time functions.">  <license>  (c) Copyright 2001-2005, ITB CompuPhase  This file is provided as is (no warranties).  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_core" summary="open.mp core functions and defines.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_player" summary="open.mp player functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_actor" summary="open.mp actor functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_checkpoint" summary="open.mp checkpoint functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_class" summary="open.mp class functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_database" summary="open.mp SQLite functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_dialog" summary="open.mp dialog functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_gangzone" summary="open.mp text draw functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_http" summary="open.mp legacy HTTP include.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p /><p/> <p/><p/> <library name="omp_menu" summary="open.mp menu functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_network" summary="open.mp core functions and defines.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_object" summary="open.mp object functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_pickup" summary="open.mp pickup functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="omp_textdraw" summary="open.mp text draw functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_variable" summary="open.mp global data functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="omp_vehicle" summary="open.mp vehicle functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <p/><p/> <library name="omp_textlabel" summary="open.mp 3D text label functions.">  <license>  This Source Code Form is subject to the terms of the Mozilla Public License,  v. 2.0. If a copy of the MPL was not distributed with this file, You can  obtain one at http://mozilla.org/MPL/2.0/.  The original code is copyright (c) 2023, open.mp team and contributors.  </license>  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="sscanf"  summary="Extracts structured information from strings."  license="Copyright (c) 2022 Alex &quot;Y_Less&quot; Cole.  Licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This is the <em>sscanf</em> plugin, which provides the <c>sscanf</c>  function to extract basic structured data from strings.  This is slightly  different to regular expressions, but both have their place.  A regular  expression gives you total control over the exact structure of data down  to the character level; however, extracting structured data like numbers  using it is tricky.  Conversely this gives slightly higher-level  <em>specifiers</em> which can easily extract data types, at the expense  of fine-grained control.  To convert a string in to two numbers would  look like:  <code>  new num1, num2;                                                          <br />  sscanf("45 100", "ii", num1, num2);  </code>  <c>ii</c> is the specifier string, which here means "integer integer";  stating that the input string should be two whole numbers in a row (which  is - <c>"45 100"</c>).  <c>num1</c> and <c>num2</c> are the destination  variables to store the found numbers in (after conversion from strings).  You can check if the conversion failed by looking for a non-naught return  value:  <code>  new num1, num2;                                                          <br />  if (sscanf("hello 100", "ii", num1, num2))                               <br />  {                                                                        <br /><indent />  printf("The input was not two numbers.");                            <br />  }  </code>  This will fail because <c>"hello"</c> is not a whole number (or indeed  any type of number at all).  For more information on using the function  refer to the tutorials or the reference documentation in  <a href="https://github.com/Y-Less/sscanf/blob/master/README.md">the  attached readme</a>.  </remarks>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library  name="y_pawndoc"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Fix pawndoc comments."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_globaltags"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Declare GLOBAL_TAG_TYPES to define many tag types for function calls."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_prehook"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="State-based ALS hooking with better control of orderings."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_stripnumbers"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  Removes tag overrides which are actually numbers.  This allows for:  <code>  uvar g_a[MAX_PLAYERS][E_SOME_ENUM]; <br />  uvar g_b[MAX_PLAYERS][42];  </code>  Without stripping you would end with code doing "42:0" or getting a tag  mismatch on "E_SOME_ENUM", both of which are problems.  </remarks>  </library> <p/> <library  name="y_shortvar"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Declares a few variables with very short names, used all over YSI."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_pp"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="More complex processing in the pre-processor."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_als"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Provides a number of macros for making ALS (Advanced Library System) callback hooking simpler."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_scriptinit"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="OnScriptInit, OnCodeInit, and equivalent exit functions."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This file provides <c>OnScriptInit</c> and <c>OnScriptExit</c> which are  called at the start and end of the current script, regardless of what the  type of the script is.  It also provides <c>IS_FILTERSCRIPT</c> as a  (partial) replacement for <c>FILTERSCRIPT</c> which detects what the mode is  at runtime for a more reliable system (but it is a run-time variable, not a  compile-time constant).  </remarks>  </library> <p/> <library  name="y_scriptdata"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Utility functions for information about how and when the script was built."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This file provides <c>OnScriptInit</c> and <c>OnScriptExit</c> which are  called at the start and end of the current script, regardless of what the  type of the script is.  It also provides <c>IS_FILTERSCRIPT</c> as a  (partial) replacement for <c>FILTERSCRIPT</c> which detects what the mode is  at runtime for a more reliable system (but it is a run-time variable, not a  compile-time constant).  </remarks>  </library> <p/> <library  name="y_serverdata"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Utility functions for information about plugin and server options."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This file provides <c>OnScriptInit</c> and <c>OnScriptExit</c> which are  called at the start and end of the current script, regardless of what the  type of the script is.  It also provides <c>IS_FILTERSCRIPT</c> as a  (partial) replacement for <c>FILTERSCRIPT</c> which detects what the mode is  at runtime for a more reliable system (but it is a run-time variable, not a  compile-time constant).  </remarks>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <transition keep="true" target="_script_init_fix_state : true"/>  <transition keep="true" target="_ALS : _ALS_go"/> <p/> <library  name="y_version"  version="0.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Checks online to see if there is a newer version of YSI available."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_debug"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Debugging features, optionally compile-time disabled."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>Ensures debug levels are set and defines debug functions.</p>  <p>General debug levels:</p>  <ul>  <li>-1 - Run-time selected debug level.</li>  <li>0 - No debug information.</li>  <li>1 - Callbacks and timers.</li>  <li>2 - Remote functions.</li>  <li>3 - Stock functions.</li>  <li>4 - Static functions.</li>  <li>5 - Utility functions.</li>  <li>6 - Code.</li>  <li>7 - Loops.</li>  </ul>  <p>If you use <c>Debug_Print0</c> you get an optional debug print  controlled by the global state <c>ysi_debug</c> - which is either on or  off.</p>  </remarks>  </library> <p/> <p/><p/> <library  name="y_cell"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Provides a few functions for manipulating the bits in single cells.  Note that this is distinct  from the y_bit library."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_amx"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Allows a script access to information about itself, such as function names."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This can be used for a range of things, including automatic callback  hooking and testing.  </remarks>  </library> <p/> <p/><p/> <p/><p/> <library  name="y_shortfunc"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Defines new names for native functions."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_utils - misc"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_utils - maths"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - varargs"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - arrays"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - colour"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - conversions"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - encodings"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - strings"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - files"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library>y_utils - files</library>  <summary>  ftouch(filename);  </summary>  <param name="filename">The file to "touch".</param>  <returns>  0 - File already exists.  1 - File was created.  -1 - File was not created.  </returns>  <remarks>  This "touches" a file in the Unix sense of creating it but not opening or  editing it in any way.  </remarks> <p/> <library  name="y_utils - ip"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_utils - names"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - random"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library>y_utils - random</library>  <param name="output">The optional string to write to.</param>  <param name="cased">Allow both upper- and lower-case letters.</param>  <param name="grouped">Groups of characters have equal probability.</param>  <param name="len">The size of the string.</param>  <returns>  A random character.  </returns>  <remarks>  Can be used to return a character or a string.  Use the return value with  no parameters for a single character, or pass a destination array for a  string.  <p />  Selects letters from <c>A</c> to <c>Z</c>, or also <c>a</c> to <c>z</c> if  <c>cased</c> is <c>true</c>.  </remarks> <p/> <library>y_utils - random</library>  <param name="output">The optional string to write to.</param>  <param name="cased">Allow both upper- and lower-case letters.</param>  <param name="grouped">Groups of characters have equal probability.</param>  <param name="len">The size of the string.</param>  <returns>  A random character.  </returns>  <remarks>  Can be used to return a character or a string.  Use the return value with  no parameters for a single character, or pass a destination array for a  string.  <p />  Selects letters from <c>a</c> to <c>z</c>, <c>A</c> to <c>Z</c>, or  numbers; with every character having equal likelihood.  Unless  <c>grouped</c> is true, in which case numbers are just as likely to appear  as upper- or lower-case letters.  </remarks> <p/> <library  name="y_utils - similarity"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_utils - textwrap"  version="0.1.3"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Misc functions used throughout."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="y_iterate"  version="0.4"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>  Provides efficient looping through sparse data sets, such as connected  players.  Significantly improved from the original version to be a generic  loop system, rather then purely a player loop system.  When used for  players this has constant time O(n) for number of connected players (n),  unlike standard player loops which are O(MAX_PLAYERS), regardless of the  actual number of connected players.  Even when n is MAX_PLAYERS this is  still faster.  </p>  <p>  For extensive documentation on writing and using iterators, see  <a href="http://forum.sa-mp.com/showthread.php?t=481877">this topic</a>  </p>  </remarks>  <section>  Examples  </section>  <subsection>Basic Iterators</subsection>  <p>  Basic iterators are simply collections of numbers - little more than an array.  A number is either in the array, or not in the array, <em>y_iterate</em> loops  through only the <em>in</em> numbers.</p>  <p><em>Players</em><br /><br />  This code will loop through every player connected to the server.  <code>  foreach (new i : Player)																				<br />  {																				<br /><indent />  printf("player %d is connected", i);																				<br />  }  </code>  </p>  <p><em>Vehicles</em><br /><br />  This code will loop through all the created vehicles on the server (including  those made in other running scripts).  <code>  foreach (new vid : Vehicle)																				<br />  {																				<br /><indent />  printf("vehicleid %d has been created", vid);																				<br />  }  </code>  </p>  <p><em>Create An Iterator</em><br /><br />  To create your own iterator, first declare it, then add things to it, then loop  over it:  <code>  new																				<br /><indent />  Iterator:MyIter&lt;100&gt;; // First declare it (this has room for 100 items numbered 0-99).									 											<br />  // Then add things to it.																				<br />  Iter_Add(MyIter, 0);  // Fine.																				<br />  Iter_Add(MyIter, 55); // Fine.																				<br />  Iter_Add(MyIter, 100); // Will fail.																				<br />  // Then loop over it.																				<br />  foreach (new i : MyIter)																				<br />  {																				<br /><indent />  printf("%d", i); // Will print "0" then "55".																				<br />  }  </code>  </p>  </library> <p/> <library>y_iterate</library>  <param name="expr"><code>var : Iterator</code></param>  <remarks>  </remarks> <p/> The workings of these macros are very extensively documented at:  <a href="http://forum.sa-mp.com/showpost.php?p=2823668" /> <p/> <library>y_iterate</library>  <remarks>  An iterator with an associated array of information.  </remarks> <p/> <library  name="y_timers"  version="2.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  Sets up repeating timers without requiring any SetTimers and arranges  them so that they will be very unlikely to meet (at least for a long  time) using scheduling algorithms to get timers with the same period to  be offset.  Also fixes arrays and strings in timers so they can be passed  properly.  </remarks>  </library> <p/> <library  name="y_malloc"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Functions for using malloc/calloc/free type functions in PAWN."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_thirdpartyinclude"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Include a load of other libraries that YSI depends on, looking in about 27 different likely  locations."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library name="amx_assembly addressof" summary="AMX Assembly Library: `addressof` function address lookup.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly frame_info" summary="AMX Assembly; Function call frame information.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_header" summary="AMX Assembly Library: AMX file header access.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_memory" summary="AMX Assembly Library: AMX data segment manipulation.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_base" summary="AMX Assembly Library: Script load address determination.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library>amx_assembly amx_header</library><p/> <p/><p/> <library>amx_assembly amx_header</library><p/> <library name="amx_assembly opcode" summary="AMX Assembly Library: Information on all PAWN opcodes.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library name="amx_assembly disasm" summary="AMX Assembly Library: Disassemble compiled code.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <library>amx_assembly disasm</library><p/> <p/><p/> <library>amx_assembly disasm</library><p/> <library name="amx_assembly addressof_jit" summary="AMX Assembly Library: `addressof` JIT code.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  ///   <remarks>  ///     <c>addressof</c> works by reading data directly out of the stack to get  ///     a return address, then reading information from that location in memory  ///     to get the next <c>CALL</c> OpCode.  This fails with the JIT because the  ///     return address is in the JITed code, not in the original p-code.  ///     Instead, when the JIT is in use, use <em>codescan</em> to convert  ///     runtime <c>addressof</c> calls to startup-time resolutions.  Actually,  ///     there's no reason why this should be restricted to JIT only.  ///   </remarks>  </library> <p/> <p/><p/> <library name="amx_assembly codescan" summary="AMX Assembly Library: Compiled code scanning and pattern  matching.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly asm" summary="AMX Assembly Library: Assembly code generation.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly asm_macros" summary="AMX Assembly Library: `@emit` macros.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly dynamic_call" summary="AMX Assembly; Call arbitrary functions by name.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly amx_jit" summary="AMX Assembly Library: JIT plugin address relocations.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <p/><p/> <p/><p/> <library>amx_assembly codescan</library> <summary> All the information for scanning through an AMX and extracting lots of nice information about it. </summary><p/> <p/><p/> <library>amx_assembly codescan</library><p/> <library name="amx_assembly amx" summary="AMX Assembly Library: `AMX*` struct pointer determination.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly phys_memory" summary="AMX Assembly Library: Read and write real server addresses.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly shellcode" summary="AMX Assembly Library: Execute arbitrary x86 assembly.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library name="amx_assembly heap_alloc" summary="AMX Assembly Library: Allocate space in the heap.">  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <p/><p/> <library  name="code-parse"  summary="Compile-time code analysis and generation"  license="Copyright (c) 2022 Alex &quot;Y_Less&quot; Cole.  Licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This include provides a handy set of macros for advanced compile-time  code analysis and generation.  With this, one can do things like analyse  the parameter types for a function, auto-generate call specifiers, and  otherwise create code-dependent macros.  </remarks>  </library> <p/> <library  name="indirection"  summary="Function pointers and code redirection."  license="Copyright (c) 2022 Alex &quot;Y_Less&quot; Cole.  Licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  Indirection is a system for calling function pointers in a generic and  type-safe way.  Instead of <c>CallLocalFunction</c>, <c>Call</c>,  <c>defer</c>, <c>Callback_Call</c>, or any other method, this gives one  common interface which can be extended by library authors; utilising  tags for compile-time parameters.  </remarks>  </library> <p/> <library  name="y_dumpamx"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Generate a new AMX from the current state of code."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>This library allows you to dump the current state of the AMX to a  file.  If this dumping is done by defining <c>YSI_YES_MODE_CACHE</c>,  then the file will be generated after <c>OnCodeInit</c> is complete, with  all YSI constructs pre-compiled and included in the resulting file.  The  new code will also start up and resume from the point after the dump was  completed.</p>  </remarks>  </library> <p/> <p/><p/> <library  name="y_inline"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This library allows a user to write inline functions in their script.  It  first detects all inline functions and generates data on them, such as  parameter counts and addresses.  When an inline function is passed in  code its current context data is stored.  Finally, when an inline  function is found to be called at some point its current local stack is  stored in global memory.  When the function actually is called, the stack  is restored, and additional parameters which are the inline function  parameters, are passed.  </remarks>  </library> <p/> <library  name="y_va"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  This library currently provides two functions - va_printf and va_format  which perform printf and format using variable arguments passed to  another function.  <p />  This is bsed on the variable parameter passing method based on code by  Zeex. See page 15 of the code optimisations topic.  </remarks>  </library> <p/> <library  name="y_cgen"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Reserve space in COD for newly generated code."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_malloc"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Functions for using malloc/calloc/free type functions in PAWN."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_dialog"  version="0.1"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Provides functions for dealing with dialogs, without needing to worry about IDs or huge `OnDialogResponse`  callbacks."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_bit"  version="0.2"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  <remarks>  <p>  Provides functions for bit manipulation and bit arrays greater than  32-bits.  The arrays are usually bigger than required due to cell  boundaries but this shouldn't cause a major problem (bit tests on the  101st bit of a 100 bit array won't return 0 for out of bounds, but the  129th will).  </p>  <p>  Note that y_commands has a few optimisations which bypass the code in  here so any modifications to bit array layouts will need to be reflected  there.  </p>  </remarks>  </library> <p/> <library  name="y_remote"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Wrapper for `__CallRemoteFunction`.  Enforces some features like no returns and arrays being  followed by their length."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_unique"  version="1.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Defines a symbol differently every time it is included."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> <library  name="y_hooks"  version="2.0"  license="(c) 2022 YSI contibutors, licensed under MPL 1.1"  summary="Automatically hooks any callbacks with a very simple syntax."  >  <summary pawndoc="true">  This library uses the enhanced <em>pawndoc.xsl</em> from  <a href="https://github.com/pawn-lang/pawndoc">pawn-lang/pawndoc</a>.  This XSL has features such as library and markdown support, and will not  render this message when used.  </summary>  </library> <p/> MySQL plugin R41-4 
 	</general>
 
 	<members>
@@ -2591,7 +2591,7 @@
 				<size value="32"/>
 			</member>
 		</member>
-		<member name="T:Opcode" value="139">
+		<member name="T:Opcode" value="160">
 			<tagname value="Opcode"/>
 			<member name="C:OP_NONE" value="0">
 			</member>
@@ -2869,7 +2869,49 @@
 			</member>
 			<member name="C:OP_BREAK" value="137">
 			</member>
-			<member name="C:OP_LAST_" value="138">
+			<member name="C:OP_PUSH2_C" value="138">
+			</member>
+			<member name="C:OP_PUSH2" value="139">
+			</member>
+			<member name="C:OP_PUSH2_S" value="140">
+			</member>
+			<member name="C:OP_PUSH2_ADR" value="141">
+			</member>
+			<member name="C:OP_PUSH3_C" value="142">
+			</member>
+			<member name="C:OP_PUSH3" value="143">
+			</member>
+			<member name="C:OP_PUSH3_S" value="144">
+			</member>
+			<member name="C:OP_PUSH3_ADR" value="145">
+			</member>
+			<member name="C:OP_PUSH4_C" value="146">
+			</member>
+			<member name="C:OP_PUSH4" value="147">
+			</member>
+			<member name="C:OP_PUSH4_S" value="148">
+			</member>
+			<member name="C:OP_PUSH4_ADR" value="149">
+			</member>
+			<member name="C:OP_PUSH5_C" value="150">
+			</member>
+			<member name="C:OP_PUSH5" value="151">
+			</member>
+			<member name="C:OP_PUSH5_S" value="152">
+			</member>
+			<member name="C:OP_PUSH5_ADR" value="153">
+			</member>
+			<member name="C:OP_LOAD_BOTH" value="154">
+			</member>
+			<member name="C:OP_LOAD_S_BOTH" value="155">
+			</member>
+			<member name="C:OP_CONST" value="156">
+			</member>
+			<member name="C:OP_CONST_S" value="157">
+			</member>
+			<member name="C:OP_SYSREQ_N" value="158">
+			</member>
+			<member name="C:OP_LAST_" value="159">
 			</member>
 			<library>amx_assembly opcode</library>
 		</member>
@@ -5899,7 +5941,7 @@
 			<referrer name="menu_RATHAUS_MENU"/>
 			<referrer name="T3_OnPlayerKeyStateChange"/>
 		</member>
-		<member name="C:NUM_OPCODES" value="138">
+		<member name="C:NUM_OPCODES" value="159">
 			<referrer name="IsOpcodeValid"/>
 			<referrer name="InitOpcodeTable"/>
 			<referrer name="UnrelocateOpcode"/>
@@ -5997,11 +6039,12 @@
 		</member>
 		<member name="C:__11_cells" value="44">
 			<referrer name="Iter_YieldEnter"/>
+			<referrer name="YVA2_FoundCall"/>
 			<referrer name="Inline_OnCodeInit"/>
 			<library>y_emit</library>  <remarks>  Just a number of cells, converted to bytes, to make various bits of maths  more clear.  Some of these values overlap with parameter offsets and the  like, but these are separate to differentiate the different use-cases.  </remarks> 
 		</member>
-		<member name="C:__13_cells" value="52">
-			<referrer name="YVA2_FoundCall"/>
+		<member name="C:__15_cells" value="60">
+			<referrer name="YVA2_Initalise"/>
 			<library>y_emit</library>  <remarks>  Just a number of cells, converted to bytes, to make various bits of maths  more clear.  Some of these values overlap with parameter offsets and the  like, but these are separate to differentiate the different use-cases.  </remarks> 
 		</member>
 		<member name="C:__1_cell" value="4">
@@ -6020,6 +6063,7 @@
 			<referrer name="Inline_OnCodeInit"/>
 			<referrer name="YHNPS_Find"/>
 			<referrer name="YHNPS_Insert"/>
+			<referrer name="Hooks_RegisterNPSHook"/>
 			<referrer name="Hooks_GenerateContinue"/>
 			<library>y_emit</library>  <remarks>  Just a number of cells, converted to bytes, to make various bits of maths  more clear.  Some of these values overlap with parameter offsets and the  like, but these are separate to differentiate the different use-cases.  </remarks> 
 		</member>
@@ -6061,6 +6105,7 @@
 			<referrer name="YVA2_FoundPush"/>
 			<referrer name="CGen_SetupCodeSpace"/>
 			<referrer name="Hooks_WriteFunction"/>
+			<referrer name="Inline_OnCodeInit"/>
 			<referrer name="_yH@"/>
 			<referrer name="Hooks_GenerateContinue"/>
 			<library>y_emit</library>  <remarks>  Just a number of cells, converted to bytes, to make various bits of maths  more clear.  Some of these values overlap with parameter offsets and the  like, but these are separate to differentiate the different use-cases.  </remarks> 
@@ -6118,7 +6163,6 @@
 			<referrer name="Malloc_OnCodeInit"/>
 			<referrer name="Iter_OnPlayerConnect"/>
 			<referrer name="Iter_OnPlayerDisconnect"/>
-			<referrer name="YVA2_Initalise"/>
 			<referrer name="Hooks_GetPreloadLibraries"/>
 			<referrer name="Hooks_GetDefaultReturn"/>
 			<referrer name="Inline_OnCodeInit"/>
@@ -6630,10 +6674,10 @@
 		<member name="C:__namemax" value="63">
 			<summary>  The maximum length of symbol names, excluding any NULLs.  </summary> 
 		</member>
-		<member name="C:__optimisation" value="0">
+		<member name="C:__optimisation" value="2">
 			<library>y_compilerdata</library>  <remarks>  The current optimisation level, spelt correctly.  </remarks> 
 		</member>
-		<member name="C:__optimization" value="0">
+		<member name="C:__optimization" value="2">
 		</member>
 		<member name="C:__param0_offset" value="12">
 			<referrer name="AMX_GetGlobalAddress"/>
@@ -6808,6 +6852,7 @@
 			<referrer name="OpcodeTableQuickSort"/>
 			<referrer name="OpcodeTableWrite"/>
 			<referrer name="InitOpcodeTable"/>
+			<referrer name="RelocateMacroOpcodeNow"/>
 			<referrer name="GetFrameReturn"/>
 			<referrer name="SetFrameReturn"/>
 			<referrer name="SetFrameParameterSize"/>
@@ -7162,7 +7207,7 @@
 		</member>
 		<member name="C:charmax" value="254">
 		</member>
-		<member name="C:debug" value="2">
+		<member name="C:debug" value="0">
 			<referrer name="RelocateOpcodeNow"/>
 		</member>
 		<member name="C:e_VEHICLE_FLAGS_Ambulance" value="262144">
@@ -11158,6 +11203,11 @@
 		</member>
 		<member name="F:OLD_DEFAULT_NAME">
 			<library>sscanf</library>  <remarks>  The <c>OLD_DEFAULT_NAME</c> option as a constant string so you can get  compile-time spell checking on the name.  The behaviour of <c>U</c>, <c>Q</c>  and <c>R</c> have been changed to take any number as a default, instead of a  connected player.  Setting <c>OLD_DEFAULT_NAME</c> to <c>1</c> will revert to  the old version.  </remarks> 
+		</member>
+		<member name="F:OP_SYSREQ_DN">
+			<tagname value="Opcode"/>
+			<referrer name="RelocateOpcodeNow"/>
+			<referrer name="UnrelocateOpcode"/>
 		</member>
 		<member name="F:ObjektInfo">
 			<referrer name="SetObjectMaterialEx"/>
@@ -23434,6 +23484,7 @@
 			<stacksize value="5"/>
 			<referrer name="YVA2_CodeGenMainCleanup"/>
 			<referrer name="Inline_GeneratePostamble"/>
+			<referrer name="Hooks_RegisterNPSHook"/>
 			<dependency name="AsmEmitInstruction"/>
 			<dependency name="OP_ADD"/>
 			<param name="ctx">
@@ -23621,6 +23672,20 @@
 			</param>
 			<library>amx_assembly asm</library>
 		</member>
+		<member name="M:AsmEmitConst" syntax="AsmEmitConst(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_CONST"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
 		<member name="M:AsmEmitConstAlt" syntax="AsmEmitConstAlt(ctx[], value)">
 			<tagname value="AsmError"/>
 			<stacksize value="6"/>
@@ -23638,6 +23703,7 @@
 			<stacksize value="6"/>
 			<referrer name="AddressofResolveFoundEnd"/>
 			<referrer name="Inline_GeneratePostamble"/>
+			<referrer name="Hooks_RegisterNPSHook"/>
 			<referrer name="Hooks_GenerateContinue"/>
 			<dependency name="AsmEmitInstruction"/>
 			<dependency name="OP_CONST_PRI"/>
@@ -23645,6 +23711,20 @@
 				<paraminfo> [21] </paraminfo>
 			</param>
 			<param name="value">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitConstS" syntax="AsmEmitConstS(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_CONST_S"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
 			</param>
 			<library>amx_assembly asm</library>
 		</member>
@@ -24003,6 +24083,26 @@
 			<referrer name="AsmEmitZeroAlt"/>
 			<referrer name="AsmEmitZeroPri"/>
 			<referrer name="AsmEmitZeroS"/>
+			<referrer name="AsmEmitPush2C"/>
+			<referrer name="AsmEmitPush2"/>
+			<referrer name="AsmEmitPush2S"/>
+			<referrer name="AsmEmitPush2Adr"/>
+			<referrer name="AsmEmitPush3C"/>
+			<referrer name="AsmEmitPush3"/>
+			<referrer name="AsmEmitPush3S"/>
+			<referrer name="AsmEmitPush3Adr"/>
+			<referrer name="AsmEmitPush4C"/>
+			<referrer name="AsmEmitPush4"/>
+			<referrer name="AsmEmitPush4S"/>
+			<referrer name="AsmEmitPush4Adr"/>
+			<referrer name="AsmEmitPush5C"/>
+			<referrer name="AsmEmitPush5"/>
+			<referrer name="AsmEmitPush5S"/>
+			<referrer name="AsmEmitPush5Adr"/>
+			<referrer name="AsmEmitLoadBoth"/>
+			<referrer name="AsmEmitLoadSBoth"/>
+			<referrer name="AsmEmitConst"/>
+			<referrer name="AsmEmitConstS"/>
 			<dependency name="ASM_ERROR_NONE"/>
 			<dependency name="AsmContext_buffer_offset"/>
 			<dependency name="AsmEmitOpcode"/>
@@ -24751,6 +24851,20 @@
 			</param>
 			<library>amx_assembly asm</library>
 		</member>
+		<member name="M:AsmEmitLoadBoth" syntax="AsmEmitLoadBoth(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_LOAD_BOTH"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
 		<member name="M:AsmEmitLoadI" syntax="AsmEmitLoadI(ctx[])">
 			<tagname value="AsmError"/>
 			<stacksize value="5"/>
@@ -24789,6 +24903,20 @@
 				<paraminfo> [21] </paraminfo>
 			</param>
 			<param name="offset">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitLoadSBoth" syntax="AsmEmitLoadSBoth(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_LOAD_S_BOTH"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
 			</param>
 			<library>amx_assembly asm</library>
 		</member>
@@ -24835,6 +24963,7 @@
 		<member name="M:AsmEmitLrefPri" syntax="AsmEmitLrefPri(ctx[], address)">
 			<tagname value="AsmError"/>
 			<stacksize value="6"/>
+			<referrer name="Hooks_RegisterNPSHook"/>
 			<dependency name="AsmEmitInstruction"/>
 			<dependency name="OP_LREF_PRI"/>
 			<param name="ctx">
@@ -25085,6 +25214,280 @@
 			</param>
 			<library>amx_assembly asm</library>
 		</member>
+		<member name="M:AsmEmitPush2" syntax="AsmEmitPush2(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH2"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush2Adr" syntax="AsmEmitPush2Adr(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH2_ADR"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush2C" syntax="AsmEmitPush2C(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH2_C"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush2S" syntax="AsmEmitPush2S(ctx[], a, b)">
+			<tagname value="AsmError"/>
+			<stacksize value="7"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH2_S"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush3" syntax="AsmEmitPush3(ctx[], a, b, c)">
+			<tagname value="AsmError"/>
+			<stacksize value="8"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH3"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush3Adr" syntax="AsmEmitPush3Adr(ctx[], a, b, c)">
+			<tagname value="AsmError"/>
+			<stacksize value="8"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH3_ADR"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush3C" syntax="AsmEmitPush3C(ctx[], a, b, c)">
+			<tagname value="AsmError"/>
+			<stacksize value="8"/>
+			<referrer name="YVA2_CodeGenPushSite"/>
+			<referrer name="Hooks_RegisterNPSHook"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH3_C"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush3S" syntax="AsmEmitPush3S(ctx[], a, b, c)">
+			<tagname value="AsmError"/>
+			<stacksize value="8"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH3_S"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush4" syntax="AsmEmitPush4(ctx[], a, b, c, d)">
+			<tagname value="AsmError"/>
+			<stacksize value="9"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH4"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush4Adr" syntax="AsmEmitPush4Adr(ctx[], a, b, c, d)">
+			<tagname value="AsmError"/>
+			<stacksize value="9"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH4_ADR"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush4C" syntax="AsmEmitPush4C(ctx[], a, b, c, d)">
+			<tagname value="AsmError"/>
+			<stacksize value="9"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH4_C"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush4S" syntax="AsmEmitPush4S(ctx[], a, b, c, d)">
+			<tagname value="AsmError"/>
+			<stacksize value="9"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH4_S"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush5" syntax="AsmEmitPush5(ctx[], a, b, c, d, e)">
+			<tagname value="AsmError"/>
+			<stacksize value="10"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH5"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<param name="e">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush5Adr" syntax="AsmEmitPush5Adr(ctx[], a, b, c, d, e)">
+			<tagname value="AsmError"/>
+			<stacksize value="10"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH5_ADR"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<param name="e">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush5C" syntax="AsmEmitPush5C(ctx[], a, b, c, d, e)">
+			<tagname value="AsmError"/>
+			<stacksize value="10"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH5_C"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<param name="e">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
+		<member name="M:AsmEmitPush5S" syntax="AsmEmitPush5S(ctx[], a, b, c, d, e)">
+			<tagname value="AsmError"/>
+			<stacksize value="10"/>
+			<dependency name="AsmEmitInstruction"/>
+			<dependency name="OP_PUSH5_S"/>
+			<param name="ctx">
+				<paraminfo> [21] </paraminfo>
+			</param>
+			<param name="a">
+			</param>
+			<param name="b">
+			</param>
+			<param name="c">
+			</param>
+			<param name="d">
+			</param>
+			<param name="e">
+			</param>
+			<library>amx_assembly asm</library>
+		</member>
 		<member name="M:AsmEmitPushAdr" syntax="AsmEmitPushAdr(ctx[], offset)">
 			<tagname value="AsmError"/>
 			<stacksize value="6"/>
@@ -25127,7 +25530,6 @@
 			<tagname value="AsmError"/>
 			<stacksize value="6"/>
 			<referrer name="AsmEmitPushNumArgs"/>
-			<referrer name="YVA2_CodeGenPushSite"/>
 			<referrer name="Inline_GenerateLocalsCopy"/>
 			<referrer name="Inline_DoRetnGen"/>
 			<referrer name="Hooks_WriteFunction"/>
@@ -25510,6 +25912,7 @@
 			<referrer name="Inline_FoundDestructor"/>
 			<referrer name="Inline_GeneratePostamble"/>
 			<referrer name="Hooks_WriteFunction"/>
+			<referrer name="Hooks_RegisterNPSHook"/>
 			<dependency name="AsmEmitInstruction"/>
 			<dependency name="OP_STOR_PRI"/>
 			<param name="ctx">
@@ -27797,7 +28200,7 @@
 		</member>
 		<member name="M:CGen_OnCodeInit" syntax="CGen_OnCodeInit()">
 			<attribute name="public"/>
-			<stacksize value="2798"/>
+			<stacksize value="3482"/>
 			<dependency name="AMX_BASE_ADDRESS"/>
 			<dependency name="AMX_HEADER_COD"/>
 			<dependency name="AMX_Ref"/>
@@ -27839,6 +28242,10 @@
 			<dependency name="OP_JZER"/>
 			<dependency name="OP_LOAD_S_PRI"/>
 			<dependency name="OP_MOVE_PRI"/>
+			<dependency name="OP_PUSH2_ADR"/>
+			<dependency name="OP_PUSH3_ADR"/>
+			<dependency name="OP_PUSH4_ADR"/>
+			<dependency name="OP_PUSH5_ADR"/>
 			<dependency name="OP_PUSH_ADR"/>
 			<dependency name="OP_PUSH_ALT"/>
 			<dependency name="OP_PUSH_C"/>
@@ -28158,7 +28565,7 @@
 			<library>omp_core</library>  <summary>Calls a public function in any script that is loaded.</summary>        <seealso name="CallLocalFunction" />  <returns>The value that the last public function returned.</returns>  <remarks>CallRemoteFunction crashes the server if it's passing an empty string.</remarks>  <remarks>  Specifier string placeholders:<br />  <ul>  <li><b><c>c</c></b> - a single character</li>  <li><b><c>d</c></b> - an integer (whole) number</li>  <li><b><c>i</c></b> - an integer (whole) number</li>  <li><b><c>x</c></b> - a number in hexadecimal notation</li>  <li><b><c>f</c></b> - a floating point number</li>  <li><b><c>s</c></b> - a string</li>  </ul>  </remarks> 
 		</member>
 		<member name="M:CallStoredFunction" syntax="CallStoredFunction(func, ...)">
-			<stacksize value="13"/>
+			<stacksize value="19"/>
 			<dependency name="INDIRECTION_DATA"/>
 			<dependency name="INDIRECTION_NAUGHT"/>
 			<dependency name="INDIRECTION_TAG"/>
@@ -28193,7 +28600,7 @@
 			      <remarks>  This is very similar to Callback_Call, but takes an array of ADDRESSES  instead of normal parameters.  This is designed to help support some  experimental OO code I was working on...  If the target is a public function, the parameters are resolved and passed  normally.  If the target is an inline function we are optimised for the  common case, so move the data on to the stack (currently done  value-by-value not all at once) and call "Callback_Call".  </remarks> 
 		</member>
 		<member name="M:Callback_Call" syntax="Callback_Call(func[], ...)">
-			<stacksize value="13"/>
+			<stacksize value="19"/>
 			<dependency name="E_CALLBACK_DATA_ALLOC"/>
 			<dependency name="INDIRECTION_DATA"/>
 			<dependency name="INDIRECTION_NAUGHT"/>
@@ -29332,6 +29739,7 @@
 		</member>
 		<member name="M:CodeScanGetHoleCount" syntax="CodeScanGetHoleCount(csm[])">
 			<stacksize value="1"/>
+			<referrer name="Inline_FoundUsingInline"/>
 			<dependency name="CodeScanMatch_hole_count"/>
 			<param name="csm">
 				<paraminfo> [172] </paraminfo>
@@ -29841,6 +30249,22 @@
 			<dependency name="OP_POP_PRI"/>
 			<dependency name="OP_PROC"/>
 			<dependency name="OP_PUSH"/>
+			<dependency name="OP_PUSH2"/>
+			<dependency name="OP_PUSH2_ADR"/>
+			<dependency name="OP_PUSH2_C"/>
+			<dependency name="OP_PUSH2_S"/>
+			<dependency name="OP_PUSH3"/>
+			<dependency name="OP_PUSH3_ADR"/>
+			<dependency name="OP_PUSH3_C"/>
+			<dependency name="OP_PUSH3_S"/>
+			<dependency name="OP_PUSH4"/>
+			<dependency name="OP_PUSH4_ADR"/>
+			<dependency name="OP_PUSH4_C"/>
+			<dependency name="OP_PUSH4_S"/>
+			<dependency name="OP_PUSH5"/>
+			<dependency name="OP_PUSH5_ADR"/>
+			<dependency name="OP_PUSH5_C"/>
+			<dependency name="OP_PUSH5_S"/>
 			<dependency name="OP_PUSH_ADR"/>
 			<dependency name="OP_PUSH_ALT"/>
 			<dependency name="OP_PUSH_C"/>
@@ -29851,6 +30275,7 @@
 			<dependency name="OP_SCTRL"/>
 			<dependency name="OP_STACK"/>
 			<dependency name="OP_SWITCH"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="UnsafeUnrelocateOpcode"/>
 			<dependency name="cellbytes"/>
 			<dependency name="cellmin"/>
@@ -33948,7 +34373,7 @@
 			<library>amx_assembly disasm</library>
 		</member>
 		<member name="M:DisasmWriteCode" syntax="DisasmWriteCode(file)">
-			<stacksize value="159"/>
+			<stacksize value="160"/>
 			<referrer name="DisasmWriteFile"/>
 			<dependency name="AMX_HDR"/>
 			<dependency name="AMX_HDR_CIP"/>
@@ -33976,6 +34401,7 @@
 			<dependency name="OP_PROC"/>
 			<dependency name="OP_SYSREQ_C"/>
 			<dependency name="OP_SYSREQ_D"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="ToHexStr"/>
 			<dependency name="ToHexStr"/>
 			<dependency name="cellbytes"/>
@@ -42635,22 +43061,27 @@
 			<dependency name="AMX_HEADER_COD"/>
 			<dependency name="AMX_Ref"/>
 			<dependency name="AsmContext"/>
+			<dependency name="AsmEmitAdd"/>
 			<dependency name="AsmEmitCallAbs"/>
+			<dependency name="AsmEmitConstPri"/>
 			<dependency name="AsmEmitHeap"/>
 			<dependency name="AsmEmitLctrl"/>
 			<dependency name="AsmEmitLoadPri"/>
+			<dependency name="AsmEmitLrefPri"/>
 			<dependency name="AsmEmitMovs"/>
 			<dependency name="AsmEmitPadding"/>
 			<dependency name="AsmEmitPopAlt"/>
 			<dependency name="AsmEmitPopPri"/>
 			<dependency name="AsmEmitProc"/>
 			<dependency name="AsmEmitPush"/>
+			<dependency name="AsmEmitPush3C"/>
 			<dependency name="AsmEmitPushAlt"/>
 			<dependency name="AsmEmitPushC"/>
 			<dependency name="AsmEmitPushPri"/>
 			<dependency name="AsmEmitRetn"/>
 			<dependency name="AsmEmitStack"/>
 			<dependency name="AsmEmitStorAlt"/>
+			<dependency name="AsmEmitStorPri"/>
 			<dependency name="AsmEmitSysreqC"/>
 			<dependency name="AsmInitPtr"/>
 			<dependency name="DisasmContext"/>
@@ -42664,11 +43095,13 @@
 			<dependency name="OP_RETN"/>
 			<dependency name="OP_SYSREQ_C"/>
 			<dependency name="OP_SYSREQ_D"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="YSI_g_sNPSBaseCall"/>
 			<dependency name="YSI_g_sNPSReplace"/>
 			<dependency name="YSI_g_sNPSStack"/>
 			<dependency name="YSI_g_sNPSTrampoline"/>
 			<dependency name="YSI_g_sTempRet"/>
+			<dependency name="__1_cell"/>
 			<dependency name="__2_cells"/>
 			<dependency name="__5_cells"/>
 			<dependency name="__frm"/>
@@ -43575,11 +44008,12 @@
 			</param>
 		</member>
 		<member name="M:Inline_FoundUsingInline" syntax="Inline_FoundUsingInline(scanner[])">
-			<stacksize value="27"/>
+			<stacksize value="28"/>
 			<referrer name="CGen_OnCodeInit"/>
 			<dependency name="AsmContext"/>
 			<dependency name="AsmEmitNop"/>
 			<dependency name="AsmEmitPushPri"/>
+			<dependency name="CodeScanGetHoleCount"/>
 			<dependency name="CodeScanGetMatchAsm"/>
 			<dependency name="CodeScanGetMatchHole"/>
 			<dependency name="CodeScanGetMatchLength"/>
@@ -43796,6 +44230,7 @@
 			<dependency name="OP_STACK"/>
 			<dependency name="OP_SYSREQ_C"/>
 			<dependency name="OP_SYSREQ_D"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="RelocateOpcode"/>
 			<dependency name="Server_JITExists"/>
 			<dependency name="UnrelocateOpcode"/>
@@ -43813,6 +44248,7 @@
 			<dependency name="__11_cells"/>
 			<dependency name="__1_cell"/>
 			<dependency name="__2_cells"/>
+			<dependency name="__3_cells"/>
 			<dependency name="__4_cells"/>
 			<dependency name="__9_cells"/>
 			<dependency name="__cip"/>
@@ -50918,6 +51354,7 @@
 			<dependency name="GetCurrentFrameReturn"/>
 			<dependency name="O@V_"/>
 			<dependency name="OP_SYSREQ_C"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="false"/>
 			<library>amx_assembly addressof</library>
 		</member>
@@ -57849,6 +58286,7 @@
 			<stacksize value="2"/>
 			<referrer name="HaveToRelocateOpcodes"/>
 			<referrer name="RelocateOpcodeNow"/>
+			<referrer name="RelocateMacroOpcodeNow"/>
 			<dependency name="OP_NONE"/>
 			<dependency name="cellbytes"/>
 			<param name="offset">
@@ -57934,6 +58372,38 @@
 			</param>
 			<library>amx_assembly phys_memory</library>
 		</member>
+		<member name="M:RelocateMacroOpcodeNow" syntax="RelocateMacroOpcodeNow(opcode)">
+			<tagname value="Opcode"/>
+			<stacksize value="4"/>
+			<referrer name="RelocateOpcodeNow"/>
+			<dependency name="OP_CONST"/>
+			<dependency name="OP_CONST_S"/>
+			<dependency name="OP_LOAD_BOTH"/>
+			<dependency name="OP_LOAD_S_BOTH"/>
+			<dependency name="OP_PUSH2"/>
+			<dependency name="OP_PUSH2_ADR"/>
+			<dependency name="OP_PUSH2_C"/>
+			<dependency name="OP_PUSH2_S"/>
+			<dependency name="OP_PUSH3"/>
+			<dependency name="OP_PUSH3_ADR"/>
+			<dependency name="OP_PUSH3_C"/>
+			<dependency name="OP_PUSH3_S"/>
+			<dependency name="OP_PUSH4"/>
+			<dependency name="OP_PUSH4_ADR"/>
+			<dependency name="OP_PUSH4_C"/>
+			<dependency name="OP_PUSH4_S"/>
+			<dependency name="OP_PUSH5"/>
+			<dependency name="OP_PUSH5_ADR"/>
+			<dependency name="OP_PUSH5_C"/>
+			<dependency name="OP_PUSH5_S"/>
+			<dependency name="OP_SYSREQ_N"/>
+			<dependency name="ReadOpcodeNearThis"/>
+			<dependency name="cellbytes"/>
+			<param name="opcode">
+				<paraminfo>Opcode </paraminfo>
+			</param>
+			<library>amx_assembly opcode</library> <remarks> Separate the macro opcodes for `-O2`. </remarks>
+		</member>
 		<member name="M:RelocateOpcode" syntax="RelocateOpcode(opcode)">
 			<tagname value="Opcode"/>
 			<stacksize value="3"/>
@@ -58016,6 +58486,7 @@
 			<dependency name="OP_JSLESS"/>
 			<dependency name="OP_JUMP"/>
 			<dependency name="OP_JZER"/>
+			<dependency name="OP_LAST_"/>
 			<dependency name="OP_LCTRL"/>
 			<dependency name="OP_LEQ"/>
 			<dependency name="OP_LESS"/>
@@ -58086,6 +58557,8 @@
 			<dependency name="OP_SWITCH"/>
 			<dependency name="OP_SYSREQ_C"/>
 			<dependency name="OP_SYSREQ_D"/>
+			<dependency name="OP_SYSREQ_DN"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="OP_UDIV"/>
 			<dependency name="OP_UDIV_ALT"/>
 			<dependency name="OP_UMUL"/>
@@ -58096,6 +58569,7 @@
 			<dependency name="OP_ZERO_PRI"/>
 			<dependency name="OP_ZERO_S"/>
 			<dependency name="ReadOpcodeNearThis"/>
+			<dependency name="RelocateMacroOpcodeNow"/>
 			<dependency name="__Pawn"/>
 			<dependency name="cellbytes"/>
 			<dependency name="debug"/>
@@ -72729,6 +73203,8 @@
 			<dependency name="InitOpcodeTable"/>
 			<dependency name="NUM_OPCODES"/>
 			<dependency name="OP_NONE"/>
+			<dependency name="OP_SYSREQ_D"/>
+			<dependency name="OP_SYSREQ_DN"/>
 			<dependency name="UnsafeUnrelocateOpcode"/>
 			<dependency name="opcode_table_is_ready"/>
 			<param name="opcode">
@@ -72756,8 +73232,10 @@
 			<dependency name="OP_CALL_PRI"/>
 			<dependency name="OP_CASETBL"/>
 			<dependency name="OP_CMPS"/>
+			<dependency name="OP_CONST"/>
 			<dependency name="OP_CONST_ALT"/>
 			<dependency name="OP_CONST_PRI"/>
+			<dependency name="OP_CONST_S"/>
 			<dependency name="OP_DEC"/>
 			<dependency name="OP_DEC_ALT"/>
 			<dependency name="OP_DEC_I"/>
@@ -72802,9 +73280,11 @@
 			<dependency name="OP_LIDX_B"/>
 			<dependency name="OP_LINE"/>
 			<dependency name="OP_LOAD_ALT"/>
+			<dependency name="OP_LOAD_BOTH"/>
 			<dependency name="OP_LOAD_I"/>
 			<dependency name="OP_LOAD_PRI"/>
 			<dependency name="OP_LOAD_S_ALT"/>
+			<dependency name="OP_LOAD_S_BOTH"/>
 			<dependency name="OP_LOAD_S_PRI"/>
 			<dependency name="OP_LODB_I"/>
 			<dependency name="OP_LREF_ALT"/>
@@ -72823,6 +73303,22 @@
 			<dependency name="OP_POP_PRI"/>
 			<dependency name="OP_PROC"/>
 			<dependency name="OP_PUSH"/>
+			<dependency name="OP_PUSH2"/>
+			<dependency name="OP_PUSH2_ADR"/>
+			<dependency name="OP_PUSH2_C"/>
+			<dependency name="OP_PUSH2_S"/>
+			<dependency name="OP_PUSH3"/>
+			<dependency name="OP_PUSH3_ADR"/>
+			<dependency name="OP_PUSH3_C"/>
+			<dependency name="OP_PUSH3_S"/>
+			<dependency name="OP_PUSH4"/>
+			<dependency name="OP_PUSH4_ADR"/>
+			<dependency name="OP_PUSH4_C"/>
+			<dependency name="OP_PUSH4_S"/>
+			<dependency name="OP_PUSH5"/>
+			<dependency name="OP_PUSH5_ADR"/>
+			<dependency name="OP_PUSH5_C"/>
+			<dependency name="OP_PUSH5_S"/>
 			<dependency name="OP_PUSH_ADR"/>
 			<dependency name="OP_PUSH_ALT"/>
 			<dependency name="OP_PUSH_C"/>
@@ -72870,6 +73366,7 @@
 			<dependency name="OP_SYMTAG"/>
 			<dependency name="OP_SYSREQ_C"/>
 			<dependency name="OP_SYSREQ_D"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="OP_SYSREQ_PRI"/>
 			<dependency name="OP_UDIV"/>
 			<dependency name="OP_UDIV_ALT"/>
@@ -73974,12 +74471,12 @@
 			</param>
 		</member>
 		<member name="M:YVA2_CodeGenPushSite" syntax="YVA2_CodeGenPushSite(ctx[], pushedBytes, skippedBytes, offset)">
-			<stacksize value="5"/>
+			<stacksize value="7"/>
 			<referrer name="YVA2_FoundCall"/>
 			<dependency name="AsmEmitAddrPri"/>
 			<dependency name="AsmEmitCallAbs"/>
 			<dependency name="AsmEmitHeap"/>
-			<dependency name="AsmEmitPushC"/>
+			<dependency name="AsmEmitPush3C"/>
 			<dependency name="AsmEmitPushPri"/>
 			<dependency name="YSI_g_sDoPushAddr"/>
 			<dependency name="__1_cell"/>
@@ -74027,7 +74524,7 @@
 			<param name="pushRequirements">
 			</param>
 		</member>
-		<member name="M:YVA2_DummyPush" syntax="YVA2_DummyPush(skippedBytes, pushedBytes, pushRequirements, dummy0, dummy1, dummy2, dummy3, dummy4, dummy5)">
+		<member name="M:YVA2_DummyPush" syntax="YVA2_DummyPush(skippedBytes, pushedBytes, pushRequirements, dummy0, dummy1, dummy2, dummy3, dummy4, dummy5, dummy6, dummy7, dummy8, dummy9, dummy10, dummy11)">
 			<stacksize value="6"/>
 			<referrer name="YVA2_Initalise"/>
 			<referrer name="va_fprintf"/>
@@ -74058,6 +74555,18 @@
 			<param name="dummy4">
 			</param>
 			<param name="dummy5">
+			</param>
+			<param name="dummy6">
+			</param>
+			<param name="dummy7">
+			</param>
+			<param name="dummy8">
+			</param>
+			<param name="dummy9">
+			</param>
+			<param name="dummy10">
+			</param>
+			<param name="dummy11">
 			</param>
 		</member>
 		<member name="M:YVA2_FoundCall" syntax="YVA2_FoundCall(m[])">
@@ -74092,7 +74601,7 @@
 			<dependency name="YVA2_CodeGenMainCleanup"/>
 			<dependency name="YVA2_CodeGenPushSite"/>
 			<dependency name="YVA2_CodeGenShiftCode"/>
-			<dependency name="__13_cells"/>
+			<dependency name="__11_cells"/>
 			<dependency name="__1_cell"/>
 			<dependency name="__2_cells"/>
 			<dependency name="__3_cells"/>
@@ -74139,7 +74648,7 @@
 			</param>
 		</member>
 		<member name="M:YVA2_Initalise" syntax="YVA2_Initalise()">
-			<stacksize value="1147"/>
+			<stacksize value="793"/>
 			<referrer name="YVA2_DummyPush"/>
 			<referrer name="Timers_OnCodeInit"/>
 			<dependency name="CodeScanAddMatcher"/>
@@ -74152,21 +74661,17 @@
 			<dependency name="O@A_"/>
 			<dependency name="O@V_"/>
 			<dependency name="OP_CALL"/>
-			<dependency name="OP_CONST_PRI"/>
 			<dependency name="OP_HEAP"/>
-			<dependency name="OP_MOVE_PRI"/>
+			<dependency name="OP_PUSH5_C"/>
 			<dependency name="OP_PUSH_ALT"/>
 			<dependency name="OP_PUSH_C"/>
-			<dependency name="OP_PUSH_PRI"/>
-			<dependency name="OP_STACK"/>
 			<dependency name="OP_STOR_I"/>
-			<dependency name="OP_SYSREQ_C"/>
-			<dependency name="OP_ZERO_PRI"/>
+			<dependency name="OP_SYSREQ_N"/>
 			<dependency name="YVA2_DummyPush"/>
 			<dependency name="YVA2_FoundCall"/>
 			<dependency name="YVA2_FoundPush"/>
+			<dependency name="__15_cells"/>
 			<dependency name="__1_cell"/>
-			<dependency name="__9_cells"/>
 			<dependency name="__minus1"/>
 			<dependency name="cellbytes"/>
 			<dependency name="gCodeScanCallback_match"/>
@@ -96562,7 +97067,7 @@
 		</member>
 		<member name="M:va_AddServerRule" syntax="va_AddServerRule(name[], fmat[], flags, ...)">
 			<tagname value="bool"/>
-			<stacksize value="15"/>
+			<stacksize value="21"/>
 			<dependency name="AddServerRule"/>
 			<dependency name="YSI_gUnsafeHugeString"/>
 			<dependency name="YSI_gUnsafeHugeString"/>
@@ -96585,7 +97090,7 @@
 		</member>
 		<member name="M:va_SetVehicleNumberPlate" syntax="va_SetVehicleNumberPlate(vehicleid, fmat[], ...)">
 			<tagname value="bool"/>
-			<stacksize value="15"/>
+			<stacksize value="21"/>
 			<referrer name="createCouponCar"/>
 			<referrer name="CreateFrakNummernSchild"/>
 			<referrer name="LoadPrivatCar"/>
@@ -96630,7 +97135,7 @@
 			</param>
 		</member>
 		<member name="M:va_fprintf" syntax="va_fprintf(fhnd, fmat[], ...)">
-			<stacksize value="15"/>
+			<stacksize value="21"/>
 			<dependency name="YSI_gUnsafeHugeString"/>
 			<dependency name="YSI_gUnsafeHugeString"/>
 			<dependency name="YVA2_DummyPush"/>
