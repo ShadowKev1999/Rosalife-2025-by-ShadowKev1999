@@ -2196,7 +2196,6 @@
 			</member>
 		</member>
 		<member name="T:MAX_CARMODS" value="16">
-			<tagname value="t_CARMODTYPE"/>
 			<member name="C:UNKNOWN_CARMODTYPE" value="-1">
 			</member>
 			<member name="C:CARMODTYPE_NONE" value="-1">
@@ -2237,7 +2236,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:MAX_FIGHT_STYLES" value="17">
-			<tagname value="t_FIGHT_STYLE"/>
 			<member name="C:UNKNOWN_FIGHT_STYLE" value="-1">
 			</member>
 			<member name="C:FIGHT_STYLE_NORMAL" value="4">
@@ -2256,7 +2254,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:MAX_VEHICLE_MODEL_INFOS" value="10">
-			<tagname value="t_VEHICLE_MODEL_INFO"/>
 			<member name="C:UNKNOWN_VEHICLE_MODEL_INFO" value="-1">
 			</member>
 			<member name="C:VEHICLE_MODEL_INFO_SIZE" value="1">
@@ -2297,7 +2294,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:MAX_WEAPONS" value="47">
-			<tagname value="t_WEAPON"/>
 			<member name="C:UNKNOWN_WEAPON" value="-1">
 			</member>
 			<member name="C:REASON_VEHICLE" value="49">
@@ -2424,7 +2420,6 @@
 			<library>open.mp</library>  <summary>Weapons</summary> 
 		</member>
 		<member name="T:MAX_WEAPONSKILLS" value="11">
-			<tagname value="t_WEAPONSKILL"/>
 			<member name="C:UNKNOWN_WEAPONSKILL" value="-1">
 			</member>
 			<member name="C:WEAPONSKILL_PISTOL" value="0">
@@ -2453,7 +2448,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:MAX_WEAPON_SLOTS" value="13">
-			<tagname value="t_WEAPON_SLOT"/>
 			<member name="C:UNKNOWN_WEAPON_SLOT" value="-1">
 			</member>
 			<member name="C:WEAPON_SLOT_UNKNOWN" value="-1">
@@ -3690,7 +3684,6 @@
 			</member>
 		</member>
 		<member name="T:__BULLET_HIT_TYPE" value="5">
-			<tagname value="t_BULLET_HIT_TYPE"/>
 			<member name="C:UNKNOWN_BULLET_HIT_TYPE" value="-1">
 			</member>
 			<member name="C:BULLET_HIT_TYPE_NONE" value="0">
@@ -3707,7 +3700,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:__CAM_MODE" value="57">
-			<tagname value="t_CAM_MODE"/>
 			<member name="C:UNKNOWN_CAM_MODE" value="-1">
 			</member>
 			<member name="C:CAM_MODE_DISCONNECTED" value="-1">
@@ -3744,7 +3736,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:__CLICK_SOURCE" value="1">
-			<tagname value="t_CLICK_SOURCE"/>
 			<member name="C:UNKNOWN_CLICK_SOURCE" value="-1">
 			</member>
 			<member name="C:CLICK_SOURCE_SCOREBOARD" value="0">
@@ -3753,7 +3744,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:__CONNSTAT" value="9">
-			<tagname value="t_CONNECTION_STATUS"/>
 			<member name="C:UNKNOWN_CONNECTION_STATUS" value="-1">
 			</member>
 			<member name="C:CONNECTION_STATUS_NO_ACTION" value="0">
@@ -3796,7 +3786,6 @@
 			<library>omp_network</library>  <summary>Connection statuses</summary> 
 		</member>
 		<member name="T:__CP_TYPE" value="9">
-			<tagname value="t_CP_TYPE"/>
 			<member name="C:UNKNOWN_CP_TYPE" value="-1">
 			</member>
 			<member name="C:CP_TYPE_GROUND_NORMAL" value="0">
@@ -3821,7 +3810,6 @@
 			<library>omp_checkpoint</library> 
 		</member>
 		<member name="T:__DIALOG_STYLE" value="6">
-			<tagname value="t_DIALOG_STYLE"/>
 			<member name="C:UNKNOWN_DIALOG_STYLE" value="-1">
 			</member>
 			<member name="C:DIALOG_STYLE_MSGBOX" value="0">
@@ -3840,7 +3828,6 @@
 			<library>omp_dialog</library>  <summary>Player GUI dialog</summary> 
 		</member>
 		<member name="T:__DOWNLOAD_REQUEST" value="3">
-			<tagname value="t_DOWNLOAD_REQUEST"/>
 			<member name="C:UNKNOWN_DOWNLOAD_REQUEST" value="-1">
 			</member>
 			<member name="C:DOWNLOAD_REQUEST_EMPTY" value="0">
@@ -3853,7 +3840,6 @@
 			<library>omp_network</library>  <summary>Artwork/NetModels</summary> 
 		</member>
 		<member name="T:__EDIT_RESPONSE" value="3">
-			<tagname value="t_EDIT_RESPONSE"/>
 			<member name="C:UNKNOWN_EDIT_RESPONSE" value="-1">
 			</member>
 			<member name="C:EDIT_RESPONSE_CANCEL" value="0">
@@ -3876,7 +3862,6 @@
 			<library>y_compilerdata</library>  <remarks>  One version of the compiler changed the definition of <c>sizeof</c> on enum  elements to return their apparent "array" size, not their true size of  <c>1</c>.  The change was to match people's misunderstanding of the syntax,  rather than the correct interpretation of what enums are.  This is an enum  with a multi-cell increment within it used to detect which enum sizeof  method is in use.  </remarks> 
 		</member>
 		<member name="T:__FORCE_SYNC" value="3">
-			<tagname value="t_FORCE_SYNC"/>
 			<member name="C:UNKNOWN_FORCE_SYNC" value="-1">
 			</member>
 			<member name="C:SYNC_NONE" value="0">
@@ -3889,7 +3874,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:__HTTP_ERROR" value="7">
-			<tagname value="t_HTTP_ERROR"/>
 			<member name="C:UNKNOWN_HTTP_ERROR" value="-1">
 			</member>
 			<member name="C:HTTP_ERROR_BAD_HOST" value="1">
@@ -3908,7 +3892,6 @@
 			<library>omp_http</library>  <summary>HTTP error response codes</summary>  <remarks>  These codes compliment ordinary HTTP response codes returned in 'responseCode'  (10x) (20x OK) (30x Moved) (40x Unauthorised) (50x Server Error)  </remarks> 
 		</member>
 		<member name="T:__HTTP_METHOD" value="4">
-			<tagname value="t_HTTP_METHOD"/>
 			<member name="C:UNKNOWN_HTTP_METHOD" value="-1">
 			</member>
 			<member name="C:HTTP_GET" value="1">
@@ -3921,7 +3904,6 @@
 			<library>omp_http</library>  <summary>HTTP request types</summary> 
 		</member>
 		<member name="T:__KEY" value="256">
-			<tagname value="t_KEY"/>
 			<member name="C:UNKNOWN_KEY" value="-1">
 			</member>
 			<member name="C:KEY_NONE" value="0">
@@ -3978,7 +3960,6 @@
 			<library>omp_player</library>  <summary>Keys</summary> 
 		</member>
 		<member name="T:__LANDING_GEAR_STATE" value="2">
-			<tagname value="t_LANDING_GEAR_STATE"/>
 			<member name="C:LANDING_GEAR_STATE_DOWN" value="0">
 			</member>
 			<member name="C:LANDING_GEAR_STATE_UP" value="1">
@@ -3987,7 +3968,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:__MAPICON" value="4">
-			<tagname value="t_MAPICON"/>
 			<member name="C:UNKNOWN_MAPICON" value="-1">
 			</member>
 			<member name="C:MAPICON_LOCAL" value="0">
@@ -4002,7 +3982,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:__OBJECT_MATERIAL_SIZE" value="150">
-			<tagname value="t_OBJECT_MATERIAL_SIZE"/>
 			<member name="C:UNKNOWN_OBJECT_MATERIAL_SIZE" value="-1">
 				<size value="10"/>
 			</member>
@@ -4052,7 +4031,6 @@
 			<library>omp_object</library> 
 		</member>
 		<member name="T:__OBJECT_MATERIAL_TEXT_ALIGN" value="3">
-			<tagname value="t_OBJECT_MATERIAL_TEXT_ALIGN"/>
 			<member name="C:UNKNOWN_OBJECT_MATERIAL_TEXT_ALIGN" value="-1">
 			</member>
 			<member name="C:OBJECT_MATERIAL_TEXT_ALIGN_CENTRE" value="1">
@@ -4071,7 +4049,6 @@
 			<library>omp_object</library> 
 		</member>
 		<member name="T:__PLAYER_MARKERS_MODE" value="3">
-			<tagname value="t_PLAYER_MARKERS_MODE"/>
 			<member name="C:UNKNOWN_PLAYER_MARKERS_MODE" value="-1">
 			</member>
 			<member name="C:PLAYER_MARKERS_MODE_UNKNOWN" value="-1">
@@ -4086,7 +4063,6 @@
 			<library>omp_core</library>  <summary>Marker modes used by <c>ShowPlayerMarkers()</c></summary> 
 		</member>
 		<member name="T:__PLAYER_RECORDING_TYPE" value="3">
-			<tagname value="t_PLAYER_RECORDING_TYPE"/>
 			<member name="C:UNKNOWN_PLAYER_RECORDING_TYPE" value="-1">
 			</member>
 			<member name="C:PLAYER_RECORDING_TYPE_NONE" value="0">
@@ -4099,7 +4075,6 @@
 			<library>omp_player</library>  <summary>Recording for NPC playback</summary> 
 		</member>
 		<member name="T:__PLAYER_STATE" value="10">
-			<tagname value="t_PLAYER_STATE"/>
 			<member name="C:UNKNOWN_PLAYER_STATE" value="-1">
 			</member>
 			<member name="C:PLAYER_STATE_NONE" value="0">
@@ -4133,7 +4108,6 @@
 			<library>y_compilerdata</library>  <remarks>  The various sub-types of <c>__pragma("warning")</c> - <c>push</c>,  <c>pop</c>, <c>disable</c>, and <c>enable</c>.  </remarks> 
 		</member>
 		<member name="T:__SELECT_OBJECT" value="3">
-			<tagname value="t_SELECT_OBJECT"/>
 			<member name="C:UNKNOWN_SELECT_OBJECT" value="-1">
 			</member>
 			<member name="C:SELECT_OBJECT_GLOBAL_OBJECT" value="1">
@@ -4144,7 +4118,6 @@
 			<library>omp_object</library> 
 		</member>
 		<member name="T:__SPECIAL_ACTION" value="69">
-			<tagname value="t_SPECIAL_ACTION"/>
 			<member name="C:UNKNOWN_SPECIAL_ACTION" value="-1">
 			</member>
 			<member name="C:SPECIAL_ACTION_NONE" value="0">
@@ -4191,7 +4164,6 @@
 			<library>omp_player</library> 
 		</member>
 		<member name="T:__SPECTATE_MODE" value="4">
-			<tagname value="t_SPECTATE_MODE"/>
 			<member name="C:UNKNOWN_SPECTATE_MODE" value="-1">
 			</member>
 			<member name="C:SPECTATE_MODE_NORMAL" value="1">
@@ -4255,7 +4227,6 @@
 			<library>omp_database</library> 
 		</member>
 		<member name="T:__TEXT_DRAW_ALIGN" value="4">
-			<tagname value="t_TEXT_DRAW_ALIGN"/>
 			<member name="C:UNKNOWN_TEXT_DRAW_ALIGN" value="-1">
 			</member>
 			<member name="C:TEXT_DRAW_ALIGN_LEFT" value="1">
@@ -4270,7 +4241,6 @@
 			<library>omp_textdraw</library>  <summary>Text draw alignment</summary> 
 		</member>
 		<member name="T:__TEXT_DRAW_FONT" value="6">
-			<tagname value="t_TEXT_DRAW_FONT"/>
 			<member name="C:UNKNOWN_TEXT_DRAW_FONT" value="-1">
 			</member>
 			<member name="C:TEXT_DRAW_FONT_0" value="0">
@@ -4309,7 +4279,6 @@
 			<library>omp_textdraw</library>  <summary>Text draw font</summary> 
 		</member>
 		<member name="T:__VARTYPE" value="4">
-			<tagname value="t_VARTYPE"/>
 			<member name="C:UNKNOWN_VARTYPE" value="-1">
 			</member>
 			<member name="C:VARTYPE_NONE" value="0">
@@ -4340,7 +4309,6 @@
 			<library>omp_variable</library>  <summary>PVar enumeration</summary> 
 		</member>
 		<member name="T:__VEHICLE_DOOR_STATUS" value="134217728">
-			<tagname value="t_VEHICLE_DOOR_STATUS"/>
 			<member name="C:UNKNOWN_VEHICLE_DOOR_STATUS" value="-1">
 			</member>
 			<member name="C:VEHICLE_DOOR_STATUS_NONE" value="0">
@@ -4447,7 +4415,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:__VEHICLE_LIGHT_STATUS" value="65">
-			<tagname value="t_VEHICLE_LIGHT_STATUS"/>
 			<member name="C:UNKNOWN_VEHICLE_LIGHT_STATUS" value="0">
 			</member>
 			<member name="C:VEHICLE_LIGHT_STATUS_NONE" value="0">
@@ -4476,7 +4443,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:__VEHICLE_PANEL_STATUS" value="1">
-			<tagname value="t_VEHICLE_PANEL_STATUS"/>
 			<member name="C:UNKNOWN_VEHICLE_PANEL_STATUS" value="-1">
 			</member>
 			<member name="C:VEHICLE_PANEL_STATUS_NONE" value="0">
@@ -4485,7 +4451,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:__VEHICLE_TYRE_STATUS" value="2">
-			<tagname value="t_VEHICLE_TYRE_STATUS"/>
 			<member name="C:UNKNOWN_VEHICLE_TYRE_STATUS" value="-1">
 			</member>
 			<member name="C:VEHICLE_TYRE_STATUS_NONE" value="0">
@@ -4526,7 +4491,6 @@
 			<library>omp_vehicle</library> 
 		</member>
 		<member name="T:__WEAPONSTATE" value="4">
-			<tagname value="t_WEAPONSTATE"/>
 			<member name="C:UNKNOWN_WEAPONSTATE" value="-1">
 			</member>
 			<member name="C:WEAPONSTATE_UNKNOWN" value="-1">
@@ -6378,7 +6342,7 @@
 			<referrer name="_Hooks_RepairStubGM"/>
 			<library>y_emit</library>  <remarks>  The JIT plugin address translation register value for use in <c>LCTRL</c>  and <c>SCTRL</c>.  </remarks> 
 		</member>
-		<member name="C:__line" value="371">
+		<member name="C:__line" value="372">
 			<referrer name="GetAge"/>
 			<referrer name="onLoadEnterExits"/>
 			<referrer name="pc_cmd_object"/>
@@ -20015,10 +19979,10 @@
 				<paraminfo> &amp; </paraminfo>
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 			</param>
 		</member>
 		<member name="M:@yH_OnPlayerKeyStateChange@04" syntax="@yH_OnPlayerKeyStateChange@04(&amp;playerid, &amp;newkeys, &amp;oldkeys)">
@@ -20033,10 +19997,10 @@
 				<paraminfo> &amp; </paraminfo>
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 			</param>
 		</member>
 		<member name="M:@yH_OnPlayerLeaveDynArea@02" syntax="@yH_OnPlayerLeaveDynArea@02(&amp;playerid, &amp;areaid)">
@@ -22150,21 +22114,18 @@
 				The direction in which the player should face after spawning
 			</param>
 			<param name="weapon1">
-				<paraminfo>t_WEAPON </paraminfo>
 				The first spawn-<a href="https://open.mp/docs/scripting/resources/weaponids">weapon</a>  for  the player
 			</param>
 			<param name="ammo1">
 				The amount of ammunition for the primary spawn weapon
 			</param>
 			<param name="weapon2">
-				<paraminfo>t_WEAPON </paraminfo>
 				The second spawn-<a href="https://open.mp/docs/scripting/resources/weaponids">weapon</a>  for  the player
 			</param>
 			<param name="ammo2">
 				The amount of ammunition for the second spawn weapon
 			</param>
 			<param name="weapon3">
-				<paraminfo>t_WEAPON </paraminfo>
 				The third spawn-<a href="https://open.mp/docs/scripting/resources/weaponids">weapon</a>  for  the player
 			</param>
 			<param name="ammo3">
@@ -22801,10 +22762,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:AirTrafficking_OnPlayerStateChange" syntax="AirTrafficking_OnPlayerStateChange(playerid, newstate)">
@@ -22819,7 +22778,6 @@
 			<param name="playerid">
 			</param>
 			<param name="newstate">
-				<paraminfo>t_PLAYER_STATE </paraminfo>
 			</param>
 		</member>
 		<member name="M:Airdrop_DynObjectMoved" syntax="Airdrop_DynObjectMoved(objectid)">
@@ -23396,7 +23354,6 @@
 				Timer in milliseconds.  For a never-ending loop it should be <b><c>0</c></b>
 			</param>
 			<param name="forceSync">
-				<paraminfo>t_FORCE_SYNC </paraminfo>
 				Set to <b><c>1</c></b> to make server sync the animation with all other players  in streaming radius. <b><c>2</c></b> works same as <b><c>1</c></b>, but will ONLY apply the animation  to streamed-in players, but NOT the actual player being animated (useful for npc animations and persistent  animations when players are being streamed) (optional=<b><c>0</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Apply an animation to a player.</summary>                      <seealso name="ClearAnimations" />  <seealso name="SetPlayerSpecialAction" />  <remarks>The <paramref name="forceSync" /> optional parameter, which defaults to <b><c>0</c></b>,  in most cases is not needed since players sync animations themselves.  The <paramref name="forceSync"  /> parameter can force all players who can see <paramref name="playerid" /> to play the animation  regardless of whether the player is performing that animation.  This is useful in circumstances where  the player can't sync the animation themselves.  For example, they may be paused.</remarks>  <remarks>An invalid animation library will crash the player's game.</remarks>  <returns>This function always returns <b><c>1</c></b>, even if the player specified does not exist,  or any of the parameters are invalid (e.g.  invalid library).</returns> 
@@ -23434,7 +23391,6 @@
 			<param name="time">
 			</param>
 			<param name="forcesync">
-				<paraminfo>t_FORCE_SYNC </paraminfo>
 			</param>
 		</member>
 		<member name="M:ApplyDynamicActorAnimation" syntax="ApplyDynamicActorAnimation(actorid, animlib[], animname[], fdelta, loop, lockx, locky, freeze, time)">
@@ -27081,10 +27037,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:BlitzerID" syntax="BlitzerID(playerid)">
@@ -28994,10 +28948,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:Cell_Abs" syntax="Cell_Abs(number, tag)">
@@ -29423,7 +29375,6 @@
 				The ID of the player to clear the animations of
 			</param>
 			<param name="forceSync">
-				<paraminfo>t_FORCE_SYNC </paraminfo>
 				Set to <b><c>1</c></b> to force playerid to sync the animation with other  players in streaming radius (optional=<b><c>0</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Clears all animations for the given player (it also cancels all current tasks such as jetpacking,parachuting,entering  vehicles, driving (removes player out of vehicle), swimming, etc.. ).</summary>      <seealso name="ApplyAnimation" />  <remarks>ClearAnimations doesn't do anything when the animation ends if we pass 1 for the freeze  parameter in <a href="#ApplyAnimation">ApplyAnimation</a>.</remarks>  <remarks>Unlike some other ways to remove player from a vehicle, this will also reset the vehicle's  velocity to zero, instantly stopping the car.  Player will appear on top of the vehicle with the  same location as he was in his car seat.</remarks>  <returns>This function always returns <b><c>1</c></b>, even when the player specified is not connected.</returns> 
@@ -33804,7 +33755,6 @@
 			<param name="playerid">
 			</param>
 			<param name="style">
-				<paraminfo>t_DIALOG_STYLE </paraminfo>
 			</param>
 			<param name="title">
 				<paraminfo> [] </paraminfo>
@@ -33837,7 +33787,6 @@
 				<paraminfo> {F@_@iiiis,F@_@iis} </paraminfo>
 			</param>
 			<param name="style">
-				<paraminfo>t_DIALOG_STYLE </paraminfo>
 			</param>
 			<param name="title">
 				<paraminfo> [] </paraminfo>
@@ -33864,7 +33813,6 @@
 				<paraminfo> [1] </paraminfo>
 			</param>
 			<param name="style">
-				<paraminfo>t_DIALOG_STYLE </paraminfo>
 			</param>
 			<param name="title">
 				<paraminfo> [] </paraminfo>
@@ -34040,7 +33988,6 @@
 			<param name="dialog">
 			</param>
 			<param name="style">
-				<paraminfo>t_DIALOG_STYLE </paraminfo>
 			</param>
 			<param name="title">
 				<paraminfo> [] </paraminfo>
@@ -34066,7 +34013,6 @@
 			<param name="dialogid">
 			</param>
 			<param name="style">
-				<paraminfo>t_DIALOG_STYLE </paraminfo>
 			</param>
 			<param name="caption">
 				<paraminfo> [] </paraminfo>
@@ -35170,10 +35116,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:DynamicRobberyStateChange" syntax="DynamicRobberyStateChange(playerid, newstate)">
@@ -35184,7 +35128,6 @@
 			<param name="playerid">
 			</param>
 			<param name="newstate">
-				<paraminfo>t_PLAYER_STATE </paraminfo>
 			</param>
 		</member>
 		<member name="M:ENUM_PAWNDOC" syntax="ENUM_PAWNDOC(symbol[])">
@@ -39773,7 +39716,7 @@
 				The ID of the player to get the keys of
 			</param>
 			<param name="keys">
-				<paraminfo>t_KEY &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 				Bitmask containing the player's key states. <a href="https://www.open.mp/docs/scripting/resources/keys">List  of keys</a>
 			</param>
 			<param name="updown">
@@ -40195,7 +40138,6 @@
 			<library>omp_player</library>  <summary>Returns the class of the players skin.</summary>    <seealso name="SetPlayerSkin" />  <remarks>Returns the new skin after <a href="#SetSpawnInfo">SetSpawnInfo</a> is called but before  the player actually respawns to get the new skin. </remarks>  <remarks>Returns the old skin if the player was spawned through <a href="#SpawnPlayer">SpawnPlayer</a>  function. </remarks>  <returns>The skin ID (<b><c>0</c></b> if invalid).</returns> 
 		</member>
 		<member name="M:GetPlayerSpecialAction" syntax="GetPlayerSpecialAction(playerid)">
-			<tagname value="t_SPECIAL_ACTION"/>
 			<attribute name="native"/>
 			<referrer name="Peeing"/>
 			<referrer name="AC_CheckStatus"/>
@@ -40225,7 +40167,6 @@
 			</param>
 		</member>
 		<member name="M:GetPlayerState" syntax="GetPlayerState(playerid)">
-			<tagname value="t_PLAYER_STATE"/>
 			<attribute name="native"/>
 			<referrer name="Iter_Func@VehicleOccupant"/>
 			<referrer name="_@yHOnPlayerEnterDynArea@03"/>
@@ -40484,7 +40425,6 @@
 			</param>
 		</member>
 		<member name="M:GetPlayerWeapon" syntax="GetPlayerWeapon(playerid)">
-			<tagname value="t_WEAPON"/>
 			<attribute name="native"/>
 			<referrer name="HasExtinguisher"/>
 			<referrer name="T3_OnPlayerKeyStateChange"/>
@@ -40510,11 +40450,10 @@
 				The ID of the player whose weapon data to retrieve
 			</param>
 			<param name="slot">
-				<paraminfo>t_WEAPON_SLOT </paraminfo>
 				The weapon slot to get data for (<b><c>0-12</c></b>)
 			</param>
 			<param name="weapon">
-				<paraminfo>t_WEAPON &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 			</param>
 			<param name="ammo">
 				<paraminfo> &amp; </paraminfo>
@@ -41099,13 +41038,11 @@
 				The ID of the vehicle to check for the component
 			</param>
 			<param name="slot">
-				<paraminfo>t_CARMODTYPE </paraminfo>
 				The component slot to check for components (see below)
 			</param>
 			<library>omp_vehicle</library>  <summary>Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific  slot.</summary>      <seealso name="AddVehicleComponent" />  <seealso name="GetVehicleComponentType" />  <seealso name="OnVehicleMod" />  <seealso name="OnEnterExitModShop" />  <remarks>  <b>Slots:</b><br />  <c>  CARMODTYPE_SPOILER  CARMODTYPE_HOOD  CARMODTYPE_ROOF  CARMODTYPE_SIDESKIRT  CARMODTYPE_LAMPS  CARMODTYPE_NITRO  CARMODTYPE_EXHAUST  CARMODTYPE_WHEELS  CARMODTYPE_STEREO  CARMODTYPE_HYDRAULICS  CARMODTYPE_FRONT_BUMPER  CARMODTYPE_REAR_BUMPER  CARMODTYPE_VENT_RIGHT  CARMODTYPE_VENT_LEFT  </c>  </remarks>  <remarks>  <b>Known Bugs:</b><br />  <ul>  <li>Doesn't work for <b><c>CARMODTYPE_STEREO</c></b>.</li>  <li>Both front bull bars and front bumper components are saved in the <b><c>CARMODTYPE_FRONT_BUMPER</c></b>  slot.  If a vehicle has both of them installed, this function will only return the one which was  installed last.</li>  <li>Both rear bull bars and rear bumper components are saved in the <b><c>CARMODTYPE_REAR_BUMPER</c></b>  slot.  If a vehicle has both of them installed, this function will only return the one which was  installed last.</li>  <li>Both left side skirt and right side skirt are saved in the <b><c>CARMODTYPE_SIDESKIRT</c></b>  slot.  If a vehicle has both of them installed, this function will only return the one which was  installed last. </li>  </ul>  </remarks>  <returns>The ID of the component installed in the specified slot.  Returns <b><c>0</c></b> if no  component in specified vehicle's specified slot, or if vehicle doesn't exist.</returns> 
 		</member>
 		<member name="M:GetVehicleComponentType" syntax="GetVehicleComponentType(component)">
-			<tagname value="t_CARMODTYPE"/>
 			<attribute name="native"/>
 			<referrer name="TuningSelectedMenuRow"/>
 			<param name="component">
@@ -41126,19 +41063,19 @@
 				The ID of the vehicle to get the damage statuses of
 			</param>
 			<param name="panels">
-				<paraminfo>t_VEHICLE_PANEL_STATUS &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 				A variable to store the panel damage data in, passed by reference
 			</param>
 			<param name="doors">
-				<paraminfo>t_VEHICLE_DOOR_STATUS &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 				A variable to store the door damage data in, passed by reference
 			</param>
 			<param name="lights">
-				<paraminfo>t_VEHICLE_LIGHT_STATUS &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 				A variable to store the light damage data in, passed by reference
 			</param>
 			<param name="tyres">
-				<paraminfo>t_VEHICLE_TYRE_STATUS &amp; </paraminfo>
+				<paraminfo> &amp; </paraminfo>
 			</param>
 			<library>omp_vehicle</library>  <summary>Retrieve the damage statuses of a vehicle.</summary>          <param name="tires">A variable to store the tyre damage data in, passed by reference</param>  <seealso name="UpdateVehicleDamageStatus" />  <seealso name="SetVehicleHealth" />  <seealso name="GetVehicleHealth" />  <seealso name="RepairVehicle" />  <seealso name="OnVehicleDamageStatusUpdate" />  <remarks>  <b>Door states:</b><br />  <ul>  <li><b><c>0x000000FF</c></b> - hood</li>  <li><b><c>0x0000FF00</c></b> - trunk</li>  <li><b><c>0x00FF0000</c></b> - drivers door</li>  <li><b><c>0xFF000000</c></b> - co-drivers door</li>  <li>byte meaning:</li>  <li><b><c>0x1</c></b> - is opened</li>  <li><b><c>0x2</c></b> - is damaged</li>  <li><b><c>0x4</c></b> - is removed</li>  <li>other bytes are unused</li>  </ul>  </remarks>  <remarks>  <b>Light states:</b><br />  <ul>  <li><b><c>0x01</c></b> - front left broken</li>  <li><b><c>0x04</c></b> - front right broken</li>  <li><b><c>0x40</c></b> - back both broken</li>  </ul>  </remarks>  <remarks>  <b>Tire states:</b><br />  <ul>  <li><b><c>0x1</c></b> - back right popped</li>  <li><b><c>0x2</c></b> - front right popped</li>  <li><b><c>0x4</c></b> - back left popped</li>  <li><b><c>0x8</c></b> - front left popped</li>  <li>only check the right states for bikes</li>  </ul>  </remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.<br />  <b><c>0</c></b>: The function failed to execute.  This means the vehicle specified does not exist.  </returns> 
 		</member>
@@ -41264,7 +41201,6 @@
 				The vehicle <a href="https://www.open.mp/docs/scripting/resources/vehicleid">model</a>  to get info of
 			</param>
 			<param name="infotype">
-				<paraminfo>t_VEHICLE_MODEL_INFO </paraminfo>
 				The type of information to retrieve
 			</param>
 			<param name="x">
@@ -41505,7 +41441,6 @@
 			<attribute name="native"/>
 			<referrer name="OnPlayerChangeWeapon"/>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the weapon to get the name of
 			</param>
 			<param name="weapon">
@@ -41882,7 +41817,6 @@
 				The ID of the player to give a weapon to
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the weapon to give to the player
 			</param>
 			<param name="ammo">
@@ -42064,7 +41998,6 @@
 			<dependency name="false"/>
 			<dependency name="strcmp"/>
 			<param name="method">
-				<paraminfo>t_HTTP_METHOD </paraminfo>
 			</param>
 			<param name="url">
 				<paraminfo> [] </paraminfo>
@@ -44640,7 +44573,6 @@
 				Time in milliseconds to complete interpolation
 			</param>
 			<param name="cut">
-				<paraminfo>t_CAM_MOVE </paraminfo>
 				The 'jumpcut' to use.  Set to <b><c>CAMERA_MOVE</c></b> for interpolation (optional=<b><c>CAMERA_CUT</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Interpolate a player's camera's 'look at' point between two coordinates with a set speed.  Can be be used with <a href="#InterpolateCameraPos">InterpolateCameraPos</a>.</summary>                    <seealso name="InterpolateCameraPos" />  <seealso name="SetPlayerCameraLookAt" />  <seealso name="SetPlayerCameraPos" />  <remarks>Use <b><c>TogglePlayerSpectating</c></b> to make objects stream in for the player while  the camera is moving.  You can reset the camera behind the player with <b><c>SetCameraBehindPlayer</c></b>.</remarks> 
@@ -44689,7 +44621,6 @@
 				Time in milliseconds
 			</param>
 			<param name="cut">
-				<paraminfo>t_CAM_MOVE </paraminfo>
 				The jumpcut to use.  Set to <b><c>CAMERA_MOVE</c></b> for a smooth movement (optional=<b><c>CAMERA_CUT</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Move a player's camera from one position to another, within the set time.  Useful for scripted  cut scenes.</summary>                    <seealso name="InterpolateCameraLookAt" />  <seealso name="SetPlayerCameraPos" />  <seealso name="SetPlayerCameraLookAt" />  <remarks>Use <b><c>TogglePlayerSpectating</c></b> to make objects stream in for the player while  the camera is moving.  You can reset the camera behind the player with <b><c>SetCameraBehindPlayer</c></b>.</remarks> 
@@ -47723,10 +47654,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newstate">
-				<paraminfo>t_PLAYER_STATE </paraminfo>
 			</param>
 			<param name="oldstate">
-				<paraminfo>t_PLAYER_STATE </paraminfo>
 			</param>
 		</member>
 		<member name="M:Iter_OnPlayerStreamIn" syntax="Iter_OnPlayerStreamIn(playerid, forplayerid)">
@@ -52911,7 +52840,6 @@
 				The ID of the player that was clicked on
 			</param>
 			<param name="source">
-				<paraminfo>t_CLICK_SOURCE </paraminfo>
 				The source of the player's click
 			</param>
 			<summary>Called when a player double-clicks on a player on the scoreboard.</summary>        <seealso name="OnPlayerClickTextDraw" />  <remarks>There is currently only one <paramref name="source" /> (<b><c>0 - CLICK_SOURCE_SCOREBOARD</c></b>).  The existence of this argument suggests that more sources may be supported in the future.</remarks>  <returns>  <b><c>1</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>0</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
@@ -53146,7 +53074,6 @@
 				The ID of the player that killed the player who died, or <b><c>INVALID_PLAYER_ID</c></b>  if there was none
 			</param>
 			<param name="reason">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the <a href="https://www.open.mp/docs/scripting/resources/weaponids">reason</a>  for the  player's death
 			</param>
 			<summary>This callback is called when a player dies, either by suicide or by being killed by another  player.</summary>        <seealso name="OnPlayerSpawn" />  <seealso name="SendDeathMessage" />  <seealso name="SetPlayerHealth" />  <remarks>  The reason will return 37 (flame thrower) from any fire sources (e.g.  molotov, 18)<br />  The reason will return 51 from any weapon that creates an explosion (e.g.  RPG, grenade)<br />  You do not need to check whether killerid is valid before using it in <a href="#SendDeathMessage">SendDeathMessage</a>.  <b><c>INVALID_PLAYER_ID</c></b> is a valid killerid ID parameter in that function.<br />  <b>playerid</b> is the only one who can call the callback. (good to know for anti fake death)  </remarks>  <returns>  <b><c>0</c></b> - Will prevent other filterscripts from receiving this callback.<br />  <b><c>1</c></b> - Indicates that this callback will be passed to the next filterscript.<br />  It is always called first in filterscripts.  </returns> 
@@ -53223,7 +53150,6 @@
 				The ID of the player that ended edition mode
 			</param>
 			<param name="response">
-				<paraminfo>t_EDIT_RESPONSE </paraminfo>
 				<b><c>0</c></b> if they cancelled (ESC) or <b><c>1</c></b> if they clicked  the save icon
 			</param>
 			<param name="index">
@@ -53311,7 +53237,6 @@
 				The ID of the edited object
 			</param>
 			<param name="response">
-				<paraminfo>t_EDIT_RESPONSE </paraminfo>
 				The type of response
 			</param>
 			<param name="fX">
@@ -53844,7 +53769,6 @@
 				The amount of health/armour damagedid has lost (combined)
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The <a href="https://www.open.mp/docs/scripting/resources/weaponids">reason</a>  that caused the  damage
 			</param>
 			<param name="bodypart">
@@ -53865,7 +53789,6 @@
 				The amount of health/armour damaged_actorid has lost
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The reason that caused the damage
 			</param>
 			<param name="bodypart">
@@ -53927,11 +53850,9 @@
 				The ID of the player that pressed or released a key
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 				A map (bitmask) of the keys currently held - see <a href="https://www.open.mp/docs/scripting/resources/keys">here</a> 
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 				A map (bitmask) of the keys held prior to the current change - see  <a href="https://www.open.mp/docs/scripting/resources/keys">here</a>
 			</param>
 			<summary>This callback is called when the state of any supported key is changed (pressed/released).  Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).</summary>        <seealso name="GetPlayerKeys" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>  Useful macros:<br />  <code>  // HOLDING(keys)<br />  #define HOLDING(%0) ((newkeys &amp; (%0)) == (%0))<br />  <br />  // PRESSED(keys)<br />  #define PRESSED(%0) (((newkeys &amp; (%0)) == (%0)) &amp;&amp; ((oldkeys &amp; (%0)) != (%0)))<br  />  <br />  // PRESSING(keyVariable, keys)<br />  #define PRESSING(%0,%1) (%0 &amp; (%1))<br />  <br />  // RELEASED(keys)<br />  #define RELEASED(%0) (((newkeys &amp; (%0)) != (%0)) &amp;&amp; ((oldkeys &amp; (%0)) == (%0)))<br  />  </code>  </remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in gamemode.  </returns> 
@@ -54250,7 +54171,6 @@
 			<param name="playerid">
 			</param>
 			<param name="type">
-				<paraminfo>t_DOWNLOAD_REQUEST </paraminfo>
 			</param>
 			<param name="crc">
 			</param>
@@ -54288,7 +54208,6 @@
 				The ID of the player that selected an object
 			</param>
 			<param name="type">
-				<paraminfo>t_SELECT_OBJECT </paraminfo>
 				The type of selection
 			</param>
 			<param name="objectid">
@@ -54555,11 +54474,9 @@
 				The ID of the player that changed state
 			</param>
 			<param name="newstate">
-				<paraminfo>t_PLAYER_STATE </paraminfo>
 				The player's new state
 			</param>
 			<param name="oldstate">
-				<paraminfo>t_PLAYER_STATE </paraminfo>
 				The player's previous state
 			</param>
 			<summary>This callback is called when a player changes state.  For example, when a player changes  from being the driver of a vehicle to being on-foot.</summary>        <seealso name="OnPlayerInteriorChange" />  <seealso name="GetPlayerState" />  <seealso name="GetPlayerSpecialAction" />  <seealso name="SetPlayerSpecialAction" />  <remarks>This callback can also be called by NPC.</remarks>  <remarks>  <b>States:</b><br />  <ul>  <li><b><c>PLAYER_STATE_NONE</c></b> - empty (while initializing)</li>  <li><b><c>PLAYER_STATE_ONFOOT</c></b> - player is on foot</li>  <li><b><c>PLAYER_STATE_DRIVER</c></b> - player is the driver of a vehicle</li>  <li><b><c>PLAYER_STATE_PASSENGER</c></b> - player is passenger of a vehicle</li>  <li><b><c>PLAYER_STATE_WASTED</c></b> - player is dead or on class selection</li>  <li><b><c>PLAYER_STATE_SPAWNED</c></b> - player is spawned</li>  <li><b><c>PLAYER_STATE_SPECTATING</c></b> - player is spectating</li>  <li><b><c>PLAYER_STATE_EXIT_VEHICLE</c></b> - player exits a vehicle</li>  <li><b><c>PLAYER_STATE_ENTER_VEHICLE_DRIVER</c></b> - player enters a vehicle as driver</li>  <li><b><c>PLAYER_STATE_ENTER_VEHICLE_PASSENGER</c></b> - player enters a vehicle as passenger  </li>  </ul>  </remarks>  <returns>  This callback does not handle returns.<br />  It is always called first in filterscripts.  </returns> 
@@ -54665,7 +54582,6 @@
 				The amount of damage the player took (health and armour combined)
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the <a href="https://www.open.mp/docs/scripting/resources/weaponids">weapon/reason</a>  for the damage
 			</param>
 			<param name="bodypart">
@@ -54911,11 +54827,9 @@
 				The ID of the player that shot a weapon
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the <a href="https://www.open.mp/docs/scripting/resources/weaponids">weapon</a>  shot  by the player
 			</param>
 			<param name="hittype">
-				<paraminfo>t_BULLET_HIT_TYPE </paraminfo>
 				The type of thing the shot hit (none, player, vehicle, or (player)object)
 			</param>
 			<param name="hitid">
@@ -56619,7 +56533,6 @@
 				The ID of the player that should be spectated
 			</param>
 			<param name="mode">
-				<paraminfo>t_SPECTATE_MODE </paraminfo>
 				The mode to spectate with (optional=<b><c>SPECTATE_MODE_NORMAL</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Makes a player spectate (watch) another player.</summary>        <seealso name="PlayerSpectateVehicle" />  <seealso name="TogglePlayerSpectating" />  <remarks>Order is CRITICAL! Ensure that you use <a href="#TogglePlayerSpectating">TogglePlayerSpectating</a>  before <a href="#PlayerSpectatePlayer">PlayerSpectatePlayer</a>. </remarks>  <remarks>playerid and targetid's virtual world and interior must be the same for this function to  work properly. </remarks>  <remarks>  <b>Spectate modes:</b><br />  <ul>  <li><b><c>SPECTATE_MODE_NORMAL</c></b> - normal spectate mode (third person point of view).  Camera can not be changed.</li>  <li><b><c>SPECTATE_MODE_FIXED </c></b> - use SetPlayerCameraPos after this to position the player's  camera, and it will track the player/vehicle set with PlayerSpectatePlayer/PlayerSpectateVehicle.</li>  <li><b><c>SPECTATE_MODE_SIDE</c></b> - the camera will be attached to the side of the player/vehicle  (like when you're in first-person camera on a bike and you do a wheelie).</li>  </ul>  </remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.<br />  <b><c>0</c></b>: The function failed to execute.  One of the players specified does not exist.  </returns> 
@@ -56636,7 +56549,6 @@
 				The ID of the vehicle the player should spectate
 			</param>
 			<param name="mode">
-				<paraminfo>t_SPECTATE_MODE </paraminfo>
 				The spectate mode.  Can generally be left blank as it defaults to 'normal'
 			</param>
 			<library>omp_player</library>  <summary>Sets a player to spectate another vehicle.  Their camera will be attached to the vehicle  as if they are driving it.</summary>        <seealso name="PlayerSpectatePlayer" />  <seealso name="TogglePlayerSpectating" />  <remarks>Order is CRITICAL! Ensure that you use <a href="#TogglePlayerSpectating">TogglePlayerSpectating</a>  before <a href="#PlayerSpectatePlayer">PlayerSpectatePlayer</a>. </remarks>  <remarks>playerid and targetid have to be in the same interior for this function to work properly.  </remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.  Note that success is reported if the player  is not in spectator mode (<a href="#TogglePlayerSpectating">TogglePlayerSpectating</a>), but nothing  will happen. <a href="#TogglePlayerSpectating">TogglePlayerSpectating</a> MUST be used first.<br  />  <b><c>0</c></b>: The function failed to execute.  The player, vehicle, or both don't exist.  </returns> 
@@ -56661,7 +56573,6 @@
 				The ID of the player-textdraw to set the alignment of
 			</param>
 			<param name="alignment">
-				<paraminfo>t_TEXT_DRAW_ALIGN </paraminfo>
 				<b><c>1</c></b>-left <b><c>2</c></b>-centered <b><c>3</c></b>-right
 			</param>
 			<library>omp_textdraw</library>  <summary>Set the text alignment of a player-textdraw.</summary>        <seealso name="CreatePlayerTextDraw" />  <seealso name="PlayerTextDrawDestroy" />  <seealso name="PlayerTextDrawColour" />  <seealso name="PlayerTextDrawBoxColour" />  <seealso name="PlayerTextDrawBackgroundColour" />  <seealso name="PlayerTextDrawFont" />  <seealso name="PlayerTextDrawLetterSize" />  <seealso name="PlayerTextDrawTextSize" />  <seealso name="PlayerTextDrawSetOutline" />  <seealso name="PlayerTextDrawSetShadow" />  <seealso name="PlayerTextDrawSetProportional" />  <seealso name="PlayerTextDrawUseBox" />  <seealso name="PlayerTextDrawSetString" />  <seealso name="PlayerTextDrawShow" />  <seealso name="PlayerTextDrawHide" />  <remarks>For alignment <b><c>2</c></b> (center) the x and y values of TextSize need to be swapped,  see notes at <a href="#PlayerTextDrawTextSize">PlayerTextDrawTextSize</a>. </remarks> 
@@ -56803,7 +56714,6 @@
 				The ID of the player-textdraw to change the font of
 			</param>
 			<param name="font">
-				<paraminfo>t_TEXT_DRAW_FONT </paraminfo>
 				There are four font styles.  A font value greater than <b><c>3</c></b> does not  display, and anything greater than <b><c>16</c></b> crashes the client.  See  <a href="https://open.mp/docs/scripting/functions/TextDrawFont">https://open.mp/docs/scripting/functions/TextDrawFont</a>
 			</param>
 			<library>omp_textdraw</library>  <summary>Change the font of a player-textdraw.</summary>        <seealso name="CreatePlayerTextDraw" />  <seealso name="PlayerTextDrawDestroy" />  <seealso name="PlayerTextDrawColour" />  <seealso name="PlayerTextDrawBoxColour" />  <seealso name="PlayerTextDrawBackgroundColour" />  <seealso name="PlayerTextDrawAlignment" />  <seealso name="PlayerTextDrawLetterSize" />  <seealso name="PlayerTextDrawTextSize" />  <seealso name="PlayerTextDrawSetOutline" />  <seealso name="PlayerTextDrawSetShadow" />  <seealso name="PlayerTextDrawSetProportional" />  <seealso name="PlayerTextDrawUseBox" />  <seealso name="PlayerTextDrawSetString" />  <seealso name="PlayerTextDrawShow" />  <seealso name="PlayerTextDrawHide" /> 
@@ -58957,7 +58867,6 @@
 				The ID of the player whose weapon to remove
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the weapon to remove
 			</param>
 			<library>omp_player</library>  <summary>Remove a specified weapon from a player.</summary>      <seealso name="GivePlayerWeapon" />  <seealso name="GetPlayerWeapon" />  <remarks>To remove individual weapons from a player, set their ammo to <b><c>0</c></b> using  <a href="#SetPlayerAmmo">SetPlayerAmmo</a>.</remarks>  <returns>  <b><c>1</c></b>: The function executed successfully, even if they didn't have the weapon (they absolutely  don't have it now)<br />  <b><c>0</c></b>: The function failed to execute. This means the player specified does not exist.  </returns> 
@@ -59917,10 +59826,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:RunShellcode" syntax="RunShellcode(code_ptr, align)">
@@ -64662,7 +64569,6 @@
 				The ID of the player to set the weapon ammo of
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the <a href="https://www.open.mp/docs/scripting/resources/weaponids">weapon</a>  to set  the ammo of.
 			</param>
 			<param name="ammo">
@@ -64683,7 +64589,6 @@
 				The ID of the player to arm with a weapon
 			</param>
 			<param name="weaponid">
-				<paraminfo>t_WEAPON </paraminfo>
 				The ID of the weapon that the player should be armed with
 			</param>
 			<library>omp_player</library>  <summary>Sets which weapon (that a player already has) the player is holding.</summary>      <seealso name="GivePlayerWeapon" />  <seealso name="GetPlayerWeapon" />  <remarks>This function arms a player with a weapon they <b>already have</b>; it does not give them  a new weapon.  See <a href="#GivePlayerWeapon">GivePlayerWeapon</a>.</remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.  Success is returned even when the function  fails to execute (the player doesn't have the weapon specified, or it is an invalid weapon).<br />  <b><c>0</c></b>: The function failed to execute. The player is not connected.  </returns> 
@@ -64834,7 +64739,6 @@
 				The z coordinate for the player's camera to look at
 			</param>
 			<param name="cut">
-				<paraminfo>t_CAM_MOVE </paraminfo>
 				The style of the change.  Can be used to interpolate (change slowly) from old pos  to new pos using <b><c>CAMERA_MOVE</c></b>.  Added in <b>0.3e</b>.  Leave out for older versions  (optional=<b><c>CAMERA_CUT</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Set the direction a player's camera looks at.  Generally meant to be used in combination  with <a href="#SetPlayerCameraPos">SetPlayerCameraPos</a>.</summary>            <seealso name="SetPlayerCameraPos" />  <seealso name="SetCameraBehindPlayer" />  <seealso name="GetPlayerCameraPos" />  <seealso name="GetPlayerCameraFrontVector" />  <remarks>Using the camera functions directly after enabling spectator mode doesn't work.</remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.<br />  <b><c>0</c></b>: The function failed to execute.  The player specified does not exist.  </returns> 
@@ -65065,7 +64969,6 @@
 				The ID of player to set the fighting style of
 			</param>
 			<param name="style">
-				<paraminfo>t_FIGHT_STYLE </paraminfo>
 				The fighting style that should be set
 			</param>
 			<library>omp_player</library>  <summary>Set a player's special fighting style.  To use in-game, aim and press the 'secondary attack'  key (<b>ENTER</b> by default).</summary>      <seealso name="GetPlayerFightingStyle" />  <remarks>This does not affect normal fist attacks - only special/secondary attacks (aim + press 'secondary  attack' key).</remarks>  <remarks>  <b>Fighting styles:</b><br />  <ul>  <li><b><c>FIGHT_STYLE_NORMAL</c></b></li>  <li><b><c>FIGHT_STYLE_BOXING</c></b></li>  <li><b><c>FIGHT_STYLE_KUNGFU</c></b></li>  <li><b><c>FIGHT_STYLE_KNEEHEAD</c></b></li>  <li><b><c>FIGHT_STYLE_GRABKICK</c></b></li>  <li><b><c>FIGHT_STYLE_ELBOW</c></b></li>  </ul>  </remarks> 
@@ -65221,7 +65124,6 @@
 				The colour of the icon (<b>RGBA</b>).  This should only be used with the square  icon (ID: <b><c>0</c></b>)
 			</param>
 			<param name="style">
-				<paraminfo>t_MAPICON </paraminfo>
 				The style of icon (optional=<b><c>MAPICON_LOCAL</c></b>)
 			</param>
 			<library>omp_player</library>  <summary>Place an icon/marker on a player's map.  Can be used to mark locations such as banks and  hospitals to players.</summary>                  <seealso name="RemovePlayerMapIcon" />  <seealso name="SetPlayerMarkerForPlayer" />  <remarks>If you use an invalid marker type, it will create ID <b><c>1</c></b> (White Square). </remarks>  <remarks>If you use an icon ID that is already in use, it will replace the current map icon using  that ID. </remarks>  <remarks>Marker type <b><c>1</c></b> (square), <b><c>2</c></b> (player blip), <b><c>4</c></b> (north),  and <b><c>56</c></b> (single airstrip blip) will cause your game to crash if you have map legends  enabled while viewing the map.</remarks>  <remarks>  <b>Map icon styles:</b><br />  <ul>  <li><b><c>0 MAPICON_LOCAL</c></b> - close proximity only</li>  <li><b><c>1 MAPICON_GLOBAL</c></b> - show on radar edge as long as in range</li>  <li><b><c>2 MAPICON_LOCAL_CHECKPOINT</c></b> - Close proximity only (with checkpoint)</li>  <li><b><c>3 MAPICON_GLOBAL_CHECKPOINT</c></b> - Show on radar edge as long as in range (with  checkpoint)</li>  </ul>  </remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.<br />  <b><c>0</c></b>: The function failed to execute.  Player is not connected.  </returns> 
@@ -65364,7 +65266,6 @@
 				The ID of the player to set the checkpoint for
 			</param>
 			<param name="type">
-				<paraminfo>t_CP_TYPE </paraminfo>
 				Type of checkpoint. <b><c>0</c></b>-Normal, <b><c>1</c></b>-Finish, <b><c>2</c></b>-Nothing(Only  the checkpoint without anything on it), <b><c>3</c></b>-Air normal, <b><c>4</c></b>-Air finish, <b><c>5</c></b>-Air  (rotates and stops), <b><c>6</c></b>-Air (increases, decreases and disappears), <b><c>7</c></b>-Air  (swings down and up), <b><c>8</c></b>-Air (swings up and down)
 			</param>
 			<param name="centreX">
@@ -65477,7 +65378,6 @@
 				The player that should perform the action
 			</param>
 			<param name="actionid">
-				<paraminfo>t_SPECIAL_ACTION </paraminfo>
 				The action that should be performed
 			</param>
 			<library>omp_player</library>  <summary>This function allows to set players special action.</summary>      <seealso name="GetPlayerSpecialAction" />  <seealso name="ApplyAnimation" />  <remarks>Removing jetpacks from players by setting their special action to <b><c>0</c></b> causes  the sound to stay until death.</remarks>  <remarks>  <b>Special actions: (marked with * cannot be set)</b><br />  <ul>  <li><b><c>0 - SPECIAL_ACTION_NONE</c></b></li>  <li><b><c>1 - SPECIAL_ACTION_DUCK *</c></b> - Detect if the player is crouching.</li>  <li><b><c>2 - SPECIAL_ACTION_USEJETPACK</c></b></li>  <li><b><c>3 - SPECIAL_ACTION_ENTER_VEHICLE *</c></b> - Detect if the player is entering a vehicle  via an animation.</li>  <li><b><c>4 - SPECIAL_ACTION_EXIT_VEHICLE *</c></b> - Detect if the player is exiting a vehicle  via an animation.</li>  <li><b><c>5 - SPECIAL_ACTION_DANCE1</c></b></li>  <li><b><c>6 - SPECIAL_ACTION_DANCE2</c></b></li>  <li><b><c>7 - SPECIAL_ACTION_DANCE3</c></b></li>  <li><b><c>8 - SPECIAL_ACTION_DANCE4</c></b></li>  <li><b><c>10 - SPECIAL_ACTION_HANDSUP</c></b></li>  <li><b><c>11 - SPECIAL_ACTION_USECELLPHONE</c></b></li>  <li><b><c>12 - SPECIAL_ACTION_SITTING *</c></b></li>  <li><b><c>13 - SPECIAL_ACTION_STOPUSECELLPHONE</c></b></li>  <li><b><c>20 - SPECIAL_ACTION_DRINK_BEER</c></b> - Will increase the player's drunk level when  used</li>  <li><b><c>21 - SPECIAL_ACTION_SMOKE_CIGGY</c></b> - Will give the player a cigar</li>  <li><b><c>22 - SPECIAL_ACTION_DRINK_WINE</c></b> - Will give the player a wine bottle to get  drunk from</li>  <li><b><c>23 - SPECIAL_ACTION_DRINK_SPRUNK</c></b> - Will give the player a sprunk bottle to  drink from</li>  <li><b><c>24 - SPECIAL_ACTION_CUFFED</c></b> - Will force the player in to cuffs (hands are behind  their back) (<b>does not work on CJ skin</b>)</li>  <li><b><c>25 - SPECIAL_ACTION_CARRY</c></b>         - Will apply a 'carrying' animation to the  player and make them unable to sprint, jump or punch (<b>does not work on CJ skin</b>)</li>  <li><b><c>68 - SPECIAL_ACTION_PISSING</c></b> - Will make make the player perform the pissing  animation with visible pee.</li>  </ul>  </remarks>  <returns>  <b><c>1</c></b>: The function executed successfully.<br />  <b><c>0</c></b>: The function failed to execute.  This means the player is not connected.  </returns> 
@@ -65685,21 +65585,18 @@
 				The direction in which the player should face after spawning
 			</param>
 			<param name="weapon1">
-				<paraminfo>t_WEAPON </paraminfo>
 				The first spawn-<a href="https://open.mp/docs/scripting/resources/weaponids">weapon</a>  for  the player
 			</param>
 			<param name="ammo1">
 				The amount of ammunition for the primary spawnweapon
 			</param>
 			<param name="weapon2">
-				<paraminfo>t_WEAPON </paraminfo>
 				The second spawn-<a href="https://open.mp/docs/scripting/resources/weaponids">weapon</a>  for  the player
 			</param>
 			<param name="ammo2">
 				The amount of ammunition for the second spawnweapon
 			</param>
 			<param name="weapon3">
-				<paraminfo>t_WEAPON </paraminfo>
 				The third spawn-<a href="https://open.mp/docs/scripting/resources/weaponids">weapon</a>  for  the player
 			</param>
 			<param name="ammo3">
@@ -66480,7 +66377,6 @@
 			<attribute name="native"/>
 			<referrer name="__WE_OnGameModeInit"/>
 			<param name="mode">
-				<paraminfo>t_PLAYER_MARKERS_MODE </paraminfo>
 				The mode to use for markers.  They can be streamed, meaning they are only visible  to nearby players.  See table below
 			</param>
 			<library>omp_core</library>  <summary>Toggles player markers (blips on the radar).  Must be used when the server starts (<a href="#OnGameModeInit">OnGameModeInit</a>).  For other times, see <a href="#SetPlayerMarkerForPlayer">SetPlayerMarkerForPlayer</a>.</summary>    <seealso name="SetPlayerMarkerForPlayer" />  <seealso name="LimitPlayerMarkerRadius" />  <seealso name="ShowNameTags" />  <seealso name="SetPlayerColor" />  <remarks>  <b>Marker modes:</b><br />  <ul>  <li><b><c>PLAYER_MARKERS_MODE_OFF</c></b> 0</li>  <li><b><c>PLAYER_MARKERS_MODE_GLOBAL</c></b> 1</li>  <li><b><c>PLAYER_MARKERS_MODE_STREAMED</c></b> 2</li>  </ul>  </remarks>  <remarks>It is also possible to set a player's colour to a colour that has full transparency (no  alpha value).  This makes it possible to show markers on a per-player basis.</remarks> 
@@ -66725,10 +66621,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:SpawnCarInGarage" syntax="SpawnCarInGarage(playerid)">
@@ -71270,10 +71164,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:T3_QuatRotate" syntax="T3_QuatRotate(qw, qx, qy, qz, oX, oY, oZ, &amp;tx, &amp;ty, &amp;tz)">
@@ -72079,7 +71971,6 @@
 				The ID of the textdraw to set the alignment of
 			</param>
 			<param name="alignment">
-				<paraminfo>t_TEXT_DRAW_ALIGN </paraminfo>
 				<b><c>1</c></b>-left <b><c>2</c></b>-centered <b><c>3</c></b>-right
 			</param>
 			<library>omp_textdraw</library>  <summary>Set the alignment of text in a text draw.</summary>      <remarks>For alignment <b><c>2</c></b> (center) the x and y values of <a href="#TextSize">TextSize</a>  need to be swapped, see notes at <a href="#TextDrawTextSize">TextDrawTextSize</a>, also position  coordinate become position of center of textdraw and not left/top edges. </remarks> 
@@ -72197,7 +72088,6 @@
 				The TextDraw to change
 			</param>
 			<param name="font">
-				<paraminfo>t_TEXT_DRAW_FONT </paraminfo>
 				There are four font styles, see  <a href="https://open.mp/docs/scripting/functions/TextDrawFont">https://open.mp/docs/scripting/functions/TextDrawFont</a>.  Font value <b><c>4</c></b> specifies that this is a txd sprite; <b><c>5</c></b> specifies that this  textdraw can display preview models.  A font value greater than 5 does not display, and anything  greater than 16 crashes the client
 			</param>
 			<library>omp_textdraw</library>  <summary>Changes the text font.</summary>      <remarks>If you want to change the font of a textdraw that is already shown, you don't have to recreate  it.  Simply use <a href="#TextDrawShowForPlayer">TextDrawShowForPlayer</a>/<a href="#TextDrawShowForAll">TextDrawShowForAll</a>  after modifying the textdraw and the change will be visible.</remarks> 
@@ -73648,19 +73538,15 @@
 				The ID of the vehicle to set the damage of
 			</param>
 			<param name="panels">
-				<paraminfo>t_VEHICLE_PANEL_STATUS </paraminfo>
 				A set of bits containing the panel damage status
 			</param>
 			<param name="doors">
-				<paraminfo>t_VEHICLE_DOOR_STATUS </paraminfo>
 				A set of bits containing the door damage status
 			</param>
 			<param name="lights">
-				<paraminfo>t_VEHICLE_LIGHT_STATUS </paraminfo>
 				A set of bits containing the light damage status
 			</param>
 			<param name="tires">
-				<paraminfo>t_VEHICLE_TYRE_STATUS </paraminfo>
 				A set of bits containing the tyre damage status
 			</param>
 			<library>omp_vehicle</library>  <summary>Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights  and damaged panels.</summary>            <seealso name="SetVehicleHealth" />  <seealso name="GetVehicleHealth" />  <seealso name="RepairVehicle" />  <seealso name="GetVehicleDamageStatus" />  <seealso name="OnVehicleDamageStatusUpdate" />  <remarks>  <b>Door states:</b><br />  <ul>  <li><b><c>0x000000FF</c></b> - hood</li>  <li><b><c>0x0000FF00</c></b> - trunk</li>  <li><b><c>0x00FF0000</c></b> - drivers door</li>  <li><b><c>0xFF000000</c></b> - co-drivers door</li>  <li>byte meaning:</li>  <li><b><c>0x1</c></b> - is opened</li>  <li><b><c>0x2</c></b> - is damaged</li>  <li><b><c>0x4</c></b> - is removed</li>  <li>other bytes are unused</li>  </ul>  </remarks>  <remarks>  <b>Light states:</b><br />  <ul>  <li><b><c>0x01</c></b> - front left broken</li>  <li><b><c>0x04</c></b> - front right broken</li>  <li><b><c>0x40</c></b> - back both broken</li>  </ul>  </remarks>  <remarks>  <b>Tire states:</b><br />  <ul>  <li><b><c>0x1</c></b> - back right popped</li>  <li><b><c>0x2</c></b> - front right popped</li>  <li><b><c>0x4</c></b> - back left popped</li>  <li><b><c>0x8</c></b> - front left popped</li>  <li>only check the right states for bikes</li>  </ul>  </remarks> 
@@ -74267,7 +74153,6 @@
 			<param name="index">
 			</param>
 			<param name="method">
-				<paraminfo>t_HTTP_METHOD </paraminfo>
 			</param>
 			<param name="url">
 				<paraminfo> [] </paraminfo>
@@ -74755,7 +74640,6 @@
 			<dependency name="ALS"/>
 		</member>
 		<member name="M:_@BULLET_HIT_TYPE" syntax="_@BULLET_HIT_TYPE()">
-			<tagname value="t_BULLET_HIT_TYPE"/>
 			<stacksize value="1"/>
 			<dependency name="__BULLET_HIT_TYPE"/>
 		</member>
@@ -74764,37 +74648,30 @@
 			<stacksize value="1"/>
 		</member>
 		<member name="M:_@CAM_MODE" syntax="_@CAM_MODE()">
-			<tagname value="t_CAM_MODE"/>
 			<stacksize value="1"/>
 			<dependency name="__CAM_MODE"/>
 		</member>
 		<member name="M:_@CARMODTYPE" syntax="_@CARMODTYPE()">
-			<tagname value="t_CARMODTYPE"/>
 			<stacksize value="1"/>
 			<dependency name="MAX_CARMODS"/>
 		</member>
 		<member name="M:_@CLICK_SOURCE" syntax="_@CLICK_SOURCE()">
-			<tagname value="t_CLICK_SOURCE"/>
 			<stacksize value="1"/>
 			<dependency name="__CLICK_SOURCE"/>
 		</member>
 		<member name="M:_@CONNECTION_STATUS" syntax="_@CONNECTION_STATUS()">
-			<tagname value="t_CONNECTION_STATUS"/>
 			<stacksize value="1"/>
 			<dependency name="__CONNSTAT"/>
 		</member>
 		<member name="M:_@CP_TYPE" syntax="_@CP_TYPE()">
-			<tagname value="t_CP_TYPE"/>
 			<stacksize value="1"/>
 			<dependency name="__CP_TYPE"/>
 		</member>
 		<member name="M:_@DIALOG_STYLE" syntax="_@DIALOG_STYLE()">
-			<tagname value="t_DIALOG_STYLE"/>
 			<stacksize value="1"/>
 			<dependency name="__DIALOG_STYLE"/>
 		</member>
 		<member name="M:_@DOWNLOAD_REQUEST" syntax="_@DOWNLOAD_REQUEST()">
-			<tagname value="t_DOWNLOAD_REQUEST"/>
 			<stacksize value="1"/>
 			<dependency name="__DOWNLOAD_REQUEST"/>
 		</member>
@@ -74815,7 +74692,6 @@
 			</param>
 		</member>
 		<member name="M:_@EDIT_RESPONSE" syntax="_@EDIT_RESPONSE()">
-			<tagname value="t_EDIT_RESPONSE"/>
 			<stacksize value="1"/>
 			<dependency name="__EDIT_RESPONSE"/>
 		</member>
@@ -74835,22 +74711,18 @@
 			<dependency name="E_YSI_DIR"/>
 		</member>
 		<member name="M:_@FIGHT_STYLE" syntax="_@FIGHT_STYLE()">
-			<tagname value="t_FIGHT_STYLE"/>
 			<stacksize value="1"/>
 			<dependency name="MAX_FIGHT_STYLES"/>
 		</member>
 		<member name="M:_@FORCE_SYNC" syntax="_@FORCE_SYNC()">
-			<tagname value="t_FORCE_SYNC"/>
 			<stacksize value="1"/>
 			<dependency name="__FORCE_SYNC"/>
 		</member>
 		<member name="M:_@HTTP_ERROR" syntax="_@HTTP_ERROR()">
-			<tagname value="t_HTTP_ERROR"/>
 			<stacksize value="1"/>
 			<dependency name="__HTTP_ERROR"/>
 		</member>
 		<member name="M:_@HTTP_METHOD" syntax="_@HTTP_METHOD()">
-			<tagname value="t_HTTP_METHOD"/>
 			<stacksize value="1"/>
 			<dependency name="__HTTP_METHOD"/>
 		</member>
@@ -74906,57 +74778,46 @@
 			          <returns>  Should this function be added to the current list of hooks?  </returns>  <remarks>  Called from inside the <c>@yH_</c> functions, to register themselves.  </remarks> 
 		</member>
 		<member name="M:_@KEY" syntax="_@KEY()">
-			<tagname value="t_KEY"/>
 			<stacksize value="1"/>
 			<dependency name="__KEY"/>
 		</member>
 		<member name="M:_@LANDING_GEAR_STATE" syntax="_@LANDING_GEAR_STATE()">
-			<tagname value="t_LANDING_GEAR_STATE"/>
 			<stacksize value="1"/>
 			<dependency name="__LANDING_GEAR_STATE"/>
 		</member>
 		<member name="M:_@MAPICON" syntax="_@MAPICON()">
-			<tagname value="t_MAPICON"/>
 			<stacksize value="1"/>
 			<dependency name="__MAPICON"/>
 		</member>
 		<member name="M:_@OBJECT_MATERIAL_SIZE" syntax="_@OBJECT_MATERIAL_SIZE()">
-			<tagname value="t_OBJECT_MATERIAL_SIZE"/>
 			<stacksize value="1"/>
 			<dependency name="__OBJECT_MATERIAL_SIZE"/>
 		</member>
 		<member name="M:_@OBJECT_MATERIAL_TEXT_ALIGN" syntax="_@OBJECT_MATERIAL_TEXT_ALIGN()">
-			<tagname value="t_OBJECT_MATERIAL_TEXT_ALIGN"/>
 			<stacksize value="1"/>
 			<dependency name="__OBJECT_MATERIAL_TEXT_ALIGN"/>
 		</member>
 		<member name="M:_@PLAYER_MARKERS_MODE" syntax="_@PLAYER_MARKERS_MODE()">
-			<tagname value="t_PLAYER_MARKERS_MODE"/>
 			<stacksize value="1"/>
 			<dependency name="__PLAYER_MARKERS_MODE"/>
 		</member>
 		<member name="M:_@PLAYER_RECORDING_TYPE" syntax="_@PLAYER_RECORDING_TYPE()">
-			<tagname value="t_PLAYER_RECORDING_TYPE"/>
 			<stacksize value="1"/>
 			<dependency name="__PLAYER_RECORDING_TYPE"/>
 		</member>
 		<member name="M:_@PLAYER_STATE" syntax="_@PLAYER_STATE()">
-			<tagname value="t_PLAYER_STATE"/>
 			<stacksize value="1"/>
 			<dependency name="__PLAYER_STATE"/>
 		</member>
 		<member name="M:_@SELECT_OBJECT" syntax="_@SELECT_OBJECT()">
-			<tagname value="t_SELECT_OBJECT"/>
 			<stacksize value="1"/>
 			<dependency name="__SELECT_OBJECT"/>
 		</member>
 		<member name="M:_@SPECIAL_ACTION" syntax="_@SPECIAL_ACTION()">
-			<tagname value="t_SPECIAL_ACTION"/>
 			<stacksize value="1"/>
 			<dependency name="__SPECIAL_ACTION"/>
 		</member>
 		<member name="M:_@SPECTATE_MODE" syntax="_@SPECTATE_MODE()">
-			<tagname value="t_SPECTATE_MODE"/>
 			<stacksize value="1"/>
 			<dependency name="__SPECTATE_MODE"/>
 		</member>
@@ -74966,62 +74827,50 @@
 			<dependency name="__SQLITE_OPEN"/>
 		</member>
 		<member name="M:_@TEXT_DRAW_ALIGN" syntax="_@TEXT_DRAW_ALIGN()">
-			<tagname value="t_TEXT_DRAW_ALIGN"/>
 			<stacksize value="1"/>
 			<dependency name="__TEXT_DRAW_ALIGN"/>
 		</member>
 		<member name="M:_@TEXT_DRAW_FONT" syntax="_@TEXT_DRAW_FONT()">
-			<tagname value="t_TEXT_DRAW_FONT"/>
 			<stacksize value="1"/>
 			<dependency name="__TEXT_DRAW_FONT"/>
 		</member>
 		<member name="M:_@VARTYPE" syntax="_@VARTYPE()">
-			<tagname value="t_VARTYPE"/>
 			<stacksize value="1"/>
 			<dependency name="__VARTYPE"/>
 		</member>
 		<member name="M:_@VEHICLE_DOOR_STATUS" syntax="_@VEHICLE_DOOR_STATUS()">
-			<tagname value="t_VEHICLE_DOOR_STATUS"/>
 			<stacksize value="1"/>
 			<dependency name="__VEHICLE_DOOR_STATUS"/>
 		</member>
 		<member name="M:_@VEHICLE_LIGHT_STATUS" syntax="_@VEHICLE_LIGHT_STATUS()">
-			<tagname value="t_VEHICLE_LIGHT_STATUS"/>
 			<stacksize value="1"/>
 			<dependency name="__VEHICLE_LIGHT_STATUS"/>
 		</member>
 		<member name="M:_@VEHICLE_MODEL_INFO" syntax="_@VEHICLE_MODEL_INFO()">
-			<tagname value="t_VEHICLE_MODEL_INFO"/>
 			<stacksize value="1"/>
 			<dependency name="MAX_VEHICLE_MODEL_INFOS"/>
 		</member>
 		<member name="M:_@VEHICLE_PANEL_STATUS" syntax="_@VEHICLE_PANEL_STATUS()">
-			<tagname value="t_VEHICLE_PANEL_STATUS"/>
 			<stacksize value="1"/>
 			<dependency name="__VEHICLE_PANEL_STATUS"/>
 		</member>
 		<member name="M:_@VEHICLE_TYRE_STATUS" syntax="_@VEHICLE_TYRE_STATUS()">
-			<tagname value="t_VEHICLE_TYRE_STATUS"/>
 			<stacksize value="1"/>
 			<dependency name="__VEHICLE_TYRE_STATUS"/>
 		</member>
 		<member name="M:_@WEAPON" syntax="_@WEAPON()">
-			<tagname value="t_WEAPON"/>
 			<stacksize value="1"/>
 			<dependency name="MAX_WEAPONS"/>
 		</member>
 		<member name="M:_@WEAPONSKILL" syntax="_@WEAPONSKILL()">
-			<tagname value="t_WEAPONSKILL"/>
 			<stacksize value="1"/>
 			<dependency name="MAX_WEAPONSKILLS"/>
 		</member>
 		<member name="M:_@WEAPONSTATE" syntax="_@WEAPONSTATE()">
-			<tagname value="t_WEAPONSTATE"/>
 			<stacksize value="1"/>
 			<dependency name="__WEAPONSTATE"/>
 		</member>
 		<member name="M:_@WEAPON_SLOT" syntax="_@WEAPON_SLOT()">
-			<tagname value="t_WEAPON_SLOT"/>
 			<stacksize value="1"/>
 			<dependency name="MAX_WEAPON_SLOTS"/>
 		</member>
@@ -75316,10 +75165,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:_@yHOnPlayerKeyStateChange@04" syntax="_@yHOnPlayerKeyStateChange@04(playerid, newkeys, oldkeys)">
@@ -75334,10 +75181,8 @@
 			<param name="playerid">
 			</param>
 			<param name="newkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 			<param name="oldkeys">
-				<paraminfo>t_KEY </paraminfo>
 			</param>
 		</member>
 		<member name="M:_@yHOnPlayerLeaveDynArea@02" syntax="_@yHOnPlayerLeaveDynArea@02(playerid, areaid)">

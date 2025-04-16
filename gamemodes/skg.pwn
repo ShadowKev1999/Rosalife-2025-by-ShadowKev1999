@@ -1,3 +1,4 @@
+#define SAMP_COMPAT
 #include <open.mp>
 #include <samp_bcrypt>
 #include <Pawn.CMD>

@@ -1,17 +1,17 @@
 //server
-#define MYSQL_HOST 						"127.0.0.1"
-#define MYSQL_USER 						"rosalife"
-#define MYSQL_PASS 						"8sde7B5Sl!.ryCyu"
-#define MYSQL_DATA						"rosalife"
+#define MYSQL_HOST 						""
+#define MYSQL_USER 						""
+#define MYSQL_PASS 						""
+#define MYSQL_DATA						""
 
-#define MYSQL_TABLE_DATA                "rosalife-reloaded.sql"
+#define MYSQL_TABLE_DATA                ""
 
 #define SERV_NAME                       "RosaLife Reloaded"
 #define SERV_SLOG                       "Open Beta"
 #define SERV_MODE                       "German Reallife"
 #define SERV_WURL                       "rosalife.de"
 #define SERV_STAG                       "RSL"
-#define SERV_PASS                       "BL0KN1L2eRA3kSjG6t4H"
+#define SERV_PASS                       ""
 #define SERV_LOAD                       "Wird geladen"
 
 #define MAX_GAME_OBJECTS 	            100
