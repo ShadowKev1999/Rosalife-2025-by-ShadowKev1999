@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet href="file:///C|/Users/Administrator/Desktop/rosa life 2024/qawno/xml/pawndoc.xsl" type="text/xsl"?>
-<doc source="C:\Users\Administrator\Desktop\rosa life 2024\gamemodes\pending\gamemode.pwn">
+<?xml-stylesheet href="file:///C|/Users/kevin/Documents/GitHub/Rosalife-2025-by-ShadowKev1999/qawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\kevin\Documents\GitHub\Rosalife-2025-by-ShadowKev1999\gamemodes\pending\gamemode.pwn">
 	<assembly>
 		<name>gamemode.pwn</name>
 	</assembly>
@@ -1922,7 +1922,6 @@
 			<referrer name="OnPlayerEnterVehicle"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="OnPlayerEnterCheckpoint"/>
-			<referrer name="OnVehicleMod"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="OnVehicleSirenStateChange"/>
@@ -2288,10 +2287,6 @@
 			<param name="playerid">
 			</param>
 		</member>
-		<member name="M:IsComponentidCompatible" syntax="IsComponentidCompatible()">
-			<stacksize value="1"/>
-			<referrer name="OnVehicleMod"/>
-		</member>
 		<member name="M:IsJobDuty" syntax="IsJobDuty()">
 			<stacksize value="1"/>
 			<referrer name="OnPlayerDeath"/>
@@ -2367,10 +2362,6 @@
 		<member name="M:IsPlayerInGangZoneEx" syntax="IsPlayerInGangZoneEx()">
 			<stacksize value="1"/>
 			<referrer name="OnPlayerDeath"/>
-		</member>
-		<member name="M:IsPlayerInInvalidNosVehicle" syntax="IsPlayerInInvalidNosVehicle()">
-			<stacksize value="1"/>
-			<referrer name="OnVehicleMod"/>
 		</member>
 		<member name="M:IsPlayerInNoDMZone" syntax="IsPlayerInNoDMZone()">
 			<stacksize value="1"/>
@@ -4528,18 +4519,14 @@
 			<param name="killerid">
 			</param>
 		</member>
-		<member name="M:OnVehicleMod" syntax="OnVehicleMod(playerid, vehicleid, component)">
+		<member name="M:OnVehicleMod" syntax="OnVehicleMod(playerid, vehicleid, componentid)">
 			<attribute name="public"/>
-			<stacksize value="5"/>
-			<dependency name="GetVehicleModel"/>
-			<dependency name="IsComponentidCompatible"/>
-			<dependency name="IsPlayerInInvalidNosVehicle"/>
-			<dependency name="RemoveVehicleComponent"/>
+			<stacksize value="1"/>
 			<param name="playerid">
 			</param>
 			<param name="vehicleid">
 			</param>
-			<param name="component">
+			<param name="componentid">
 			</param>
 		</member>
 		<member name="M:OnVehiclePaintjob" syntax="OnVehiclePaintjob(playerid, vehicleid, paintjob)">
@@ -5098,7 +5085,6 @@
 		</member>
 		<member name="M:RemoveVehicleComponent" syntax="RemoveVehicleComponent()">
 			<stacksize value="1"/>
-			<referrer name="OnVehicleMod"/>
 			<referrer name="OnPlayerExitedMenu"/>
 		</member>
 		<member name="M:RepairVehicle" syntax="RepairVehicle()">

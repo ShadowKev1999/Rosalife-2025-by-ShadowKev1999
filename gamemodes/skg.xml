@@ -55292,7 +55292,6 @@
 			</param>
 		</member>
 		<member name="M:OnVehicleRespray" syntax="OnVehicleRespray(playerid, vehicleid, color1, color2)">
-			<attribute name="public"/>
 			<stacksize value="1"/>
 			<param name="playerid">
 				The ID of the player that is driving the vehicle

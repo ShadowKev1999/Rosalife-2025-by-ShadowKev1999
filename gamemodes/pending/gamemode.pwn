@@ -9668,25 +9668,22 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
     return 1;
 }
 
-public OnVehicleMod(playerid, vehicleid, component)
+public OnVehicleMod(playerid, vehicleid, componentid)
 {
-	switch(component)
+	switch(componentid)
 	{
-	    case 1008..1010: if(IsPlayerInInvalidNosVehicle(playerid)) RemoveVehicleComponent(vehicleid, component);
+	    case 1008..1010: if(IsPlayerInInvalidNosVehicle(playerid)) RemoveVehicleComponent(vehicleid, componentid);
 	}
-	if(!IsComponentidCompatible(GetVehicleModel(vehicleid), component)) RemoveVehicleComponent(vehicleid, component);
+	if(!IsComponentidCompatible(GetVehicleModel(vehicleid), componentid)) RemoveVehicleComponent(vehicleid, componentid);
 	return 1;
 }
 
-public OnVehiclePaintjob(playerid, vehicleid, paintjob)
+public OnVehiclePaintjob(playerid, vehicleid, paintjobid)
 {
 	return 1;
 }
 
-public OnVehicleRespray(playerid, vehicleid, colour1, colour2)
-{
-	return 1;
-}
+
 
 gMenu:TEST1_MENU(playerid, response, listitem)
 {
@@ -29777,11 +29774,11 @@ public PDInnenFrei()
 	return 1;
 }
 
-public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:rotationX, Float:rotationY, Float:rotationZ, Float:scaleX, Float:scaleY, Float:scaleZ)
+/*public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:ScaleX, Float:ScaleY, Float:ScaleZ)
 {
-	if(response)
+	if (response)
 	{
-	    if(scaleX > 2 || scaleY > 2 || scaleZ > 2)
+	    if(ScaleX > 2 || ScaleY > 2 || ScaleZ > 2)
 	    {
 	        EditAttachedObject(playerid, index);
 	    	SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Solche unrealistischen Werte sind nicht willkommen.");
@@ -29793,12 +29790,12 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 			SpielerInfo[playerid][sVictimBrilleOffX] = fOffsetX;
 			SpielerInfo[playerid][sVictimBrilleOffY] = fOffsetY;
 			SpielerInfo[playerid][sVictimBrilleOffZ] = fOffsetZ;
-			SpielerInfo[playerid][sVictimBrilleRotX] = rotationX;
-			SpielerInfo[playerid][sVictimBrilleRotY] = rotationY;
-			SpielerInfo[playerid][sVictimBrilleRotZ] = rotationZ;
-			SpielerInfo[playerid][sVictimBrilleScaX] = scaleX;
-			SpielerInfo[playerid][sVictimBrilleScaY] = scaleY;
-			SpielerInfo[playerid][sVictimBrilleScaZ] = scaleZ;
+			SpielerInfo[playerid][sVictimBrilleRotX] = fRotX;
+			SpielerInfo[playerid][sVictimBrilleRotY] = fRotY;
+			SpielerInfo[playerid][sVictimBrilleRotZ] = fRotZ;
+			SpielerInfo[playerid][sVictimBrilleScaX] = ScaleX;
+			SpielerInfo[playerid][sVictimBrilleScaY] = ScaleY;
+			SpielerInfo[playerid][sVictimBrilleScaZ] = ScaleZ;
 		}
         if(GetPVarInt(playerid,"VictimSchmuck") == 2)
 		{
@@ -29806,12 +29803,12 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
             SpielerInfo[playerid][sVictimCapOffX] = fOffsetX;
 			SpielerInfo[playerid][sVictimCapOffY] = fOffsetY;
 			SpielerInfo[playerid][sVictimCapOffZ] = fOffsetZ;
-			SpielerInfo[playerid][sVictimCapRotX] = rotationX;
-			SpielerInfo[playerid][sVictimCapRotY] = rotationY;
-			SpielerInfo[playerid][sVictimCapRotZ] = rotationZ;
-			SpielerInfo[playerid][sVictimCapScaX] = scaleX;
-			SpielerInfo[playerid][sVictimCapScaY] = scaleY;
-			SpielerInfo[playerid][sVictimCapScaZ] = scaleZ;
+			SpielerInfo[playerid][sVictimCapRotX] = fRotX;
+			SpielerInfo[playerid][sVictimCapRotY] = fRotY;
+			SpielerInfo[playerid][sVictimCapRotZ] = fRotZ;
+			SpielerInfo[playerid][sVictimCapScaX] = ScaleX;
+			SpielerInfo[playerid][sVictimCapScaY] = ScaleY;
+			SpielerInfo[playerid][sVictimCapScaZ] = ScaleZ;
 		}
         if(GetPVarInt(playerid,"VictimSchmuck") == 3)
 		{
@@ -29819,12 +29816,12 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
             SpielerInfo[playerid][sVictimBandanaOffX] = fOffsetX;
 			SpielerInfo[playerid][sVictimBandanaOffY] = fOffsetY;
 			SpielerInfo[playerid][sVictimBandanaOffZ] = fOffsetZ;
-			SpielerInfo[playerid][sVictimBandanaRotX] = rotationX;
-			SpielerInfo[playerid][sVictimBandanaRotY] = rotationY;
-			SpielerInfo[playerid][sVictimBandanaRotZ] = rotationZ;
-			SpielerInfo[playerid][sVictimBandanaScaX] = scaleX;
-			SpielerInfo[playerid][sVictimBandanaScaY] = scaleY;
-			SpielerInfo[playerid][sVictimBandanaScaZ] = scaleZ;
+			SpielerInfo[playerid][sVictimBandanaRotX] = fRotX;
+			SpielerInfo[playerid][sVictimBandanaRotY] = fRotY;
+			SpielerInfo[playerid][sVictimBandanaRotZ] = fRotZ;
+			SpielerInfo[playerid][sVictimBandanaScaX] = ScaleX;
+			SpielerInfo[playerid][sVictimBandanaScaY] = ScaleY;
+			SpielerInfo[playerid][sVictimBandanaScaZ] = ScaleZ;
 		}
 	}
 	else
@@ -29834,7 +29831,65 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 	}
 	return 1;
 }
+*/
 
+public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)
+{
+    if(response)
+    {
+        if(fScaleX > 2 || fScaleY > 2 || fScaleZ > 2)
+        {
+            EditAttachedObject(playerid, index);
+            SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Solche unrealistischen Werte sind nicht willkommen.");
+            return 1;
+        }
+        if(GetPVarInt(playerid,"VictimSchmuck") == 1)
+        {
+            ShowPlayerDialog(playerid,DIALOG_VICTIM_SCHMUCK2,DIALOG_STYLE_MSGBOX,"{007DFF}"SERV_NAME"{FFFFFF} - Victim Schmuck","M?chtest du die Sonnenbrille f?r 850$ kaufen?","Kaufen","Abbrechen");
+            SpielerInfo[playerid][sVictimBrilleOffX] = fOffsetX;
+            SpielerInfo[playerid][sVictimBrilleOffY] = fOffsetY;
+            SpielerInfo[playerid][sVictimBrilleOffZ] = fOffsetZ;
+            SpielerInfo[playerid][sVictimBrilleRotX] = fRotX;
+            SpielerInfo[playerid][sVictimBrilleRotY] = fRotY;
+            SpielerInfo[playerid][sVictimBrilleRotZ] = fRotZ;
+            SpielerInfo[playerid][sVictimBrilleScaX] = fScaleX;
+            SpielerInfo[playerid][sVictimBrilleScaY] = fScaleY;
+            SpielerInfo[playerid][sVictimBrilleScaZ] = fScaleZ;
+        }
+        if(GetPVarInt(playerid,"VictimSchmuck") == 2)
+        {
+            ShowPlayerDialog(playerid,DIALOG_VICTIM_SCHMUCK2,DIALOG_STYLE_MSGBOX,"{007DFF}"SERV_NAME"{FFFFFF} - Victim Schmuck","M?chtest du diese Cap f?r 1.250$ kaufen?","Kaufen","Abbrechen");
+            SpielerInfo[playerid][sVictimCapOffX] = fOffsetX;
+            SpielerInfo[playerid][sVictimCapOffY] = fOffsetY;
+            SpielerInfo[playerid][sVictimCapOffZ] = fOffsetZ;
+            SpielerInfo[playerid][sVictimCapRotX] = fRotX;
+            SpielerInfo[playerid][sVictimCapRotY] = fRotY;
+            SpielerInfo[playerid][sVictimCapRotZ] = fRotZ;
+            SpielerInfo[playerid][sVictimCapScaX] = fScaleX;
+            SpielerInfo[playerid][sVictimCapScaY] = fScaleY;
+            SpielerInfo[playerid][sVictimCapScaZ] = fScaleZ;
+        }
+        if(GetPVarInt(playerid,"VictimSchmuck") == 3)
+        {
+            ShowPlayerDialog(playerid,DIALOG_VICTIM_SCHMUCK2,DIALOG_STYLE_MSGBOX,"{007DFF}"SERV_NAME"{FFFFFF} - Victim Schmuck","M?chtest du dieses Bandana f?r 2.250$ kaufen?","Kaufen","Abbrechen");
+            SpielerInfo[playerid][sVictimBandanaOffX] = fOffsetX;
+            SpielerInfo[playerid][sVictimBandanaOffY] = fOffsetY;
+            SpielerInfo[playerid][sVictimBandanaOffZ] = fOffsetZ;
+            SpielerInfo[playerid][sVictimBandanaRotX] = fRotX;
+            SpielerInfo[playerid][sVictimBandanaRotY] = fRotY;
+            SpielerInfo[playerid][sVictimBandanaRotZ] = fRotZ;
+            SpielerInfo[playerid][sVictimBandanaScaX] = fScaleX;
+            SpielerInfo[playerid][sVictimBandanaScaY] = fScaleY;
+            SpielerInfo[playerid][sVictimBandanaScaZ] = fScaleZ;
+        }
+    }
+    else
+    {
+        EditAttachedObject(playerid, index);
+        SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Dr?cke auf das 'Speicherkarte'-Symbol um fortzufahren.");
+    }
+    return 1;
+}
 public OnActorStreamIn(actorid, forplayerid)
 {
 	Actor_OnActorStreamIn();
