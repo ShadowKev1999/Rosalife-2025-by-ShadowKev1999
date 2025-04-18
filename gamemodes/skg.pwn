@@ -9,8 +9,8 @@
 #include <YSI_Coding\y_timers>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 235
-//#define STREAMER_OBJECT_SD 700.0
-//#define STREAMER_OBJECT_DD 300.0
+#define STREAMER_OBJECT_SD 700.0
+#define STREAMER_OBJECT_DD 300.0
 #pragma warning disable 239
 //ItemSystem
 #include <item>
@@ -23,7 +23,6 @@
 #include <streamer>
 #include <mSelection>
 #include <winteredition>
-//new modurl[] = "https://shadowkev1999-gaming.eu/models/"; //url /ordner wo die model dan drin sind sprich auf dein webspace hochladen!
 
 #include "core/server/config.pwn"
 //#include "core/server/anticheat.pwn"
@@ -37,6 +36,7 @@ main()
 	print("Copyright (c) 2014 by GangstaSunny & Tobi_DeKey - Alle Rechte vorbehalten.\n");
 	print("Copyright (c) 2020 by ShadowKev1999 & Reborn - Alle Rechte vorbehalten.\n");
 	print("Copyright (c) 2023 by ShadowKev1999 & c0kkie - Alle Rechte vorbehalten.\n");
+	print("Copyright (c) 2025 by ShadowKev1999 - Alle Rechte vorbehalten.\n");
 }
 
 //HELPERS & UTIL FUNCTIONS

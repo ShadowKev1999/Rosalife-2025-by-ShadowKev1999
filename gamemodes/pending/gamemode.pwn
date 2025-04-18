@@ -10404,7 +10404,7 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 	    if(IsPlayerInAnyVehicle(playerid))
 	    {
 	        new vehicleid = GetPlayerVehicleID(playerid);
-			if(GetPVarInt(playerid,"SireneHupe") == 1 && GetVehicleParamsSirenState(vehicleid) == true)
+			if(GetPVarInt(playerid,"SireneHupe") == 1 && GetVehicleParamsSirenState(vehicleid) == 1)
 			{
 				PC_EmulateCommand(playerid, "/sirene");
 				//OnPlayerCommandText(playerid,"/sirene");

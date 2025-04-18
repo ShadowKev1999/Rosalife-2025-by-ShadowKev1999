@@ -76,7 +76,7 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": ["ColAndreas", "mysql", "samp_bcrypt", "sscanf", "streamer", "uuid"],
+        "legacy_plugins": ["ColAndreas.so", "mysql.so", "samp_bcrypt.so", "sscanf.so", "streamer.so", "uuid.so"],
         "main_scripts": [
             "skg"
         ],
@@ -85,9 +85,9 @@
     "rcon": {
         "allow_teleport": false,
         "enable": true,
-        "password": "huhu123"
+        "password": ""
     },
     "sleep": 5.0,
     "use_dyn_ticks": true,
-    "website": "redv-reallife.de"
+    "website": ""
 }

@@ -390,7 +390,7 @@ CMD:sirene(playerid, params[])
 			if(GetVehicleModel(tmpcar) == 560)
 			{
    				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene für dieses Fahrzeug.");
-			    if(GetVehicleParamsSirenState(tmpcar) == true)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Benutze die H - Taste um die Sirene einzuschalten!");
+			    if(GetVehicleParamsSirenState(tmpcar) == 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Benutze die H - Taste um die Sirene einzuschalten!");
 				FahrzeugInfo[tmpcar][fSirene][0] = CreateDynamicObject(19288,0,0,-1000,0,0,0,-1,-1,-1,100,100);
 				FahrzeugInfo[tmpcar][fSirene][1] = CreateDynamicObject(19419,0,0,0,0,0,0,-1,-1,-1,100,100);
 				FahrzeugInfo[tmpcar][fSirene][2] = CreateDynamicObject(19288,0,0,0,0,0,0,-1,-1,-1,100,100);
