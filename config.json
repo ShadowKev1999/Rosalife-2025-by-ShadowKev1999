@@ -76,11 +76,11 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": ["ColAndreas.so", "mysql.so", "samp_bcrypt.so", "sscanf.so", "streamer.so", "uuid.so"],
+        "legacy_plugins": ["ColAndreas", "mysql", "samp_bcrypt", "sscanf", "streamer", "uuid"],
         "main_scripts": [
             "skg"
         ],
-        "side_scripts": ["filterscripts/samplife-mapps"]
+        "side_scripts": ["filterscript/samplife-mapps"]
     },
     "rcon": {
         "allow_teleport": false,
