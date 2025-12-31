@@ -2,9 +2,9 @@
 #define MYSQL_HOST 						"localhost"
 #define MYSQL_USER 						"root"
 #define MYSQL_PASS 						""
-#define MYSQL_DATA						"rosalife-reloaded"
+#define MYSQL_DATA						"rosalife2025"
 
-#define MYSQL_TABLE_DATA                "rosalife-reloaded.sql"
+#define MYSQL_TABLE_DATA                "rosalife2025.sql"
 
 #define SERV_NAME                       "RosaLife Reloaded"
 #define SERV_SLOG                       "V 0.0.1"

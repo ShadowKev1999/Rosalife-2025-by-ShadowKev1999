@@ -9,56 +9,6 @@ Ein deutscher SA-MP Server basierend auf Open.MP mit umfangreichen Funktionen un
 - **Max. Spieler**: 100
 - **Port**: 7777
 - **Status**: In Entwicklung (keine aktiven Updates, Updates geplant für 2026)
-- **Compiler**: Qawno (empfohlen) / Pawno (kompatibel)
-
-## ?? Schnellstart
-
-### 1. Server einrichten
-```bash
-# Datenbank automatisch einrichten
-php database_setup.php
-
-# Oder mit Batch-Datei
-setup_database.bat
-```
-
-### 2. Gamemode kompilieren
-```bash
-# Mit Qawno (empfohlen)
-compile_qawno.bat
-
-# Oder mit Pawno
-compile_fix.bat
-```
-
-### 3. Server starten
-```bash
-omp-server.exe
-```
-
-## ?? Wichtige Dateien
-
-### Konfiguration
-- `config.json` - Server-Konfiguration
-- `database_config.php` - Datenbank-Zugangsdaten
-- `rosalife-2025-database.sql` - Komplette Datenbank-Struktur
-
-### Compiler
-- `compile_qawno.bat` - Qawno Compiler (empfohlen)
-- `compile_fix.bat` - Pawno Compiler (Fallback)
-- `skg_minimal.pwn` - Minimale Gamemode-Version
-
-### Datenbank
-- `database_setup.php` - Automatisches Datenbank-Setup
-- `database_simple.pwn` - PAWN Datenbank-Setup
-- `database_setup.pwn` - Vollständiges PAWN Setup
-
-### Dokumentation
-- `README.md` - Hauptdokumentation
-- `README_Database.md` - Datenbank-Anleitung
-- `README_Database_PAWN.md` - PAWN Setup-Anleitung
-- `README_Compiler_Fix.md` - Compiler-Fix-Anleitung
-- `README_Qawno_Compiler.md` - Qawno Compiler-Anleitung
 
 ## Inhaltsverzeichnis
 
@@ -69,8 +19,6 @@ omp-server.exe
 5. [Job Befehle](#job-befehle)
 6. [Haus & Geschäft Befehle](#haus--geschäft-befehle)
 7. [Sonstige Befehle](#sonstige-befehle)
-8. [Datenbank-Setup](#datenbank-setup)
-9. [Compiler-Anleitungen](#compiler-anleitungen)
 
 ---
 
@@ -374,98 +322,6 @@ omp-server.exe
 
 ---
 
-## Datenbank-Setup
-
-### Automatische Einrichtung
-Der Server verfügt über ein vollautomatisches Datenbank-Setup:
-
-#### PHP-Setup (empfohlen)
-```bash
-# Web-Interface
-php database_setup.php
-
-# Oder mit Batch
-setup_database.bat
-```
-
-#### PAWN-Setup
-```pawn
-// In OnGameModeInit()
-Database_Initialize();
-
-// Oder einfach
-DatabaseSimple_Initialize();
-```
-
-### Admin-Befehle für Setup
-- `/setupdb` - Startet Datenbank-Setup (Admin Level 5)
-- `/checkdb` - Überprüft Tabellen (Admin Level 3)
-
-### Erstellt Tabellen
-- **accounts** - Spielerdaten (25+ Felder)
-- **vehicles** - Fahrzeuge mit Tuning
-- **houses** - Häuser und Immobilien
-- **businesses** - Geschäfte und Unternehmen
-- **garages** - Garagen für Fahrzeuge
-- **groups** - Spielergruppen
-- **licenses** - Lizenzen (Auto, Waffe, etc.)
-- **items** - Inventar-System
-- **job_stats** - Job-Statistiken für alle 16 Jobs
-- **admin_logs** - Admin-Aktivitäten
-- **server_stats** - Server-Statistiken
-- **achievements** - Achievement-System
-- **faction_ranks/vehicles** - Fraktions-System
-
-### Admin-Account
-- **Benutzername**: ShadowKev1999
-- **Passwort**: admin123
-- **Level**: 10 (Admin Level 5)
-- **Startgeld**: $100.000
-
----
-
-## Compiler-Anleitungen
-
-### Qawno Compiler (empfohlen)
-```bash
-# Automatischer Fix
-compile_qawno.bat
-
-# Manuelles Kompilieren
-qawno\qawno.exe -t300 gamemodes\skg.pwn
-
-# Minimale Version
-qawno\qawno.exe gamemodes\skg_minimal.pwn
-```
-
-### Pawno Compiler (Fallback)
-```bash
-# Mit Timeout-Fix
-compile_fix.bat
-
-# Manuelles Kompilieren
-pawno\pawno.exe -t300 gamemodes\skg.pwn
-```
-
-### Compiler-Probleme lösen
-#### "Process operation timed out"
-- **Ursache**: Zu viele Includes (100+)
-- **Lösung**: `compile_qawno.bat` mit Option 1 verwenden
-
-#### "Out of memory"
-- **Ursache**: Zu wenig Speicher
-- **Lösung**: `#pragma dynamic 65536` hinzufügen
-
-### Minimale Version
-Falls die volle Version nicht kompiliert:
-```pawn
-// Verwenden Sie skg_minimal.pwn
-// Nur grundlegende Funktionen
-// Sofort lauffähig
-```
-
----
-
 ## Server Features
 
 ### Roleplay System
@@ -497,50 +353,11 @@ Falls die volle Version nicht kompiliert:
 
 ## Installation
 
-### 1. Voraussetzungen
-- **Open.MP Server** - Latest Version
-- **PHP 7.4+** mit mysqli-Erweiterung
-- **MySQL/MariaDB 5.7+**
-- **Qawno Compiler** (empfohlen)
-
-### 2. Datenbank einrichten
-```bash
-# Automatisch
-php database_setup.php
-
-# Oder manuell
-mysql -u root -p rosalife2025 < rosalife-2025-database.sql
-```
-
-### 3. Gamemode kompilieren
-```bash
-# Mit Qawno
-compile_qawno.bat
-
-# Überprüfen ob kompiliert wurde
-dir gamemodes\compiled\skg.amx
-```
-
-### 4. Server konfigurieren
-```json
-{
-    "pawn": {
-        "main_scripts": ["skg"],
-        "side_scripts": ["filterscript/samplife-mapps"]
-    },
-    "database": {
-        "host": "localhost",
-        "username": "root",
-        "password": "",
-        "database": "rosalife2025"
-    }
-}
-```
-
-### 5. Server starten
-```bash
-omp-server.exe
-```
+1. Lade die neueste Version von Open.MP herunter
+2. Kopiere alle Dateien in dein Server-Verzeichnis
+3. Konfiguriere die `config.json` nach deinen Wünschen
+4. Importiere die `rosalife-reloaded.sql` in deine Datenbank
+5. Starte den Server mit `omp-server.exe`
 
 ---
 
@@ -550,27 +367,16 @@ omp-server.exe
 - Es können noch Fehler vorhanden sein
 - Aktive Updates sind derzeit nicht geplant
 - Updates sind für 2026 geplant
-- Qawno Compiler wird empfohlen für bessere Performance
 
 ---
 
 ## Kontakt & Support
 
-Bei Fragen oder Problemen:
-1. **Dokumentation lesen**: `README_*.md` Dateien
-2. **Logs überprüfen**: Server-Logs und Compiler-Logs
-3. **Support-System**: `/support` Befehl im Spiel
-4. **Admin kontaktieren**: `/admins` Befehl
-
----
-
-## ?? Weitere Dokumentation
-
-- `README_Database.md` - Detaillierte Datenbank-Anleitung
-- `README_Database_PAWN.md` - PAWN Setup-Anleitung
-- `README_Compiler_Fix.md` - Compiler-Fix-Anleitung
-- `README_Qawno_Compiler.md` - Qawno Compiler-Anleitung
+Bei Fragen oder Problemen kannst du dich an das Support-Team auf dem Server wenden.
 
 ---
 
 *Diese Dokumentation wurde automatisch erstellt und enthält alle verfügbaren Befehle und Funktionen des Rosalife-2025 Servers.*
+
+
+

@@ -9,8 +9,8 @@
 #include <YSI_Coding\y_timers>
 #undef MAX_PLAYERS
 #define MAX_PLAYERS 235
-#define STREAMER_OBJECT_SD 700.0
-#define STREAMER_OBJECT_DD 300.0
+//#define STREAMER_OBJECT_SD 700.0
+//#define STREAMER_OBJECT_DD 300.0
 #pragma warning disable 239
 //ItemSystem
 #include <item>
