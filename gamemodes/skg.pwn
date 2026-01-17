@@ -69,6 +69,7 @@ main()
 #include "vars/admin/admin.pwn"
 #include "vars/admin/coupons.pwn"
 #include "vars/admin/server_restart.pwn"
+#include "vars/admin/daily_restart.pwn"
 
 #include "vars/events/eventboxes.pwn"
 #include "vars/events/halloween.pwn"
@@ -294,6 +295,7 @@ main()
 #include "cmds/admin/faction_manager.pwn"
 #include "cmds/admin/coupons.pwn"
 #include "cmds/admin/server_restart.pwn"
+#include "cmds/admin/daily_restart.pwn"
 
 #include "cmds/events/race.pwn"
 
