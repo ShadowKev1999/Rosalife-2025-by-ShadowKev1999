@@ -4,7 +4,7 @@
  */
 
 // Befehl zum manuellen Auslösen des täglichen Neustarts
-CMD:dailyrestart(playerid, params[])
+pc_cmd_dailyrestart(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt;
     
@@ -21,7 +21,7 @@ CMD:dailyrestart(playerid, params[])
 }
 
 // Befehl zum Abbrechen des täglichen Neustarts
-CMD:canceldailyrestart(playerid, params[])
+pc_cmd_canceldailyrestart(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt;
     
@@ -54,7 +54,7 @@ CMD:canceldailyrestart(playerid, params[])
 }
 
 // Befehl zum Setzen der täglichen Neustart-Zeit
-CMD:setdailyrestarttime(playerid, params[])
+pc_cmd_setdailyrestarttime(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt;
     
@@ -81,7 +81,7 @@ CMD:setdailyrestarttime(playerid, params[])
 }
 
 // Befehl zum Anzeigen des täglichen Neustart-Status
-CMD:dailyrestartstatus(playerid, params[])
+pc_cmd_dailyrestartstatus(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 3) return NichtBerechtigt;
     

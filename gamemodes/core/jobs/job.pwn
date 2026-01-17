@@ -1,4 +1,4 @@
-ï»¿public LoadJobInfos()
+public LoadJobInfos()
 {
     new ts = 0, jobs = 0;
 	new  var[24];
@@ -47,7 +47,7 @@ stock DeleteJobFahrzeug(playerid)
 	else if(GetPVarInt(playerid,"KehrmaschinenAuftrag") != 0)
 	{
 		new vehicleid = GetPVarInt(playerid,"Kehrmaschine");
-	    UpdateDynamic3DTextLabelText(FahrzeugInfo[vehicleid][fLabel], COLOR_WHITE, "Jobfahrzeug von\n{FE0000}Niemandem{FFFFFF}\nMï¿½ll: {FF0000}0{FFFFFF} Liter");
+	    UpdateDynamic3DTextLabelText(FahrzeugInfo[vehicleid][fLabel], COLOR_WHITE, "Jobfahrzeug von\n{FE0000}Niemandem{FFFFFF}\nMüll: {FF0000}0{FFFFFF} Liter");
 	    SetVehicleToRespawn(vehicleid);
    	    DeletePVar(FahrzeugInfo[vehicleid][fJobFahrer],"Kehrmaschine");
 		DeletePVar(FahrzeugInfo[vehicleid][fJobFahrer],"KehrmaschinenAuftrag");
@@ -77,16 +77,16 @@ stock DeleteJobFahrzeug(playerid)
 		FahrzeugInfo[vehicleid][fJobFahrer] = 0;
 		return 1;
 	}
-	else if(GetPVarInt(playerid,"Mï¿½llmannArbeitet") != 0)
+	else if(GetPVarInt(playerid,"MüllmannArbeitet") != 0)
 	{
 	    KillTimer(MuellmannTimer[playerid]);
-  		new tmpcar = GetPVarInt(playerid,"Mï¿½llAuto");
-	    UpdateDynamic3DTextLabelText(FahrzeugInfo[tmpcar][fLabel], COLOR_WHITE, "Mï¿½llmann:\n{FE0000}Niemand{FFFFFF}\nMï¿½ll: {FF0000}0{FFFFFF} Liter");
+  		new tmpcar = GetPVarInt(playerid,"MüllAuto");
+	    UpdateDynamic3DTextLabelText(FahrzeugInfo[tmpcar][fLabel], COLOR_WHITE, "Müllmann:\n{FE0000}Niemand{FFFFFF}\nMüll: {FF0000}0{FFFFFF} Liter");
 	    SetVehicleToRespawn(tmpcar);
 	    FahrzeugInfo[tmpcar][fJobFahrer] = 0;
-	    DeletePVar(playerid,"Mï¿½llBeutel");
-	    DeletePVar(playerid,"Mï¿½llBeutelHand");
-	    DeletePVar(playerid,"Mï¿½llmannArbeitet");
+	    DeletePVar(playerid,"MüllBeutel");
+	    DeletePVar(playerid,"MüllBeutelHand");
+	    DeletePVar(playerid,"MüllmannArbeitet");
 	    MuellHausPos[playerid][0] = 0;
 	    MuellHausPos[playerid][1] = 0;
 	    MuellHausPos[playerid][2] = 0;
@@ -170,13 +170,13 @@ stock DeleteJobFahrzeug(playerid)
 	    vehicleid[2] = SpielerInfo[playerid][sZugID][2];//Wagon 2
 	    vehicleid[3] = SpielerInfo[playerid][sZugID][3];//Wagon 3
 
-		//Lï¿½schen der Zugmaschine und der Trailer
+		//Löschen der Zugmaschine und der Trailer
         DestroyVehicle(SpielerInfo[playerid][sZugID][0]);
         DestroyVehicle(SpielerInfo[playerid][sZugID][1]);
         DestroyVehicle(SpielerInfo[playerid][sZugID][2]);
         DestroyVehicle(SpielerInfo[playerid][sZugID][3]);
 
-        //Zurï¿½cksetzen der Trailer-Variablen und Lï¿½schung der Trailer-Objekte
+        //Zurücksetzen der Trailer-Variablen und Löschung der Trailer-Objekte
         DestroyDynamicObject(FahrzeugInfo[SpielerInfo[playerid][sZugID][1]][fAttachedObject][0]);
 		DestroyDynamicObject(FahrzeugInfo[SpielerInfo[playerid][sZugID][1]][fAttachedObject][1]);
 		FahrzeugInfo[SpielerInfo[playerid][sZugID][1]][fAttachedObject][0] = INVALID_OBJECT_ID;
@@ -215,7 +215,7 @@ stock JobName(JobID)
 		case 3:{jbname="KM-Fahrer";}
 		case 4:{jbname="Pilot";}
 		case 5:{jbname="Busfahrer";}
-		case 6:{jbname="Muellmann";}
+		case 6:{jbname="Müllmann";}
 		case 7:{jbname="Landwirt";}
 		case 8:{jbname="D-";}
 		case 9:{jbname="W-";}
@@ -259,7 +259,7 @@ stock IsJobDuty(playerid)
 {
     if(GetPVarInt(playerid,"TruckerDuty") == 0 && GetPVarInt(playerid,"PizzaboteDuty") == 0 &&
 	GetPVarInt(playerid,"KehrmaschinenDuty") == 0 && GetPVarInt(playerid,"PilotDuty") == 0 &&
-	GetPVarInt(playerid,"BusfahrerDuty") == 0 && GetPVarInt(playerid,"Mï¿½llmannDuty") == 0 &&
+	GetPVarInt(playerid,"BusfahrerDuty") == 0 && GetPVarInt(playerid,"MüllmannDuty") == 0 &&
 	GetPVarInt(playerid,"LandwirtDuty") == 0 && GetPVarInt(playerid,"GeldlieferantDuty") == 0 &&
 	GetPVarInt(playerid,"ElektrikerDuty") == 0){return false;}
 	else return true;
@@ -304,4 +304,3 @@ Job_Streamer_OnItemStreamOut(type, forplayerid) {
 	}
 	return 1;
 }
-

@@ -69,7 +69,8 @@ main()
 #include "vars/admin/admin.pwn"
 #include "vars/admin/coupons.pwn"
 #include "vars/admin/server_restart.pwn"
-#include "vars/admin/daily_restart.pwn"
+#include "core/admin/daily_restart.pwn"
+#include "cmds/admin/daily_restart.pwn"
 
 #include "vars/events/eventboxes.pwn"
 #include "vars/events/halloween.pwn"
@@ -197,7 +198,6 @@ main()
 #include "core/general/furniture.pwn"
 #include "core/general/parties.pwn"
 
-#include "core/jobs/job.pwn"
 #include "core/jobs/air_trafficking.pwn"
 #include "core/jobs/trashcans.pwn"
 #include "core/jobs/fishing.pwn"
@@ -371,3 +371,6 @@ main()
 
 //PENDING CORE
 #include "pending/gamemode.pwn"
+
+// Move job.pwn after pending to fix function visibility
+#include "core/jobs/job.pwn"
