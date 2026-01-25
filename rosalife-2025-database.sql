@@ -81,6 +81,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `VIPExpire` int(11) NOT NULL DEFAULT 0,
   `PlayTime` int(11) NOT NULL DEFAULT 0,
   `LastLogin` varchar(32) DEFAULT NULL,
+  `ID_old` int(11),
   PRIMARY KEY (`ID`),
   UNIQUE KEY `Name` (`Name`),
   KEY `Online` (`Online`),
@@ -152,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `houses` (
 CREATE TABLE IF NOT EXISTS `businesses` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
-  `Name` varchar(64) NOT NULL DEFAULT 'Geschäft',
+  `Name` varchar(64) NOT NULL DEFAULT 'Business',
   `PosX` double NOT NULL DEFAULT 0,
   `PosY` double NOT NULL DEFAULT 0,
   `PosZ` double NOT NULL DEFAULT 0,
@@ -416,7 +417,7 @@ CREATE TABLE IF NOT EXISTS `server_economy` (
   `value` INT(12) NOT NULL,
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`economyId`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
 --
 -- Table structure for table `server_enterexits`
@@ -428,7 +429,7 @@ CREATE TABLE IF NOT EXISTS `server_enterexits` (
   `Exit` varchar(256) DEFAULT '|',
   `Name` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
 --
 -- Table structure for table `server_pickups`
@@ -445,7 +446,7 @@ CREATE TABLE IF NOT EXISTS `server_pickups` (
   `type` INT(12) NOT NULL,
   `text` VARCHAR(256) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
 --
 -- Dumping data for table `server_stats`
@@ -464,7 +465,7 @@ INSERT IGNORE INTO `server_stats` (`StatName`, `StatValue`) VALUES
 --
 
 INSERT IGNORE INTO `faction_ranks` (`Fraktion`, `Rank`, `RankName`, `Pay`) VALUES
-(1, 1, 'Anwärter', 100), (1, 2, 'Mitarbeiter', 200), (1, 3, 'Erfahrener Mitarbeiter', 300),
+(1, 1, 'Anwaerter', 100), (1, 2, 'Mitarbeiter', 200), (1, 3, 'Erfahrener Mitarbeiter', 300),
 (1, 4, 'Abteilungsleiter', 400), (1, 5, 'Stellvertretender Leiter', 500), (1, 6, 'Leiter', 600),
 (2, 1, 'Recruit', 200), (2, 2, 'Officer', 300), (2, 3, 'Sergeant', 400),
 (2, 4, 'Lieutenant', 500), (2, 5, 'Captain', 600), (2, 6, 'Chief', 800);
