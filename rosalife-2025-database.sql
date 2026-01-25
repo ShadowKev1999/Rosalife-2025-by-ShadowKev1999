@@ -1,22 +1,15 @@
 -- Rosalife-2025 Database Schema
--- Created for Open.MP Server
--- MySQL/MariaDB Database Structure
+-- Generated based on gamemode definitions
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+--
+-- Table structure for table `accounts`
+--
 
--- --------------------------------------------------------
--- Database: rosalife2025
--- --------------------------------------------------------
-
--- Accounts Table
-CREATE TABLE `accounts` (
+CREATE TABLE IF NOT EXISTS `accounts` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(24) NOT NULL,
   `Passwort` varchar(255) NOT NULL,
@@ -95,24 +88,11 @@ CREATE TABLE `accounts` (
   KEY `Admin` (`Admin`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Account Bans Table
-CREATE TABLE `accbans` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(24) NOT NULL,
-  `Teammitglied` varchar(24) NOT NULL,
-  `Bangrund` varchar(128) NOT NULL,
-  `GPCI` varchar(128) NOT NULL DEFAULT '0',
-  `Uhrzeit` varchar(16) NOT NULL,
-  `Datum` varchar(16) NOT NULL,
-  `BanType` enum('permanent','temporary') NOT NULL DEFAULT 'permanent',
-  `BanTime` int(11) NOT NULL DEFAULT 0,
-  PRIMARY KEY (`ID`),
-  KEY `Name` (`Name`),
-  KEY `GPCI` (`GPCI`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+--
+-- Table structure for table `vehicles`
+--
 
--- Vehicles Table
-CREATE TABLE `vehicles` (
+CREATE TABLE IF NOT EXISTS `vehicles` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `DatabaseID` int(11) NOT NULL DEFAULT 0,
   `Model` int(11) NOT NULL DEFAULT 411,
@@ -140,8 +120,11 @@ CREATE TABLE `vehicles` (
   KEY `Fraktion` (`Fraktion`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Houses Table
-CREATE TABLE `houses` (
+--
+-- Table structure for table `houses`
+--
+
+CREATE TABLE IF NOT EXISTS `houses` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
   `PosX` double NOT NULL DEFAULT 0,
@@ -162,8 +145,11 @@ CREATE TABLE `houses` (
   KEY `Besitzer` (`Besitzer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Businesses Table
-CREATE TABLE `businesses` (
+--
+-- Table structure for table `businesses`
+--
+
+CREATE TABLE IF NOT EXISTS `businesses` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
   `Name` varchar(64) NOT NULL DEFAULT 'Geschäft',
@@ -183,8 +169,11 @@ CREATE TABLE `businesses` (
   KEY `Besitzer` (`Besitzer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Garages Table
-CREATE TABLE `garages` (
+--
+-- Table structure for table `garages`
+--
+
+CREATE TABLE IF NOT EXISTS `garages` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
   `PosX` double NOT NULL DEFAULT 0,
@@ -198,8 +187,11 @@ CREATE TABLE `garages` (
   KEY `Besitzer` (`Besitzer`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Groups Table
-CREATE TABLE `groups` (
+--
+-- Table structure for table `groups`
+--
+
+CREATE TABLE IF NOT EXISTS `groups` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(64) NOT NULL,
   `Leader` varchar(24) NOT NULL,
@@ -211,8 +203,11 @@ CREATE TABLE `groups` (
   KEY `Leader` (`Leader`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Group Members Table
-CREATE TABLE `group_members` (
+--
+-- Table structure for table `group_members`
+--
+
+CREATE TABLE IF NOT EXISTS `group_members` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `GroupID` int(11) NOT NULL,
   `Member` varchar(24) NOT NULL,
@@ -223,22 +218,11 @@ CREATE TABLE `group_members` (
   KEY `Member` (`Member`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Group Houses Table
-CREATE TABLE `group_houses` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `GroupID` int(11) NOT NULL,
-  `PosX` double NOT NULL DEFAULT 0,
-  `PosY` double NOT NULL DEFAULT 0,
-  `PosZ` double NOT NULL DEFAULT 0,
-  `Interior` int(11) NOT NULL DEFAULT 0,
-  `VirtualWorld` int(11) NOT NULL DEFAULT 0,
-  `Storage` text DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `GroupID` (`GroupID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+--
+-- Table structure for table `licenses`
+--
 
--- Licenses Table
-CREATE TABLE `licenses` (
+CREATE TABLE IF NOT EXISTS `licenses` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(24) NOT NULL,
   `Auto` int(11) NOT NULL DEFAULT 0,
@@ -251,8 +235,11 @@ CREATE TABLE `licenses` (
   UNIQUE KEY `Name` (`Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Phone Contacts Table
-CREATE TABLE `phone_contacts` (
+--
+-- Table structure for table `phone_contacts`
+--
+
+CREATE TABLE IF NOT EXISTS `phone_contacts` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Owner` varchar(24) NOT NULL,
   `Name` varchar(32) NOT NULL,
@@ -261,8 +248,11 @@ CREATE TABLE `phone_contacts` (
   KEY `Owner` (`Owner`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Phone Messages Table
-CREATE TABLE `phone_messages` (
+--
+-- Table structure for table `phone_messages`
+--
+
+CREATE TABLE IF NOT EXISTS `phone_messages` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Sender` varchar(24) NOT NULL,
   `Receiver` varchar(24) NOT NULL,
@@ -274,8 +264,11 @@ CREATE TABLE `phone_messages` (
   KEY `Receiver` (`Receiver`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Items Table
-CREATE TABLE `items` (
+--
+-- Table structure for table `items`
+--
+
+CREATE TABLE IF NOT EXISTS `items` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Owner` varchar(24) NOT NULL,
   `ItemName` varchar(64) NOT NULL,
@@ -288,8 +281,11 @@ CREATE TABLE `items` (
   KEY `ItemType` (`ItemType`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Job Stats Table
-CREATE TABLE `job_stats` (
+--
+-- Table structure for table `job_stats`
+--
+
+CREATE TABLE IF NOT EXISTS `job_stats` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(24) NOT NULL,
   `Job` int(11) NOT NULL,
@@ -301,8 +297,11 @@ CREATE TABLE `job_stats` (
   UNIQUE KEY `Name_Job` (`Name`,`Job`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- ATM Machines Table
-CREATE TABLE `atm_machines` (
+--
+-- Table structure for table `atm_machines`
+--
+
+CREATE TABLE IF NOT EXISTS `atm_machines` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `PosX` double NOT NULL DEFAULT 0,
   `PosY` double NOT NULL DEFAULT 0,
@@ -312,8 +311,11 @@ CREATE TABLE `atm_machines` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Speed Cameras Table
-CREATE TABLE `speed_cameras` (
+--
+-- Table structure for table `speed_cameras`
+--
+
+CREATE TABLE IF NOT EXISTS `speed_cameras` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `PosX` double NOT NULL DEFAULT 0,
   `PosY` double NOT NULL DEFAULT 0,
@@ -324,56 +326,11 @@ CREATE TABLE `speed_cameras` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Mining System Table
-CREATE TABLE `mining_data` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(24) NOT NULL,
-  `OreType` varchar(32) NOT NULL,
-  `Amount` int(11) NOT NULL DEFAULT 0,
-  `LastMine` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `Name_OreType` (`Name`,`OreType`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+--
+-- Table structure for table `admin_logs`
+--
 
--- Trees Table (for Lumberjack Job)
-CREATE TABLE `trees` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `PosX` double NOT NULL DEFAULT 0,
-  `PosY` double NOT NULL DEFAULT 0,
-  `PosZ` double NOT NULL DEFAULT 0,
-  `Health` int(11) NOT NULL DEFAULT 100,
-  `RespawnTime` int(11) NOT NULL DEFAULT 300,
-  `LastCut` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
-
--- Log Buyers Table (for Lumberjack Job)
-CREATE TABLE `log_buyers` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `PosX` double NOT NULL DEFAULT 0,
-  `PosY` double NOT NULL DEFAULT 0,
-  `PosZ` double NOT NULL DEFAULT 0,
-  `Skin` int(11) NOT NULL DEFAULT 50,
-  `PricePerLog` int(11) NOT NULL DEFAULT 50,
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
-
--- Electrician Jobs Table
-CREATE TABLE `electrician_jobs` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Type` varchar(32) NOT NULL,
-  `PosX` double NOT NULL DEFAULT 0,
-  `PosY` double NOT NULL DEFAULT 0,
-  `PosZ` double NOT NULL DEFAULT 0,
-  `Defekt` int(11) NOT NULL DEFAULT 1,
-  `AssignedTo` varchar(24) DEFAULT NULL,
-  `AssignedTime` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `AssignedTo` (`AssignedTo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
-
--- Admin Logs Table
-CREATE TABLE `admin_logs` (
+CREATE TABLE IF NOT EXISTS `admin_logs` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Admin` varchar(24) NOT NULL,
   `Action` varchar(64) NOT NULL,
@@ -387,8 +344,11 @@ CREATE TABLE `admin_logs` (
   KEY `Timestamp` (`Timestamp`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Server Statistics Table
-CREATE TABLE `server_stats` (
+--
+-- Table structure for table `server_stats`
+--
+
+CREATE TABLE IF NOT EXISTS `server_stats` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `StatName` varchar(64) NOT NULL,
   `StatValue` bigint(20) NOT NULL DEFAULT 0,
@@ -397,8 +357,11 @@ CREATE TABLE `server_stats` (
   UNIQUE KEY `StatName` (`StatName`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Achievements Table
-CREATE TABLE `achievements` (
+--
+-- Table structure for table `achievements`
+--
+
+CREATE TABLE IF NOT EXISTS `achievements` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(24) NOT NULL,
   `AchievementID` varchar(64) NOT NULL,
@@ -409,8 +372,11 @@ CREATE TABLE `achievements` (
   UNIQUE KEY `Name_AchievementID` (`Name`,`AchievementID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Faction Ranks Table
-CREATE TABLE `faction_ranks` (
+--
+-- Table structure for table `faction_ranks`
+--
+
+CREATE TABLE IF NOT EXISTS `faction_ranks` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Fraktion` int(11) NOT NULL,
   `Rank` int(11) NOT NULL,
@@ -420,8 +386,11 @@ CREATE TABLE `faction_ranks` (
   UNIQUE KEY `Fraktion_Rank` (`Fraktion`,`Rank`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Faction Vehicles Table
-CREATE TABLE `faction_vehicles` (
+--
+-- Table structure for table `faction_vehicles`
+--
+
+CREATE TABLE IF NOT EXISTS `faction_vehicles` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Fraktion` int(11) NOT NULL,
   `Model` int(11) NOT NULL,
@@ -438,8 +407,51 @@ CREATE TABLE `faction_vehicles` (
   KEY `Fraktion` (`Fraktion`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
 
--- Insert default data
-INSERT INTO `server_stats` (`StatName`, `StatValue`) VALUES
+--
+-- Table structure for table `server_economy`
+--
+
+CREATE TABLE IF NOT EXISTS `server_economy` (
+  `economyId` INT(12) NOT NULL,
+  `value` INT(12) NOT NULL,
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`economyId`)
+) ENGINE=InnoDB;
+
+--
+-- Table structure for table `server_enterexits`
+--
+
+CREATE TABLE IF NOT EXISTS `server_enterexits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Enter` varchar(256) DEFAULT '|',
+  `Exit` varchar(256) DEFAULT '|',
+  `Name` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `server_pickups`
+--
+
+CREATE TABLE IF NOT EXISTS `server_pickups` (
+  `id` INT(12) NOT NULL AUTO_INCREMENT,
+  `x` FLOAT NOT NULL,
+  `y` FLOAT NOT NULL,
+  `z` FLOAT NOT NULL,
+  `model` INT(12) NOT NULL,
+  `world` INT(12) NOT NULL,
+  `interior` INT(12) NOT NULL,
+  `type` INT(12) NOT NULL,
+  `text` VARCHAR(256) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+--
+-- Dumping data for table `server_stats`
+--
+
+INSERT IGNORE INTO `server_stats` (`StatName`, `StatValue`) VALUES
 ('total_players', 0),
 ('total_money', 0),
 ('total_vehicles', 0),
@@ -447,33 +459,14 @@ INSERT INTO `server_stats` (`StatName`, `StatValue`) VALUES
 ('total_businesses', 0),
 ('server_uptime', 0);
 
--- Insert default faction ranks
-INSERT INTO `faction_ranks` (`Fraktion`, `Rank`, `RankName`, `Pay`) VALUES
-(1, 1, 'Anwärter', 100),
-(1, 2, 'Mitarbeiter', 200),
-(1, 3, 'Erfahrener Mitarbeiter', 300),
-(1, 4, 'Abteilungsleiter', 400),
-(1, 5, 'Stellvertretender Leiter', 500),
-(1, 6, 'Leiter', 600),
-(2, 1, 'Recruit', 200),
-(2, 2, 'Officer', 300),
-(2, 3, 'Sergeant', 400),
-(2, 4, 'Lieutenant', 500),
-(2, 5, 'Captain', 600),
-(2, 6, 'Chief', 800);
+--
+-- Dumping data for table `faction_ranks`
+--
 
--- Add indexes for better performance
-ALTER TABLE `accounts` ADD INDEX `Level` (`Level`);
-ALTER TABLE `accounts` ADD INDEX `LastLogin` (`LastLogin`);
-ALTER TABLE `vehicles` ADD INDEX `Model` (`Model`);
-ALTER TABLE `vehicles` ADD INDEX `Created` (`Created`);
-ALTER TABLE `houses` ADD INDEX `Preis` (`Preis`);
-ALTER TABLE `businesses` ADD INDEX `Typ` (`Typ`);
-ALTER TABLE `businesses` ADD INDEX `Preis` (`Preis`);
-ALTER TABLE `admin_logs` ADD INDEX `Target` (`Target`);
-
--- Set foreign key constraints
-ALTER TABLE `group_members` ADD CONSTRAINT `group_members_ibfk_1` FOREIGN KEY (`GroupID`) REFERENCES `groups` (`ID`) ON DELETE CASCADE;
-ALTER TABLE `group_houses` ADD CONSTRAINT `group_houses_ibfk_1` FOREIGN KEY (`GroupID`) REFERENCES `groups` (`ID`) ON DELETE CASCADE;
+INSERT IGNORE INTO `faction_ranks` (`Fraktion`, `Rank`, `RankName`, `Pay`) VALUES
+(1, 1, 'Anwärter', 100), (1, 2, 'Mitarbeiter', 200), (1, 3, 'Erfahrener Mitarbeiter', 300),
+(1, 4, 'Abteilungsleiter', 400), (1, 5, 'Stellvertretender Leiter', 500), (1, 6, 'Leiter', 600),
+(2, 1, 'Recruit', 200), (2, 2, 'Officer', 300), (2, 3, 'Sergeant', 400),
+(2, 4, 'Lieutenant', 500), (2, 5, 'Captain', 600), (2, 6, 'Chief', 800);
 
 COMMIT;
