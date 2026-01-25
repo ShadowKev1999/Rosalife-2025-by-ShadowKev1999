@@ -4,8 +4,10 @@ public LoadJobInfos()
 	new  var[24];
 
 	new Cache:result = mysql_query(sqlHandle, "SELECT * FROM `jobinfos` ORDER BY `ID` ASC");
+    new rows;
+    cache_get_row_count(rows);
 
-	for(new i = 0; i < cache_num_rows(result); i++)
+	for(new i = 0; i < rows; i++)
 	{
 		cache_get_value_name(i, "ID",var); ts = strval(var); JobInfo[ts][jiID] = strval(var);
 		cache_get_value_name(i, "Gehalt",var); JobInfo[ts][jiGehalt] = strval(var);
@@ -47,7 +49,7 @@ stock DeleteJobFahrzeug(playerid)
 	else if(GetPVarInt(playerid,"KehrmaschinenAuftrag") != 0)
 	{
 		new vehicleid = GetPVarInt(playerid,"Kehrmaschine");
-	    UpdateDynamic3DTextLabelText(FahrzeugInfo[vehicleid][fLabel], COLOR_WHITE, "Jobfahrzeug von\n{FE0000}Niemandem{FFFFFF}\nMüll: {FF0000}0{FFFFFF} Liter");
+	    UpdateDynamic3DTextLabelText(FahrzeugInfo[vehicleid][fLabel], COLOR_WHITE, "Jobfahrzeug von\n{FE0000}Niemandem{FFFFFF}\nMll: {FF0000}0{FFFFFF} Liter");
 	    SetVehicleToRespawn(vehicleid);
    	    DeletePVar(FahrzeugInfo[vehicleid][fJobFahrer],"Kehrmaschine");
 		DeletePVar(FahrzeugInfo[vehicleid][fJobFahrer],"KehrmaschinenAuftrag");
@@ -77,16 +79,16 @@ stock DeleteJobFahrzeug(playerid)
 		FahrzeugInfo[vehicleid][fJobFahrer] = 0;
 		return 1;
 	}
-	else if(GetPVarInt(playerid,"MüllmannArbeitet") != 0)
+	else if(GetPVarInt(playerid,"MllmannArbeitet") != 0)
 	{
 	    KillTimer(MuellmannTimer[playerid]);
-  		new tmpcar = GetPVarInt(playerid,"MüllAuto");
-	    UpdateDynamic3DTextLabelText(FahrzeugInfo[tmpcar][fLabel], COLOR_WHITE, "Müllmann:\n{FE0000}Niemand{FFFFFF}\nMüll: {FF0000}0{FFFFFF} Liter");
+  		new tmpcar = GetPVarInt(playerid,"MllAuto");
+	    UpdateDynamic3DTextLabelText(FahrzeugInfo[tmpcar][fLabel], COLOR_WHITE, "Mllmann:\n{FE0000}Niemand{FFFFFF}\nMll: {FF0000}0{FFFFFF} Liter");
 	    SetVehicleToRespawn(tmpcar);
 	    FahrzeugInfo[tmpcar][fJobFahrer] = 0;
-	    DeletePVar(playerid,"MüllBeutel");
-	    DeletePVar(playerid,"MüllBeutelHand");
-	    DeletePVar(playerid,"MüllmannArbeitet");
+	    DeletePVar(playerid,"MllBeutel");
+	    DeletePVar(playerid,"MllBeutelHand");
+	    DeletePVar(playerid,"MllmannArbeitet");
 	    MuellHausPos[playerid][0] = 0;
 	    MuellHausPos[playerid][1] = 0;
 	    MuellHausPos[playerid][2] = 0;
@@ -170,13 +172,13 @@ stock DeleteJobFahrzeug(playerid)
 	    vehicleid[2] = SpielerInfo[playerid][sZugID][2];//Wagon 2
 	    vehicleid[3] = SpielerInfo[playerid][sZugID][3];//Wagon 3
 
-		//Löschen der Zugmaschine und der Trailer
+		//Lschen der Zugmaschine und der Trailer
         DestroyVehicle(SpielerInfo[playerid][sZugID][0]);
         DestroyVehicle(SpielerInfo[playerid][sZugID][1]);
         DestroyVehicle(SpielerInfo[playerid][sZugID][2]);
         DestroyVehicle(SpielerInfo[playerid][sZugID][3]);
 
-        //Zurücksetzen der Trailer-Variablen und Löschung der Trailer-Objekte
+        //Zurcksetzen der Trailer-Variablen und Lschung der Trailer-Objekte
         DestroyDynamicObject(FahrzeugInfo[SpielerInfo[playerid][sZugID][1]][fAttachedObject][0]);
 		DestroyDynamicObject(FahrzeugInfo[SpielerInfo[playerid][sZugID][1]][fAttachedObject][1]);
 		FahrzeugInfo[SpielerInfo[playerid][sZugID][1]][fAttachedObject][0] = INVALID_OBJECT_ID;
@@ -215,7 +217,7 @@ stock JobName(JobID)
 		case 3:{jbname="KM-Fahrer";}
 		case 4:{jbname="Pilot";}
 		case 5:{jbname="Busfahrer";}
-		case 6:{jbname="Müllmann";}
+		case 6:{jbname="Mllmann";}
 		case 7:{jbname="Landwirt";}
 		case 8:{jbname="D-";}
 		case 9:{jbname="W-";}
@@ -259,7 +261,7 @@ stock IsJobDuty(playerid)
 {
     if(GetPVarInt(playerid,"TruckerDuty") == 0 && GetPVarInt(playerid,"PizzaboteDuty") == 0 &&
 	GetPVarInt(playerid,"KehrmaschinenDuty") == 0 && GetPVarInt(playerid,"PilotDuty") == 0 &&
-	GetPVarInt(playerid,"BusfahrerDuty") == 0 && GetPVarInt(playerid,"MüllmannDuty") == 0 &&
+	GetPVarInt(playerid,"BusfahrerDuty") == 0 && GetPVarInt(playerid,"MllmannDuty") == 0 &&
 	GetPVarInt(playerid,"LandwirtDuty") == 0 && GetPVarInt(playerid,"GeldlieferantDuty") == 0 &&
 	GetPVarInt(playerid,"ElektrikerDuty") == 0){return false;}
 	else return true;

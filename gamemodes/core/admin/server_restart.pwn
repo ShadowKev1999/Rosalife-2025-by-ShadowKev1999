@@ -1,4 +1,5 @@
-timer RestartServerTimer[60000]() {
+forward RestartServerTimer();
+public RestartServerTimer() {
     GMX_Data[pendingRestartTime] --;
     if(GMX_Data[pendingRestartTime] <= 0) {
         ServerRestartFolgt = 1;
@@ -25,7 +26,7 @@ timer RestartServerTimer[60000]() {
         SaveWerbetafel();
         SaveVehicles();
 
-        stop GMX_Data[restartTimer];
+        KillTimer(_:GMX_Data[restartTimer]);
 
         SetTimer("ServerRestart", 10000, false);
     } else {
@@ -47,10 +48,10 @@ ServerRestart_OnDialogResponse(playerid, dialogid, response) {
             GMX_Data[pendingRestartTime] = restart_time;
             format(GMX_Data[restartAdmin], MAX_PLAYER_NAME, "%s", GetName(playerid));
 
-            GMX_Data[restartTimer] = repeat RestartServerTimer();
+            GMX_Data[restartTimer] = Timer:SetTimer("RestartServerTimer", 60000, true);
 
             SendClientMessageToAll(-1, "{FF8080}SERVER-RESTART: {FFFFFF}%s hat einen Serverneustart gestartet! Der Server startet in %i Minuten neu.", GetName(playerid), restart_time);
-            SendClientMessageToAll(-1, "{FF8080}SERVER-RESTART: {FFFFFF}Beende sämtliche Tätigkeiten, damit dein Spielstand nicht verloren geht!");
+            SendClientMessageToAll(-1, "{FF8080}SERVER-RESTART: {FFFFFF}Beende smtliche Ttigkeiten, damit dein Spielstand nicht verloren geht!");
 
             SendClientMessage(playerid, COLOR_YELLOW, "Um den Serverneustart abzubrechen, nutze /cancelrestart");
 
@@ -70,7 +71,7 @@ ServerRestart_OnDialogResponse(playerid, dialogid, response) {
 
             stop GMX_Data[restartTimer];
 
-            SendClientMessageToAll(-1, "{FF8080}SERVER-RESTART: {FFFFFF}%s hat den Serverneustart abgebrochen. Du kannst nun deine Tätigkeit fortsetzen!", GetName(playerid));
+            SendClientMessageToAll(-1, "{FF8080}SERVER-RESTART: {FFFFFF}%s hat den Serverneustart abgebrochen. Du kannst nun deine Ttigkeit fortsetzen!", GetName(playerid));
             return 1;
         }
     }

@@ -37,7 +37,7 @@ InteractEnterExit(playerid) {
     if(slot == -1) return 1;
     if(!sEnterExits[slot][sEnterCreated]) return 1;
     if(IsPlayerInDynamicArea(playerid, sEnterExits[slot][sEnterExitArea][0])) { //Enter
-        if(IsAntiInteriorFlucht(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF} Anti-Interiorflucht: Warte bis du das Geb‰ude betrittst/verl‰sst.");
+        if(IsAntiInteriorFlucht(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF} Anti-Interiorflucht: Warte bis du das Gebùude betrittst/verlùsst.");
 
         SetPlayerPos(playerid, sEnterExits[slot][sExitPos][0], sEnterExits[slot][sExitPos][1], sEnterExits[slot][sExitPos][2]);
         SetPlayerFacingAngle(playerid, sEnterExits[slot][sExitPos][3]);
@@ -50,7 +50,7 @@ InteractEnterExit(playerid) {
         GameTextForPlayer(playerid,"~r~Welt~w~ wird geladen",3000,6);
 
     } else if(IsPlayerInDynamicArea(playerid, sEnterExits[slot][sEnterExitArea][1])) { //Exit
-        if(IsAntiInteriorFlucht(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF} Anti-Interiorflucht: Warte bis du das Geb‰ude betrittst/verl‰sst.");
+        if(IsAntiInteriorFlucht(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF} Anti-Interiorflucht: Warte bis du das Gebùude betrittst/verlùsst.");
         
         SetPlayerPos(playerid, sEnterExits[slot][sEnterPos][0], sEnterExits[slot][sEnterPos][1], sEnterExits[slot][sEnterPos][2]);
         SetPlayerFacingAngle(playerid, sEnterExits[slot][sEnterPos][3]);
@@ -93,16 +93,16 @@ public onLoadEnterExits() {
 
             sEnterExits[i][sEnterExitPickup][0] = CreateDynamicPickup(ENTER_EXIT_PICKUP_MODEL, 1, sEnterExits[i][sEnterPos][0], sEnterExits[i][sEnterPos][1], sEnterExits[i][sEnterPos][2], .worldid = sEnterExits[i][sEnterExitWorldId][0], .interiorid = sEnterExits[i][sEnterExitInteriorId][0]);
             sEnterExits[i][sEnterExitPickup][1] = CreateDynamicPickup(ENTER_EXIT_PICKUP_MODEL, 1, sEnterExits[i][sExitPos][0], sEnterExits[i][sExitPos][1], sEnterExits[i][sExitPos][2], .worldid = sEnterExits[i][sEnterExitWorldId][1], .interiorid = sEnterExits[i][sEnterExitInteriorId][1]);
-            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Geb‰ude zu betreten.", sEnterExits[i][sEnterExitName]);
+            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Gebùude zu betreten.", sEnterExits[i][sEnterExitName]);
             sEnterExits[i][sEnterExitLabel][0] = CreateDynamic3DTextLabel(string, 0x008080FF, sEnterExits[i][sEnterPos][0], sEnterExits[i][sEnterPos][1], sEnterExits[i][sEnterPos][2], 5.0, .worldid = sEnterExits[i][sEnterExitWorldId][0], .interiorid = sEnterExits[i][sEnterExitInteriorId][0]);
-            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Geb‰ude zu verlassen.", sEnterExits[i][sEnterExitName]);
+            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Gebùude zu verlassen.", sEnterExits[i][sEnterExitName]);
             sEnterExits[i][sEnterExitLabel][1] = CreateDynamic3DTextLabel(string, 0x008080FF, sEnterExits[i][sExitPos][0], sEnterExits[i][sExitPos][1], sEnterExits[i][sExitPos][2], 5.0, .worldid = sEnterExits[i][sEnterExitWorldId][1], .interiorid = sEnterExits[i][sEnterExitInteriorId][1]);
             
             sEnterExits[i][sEnterCreated] = true;
         }
         return 1;
     }
-    return printf("MySQL: %i EnterExits geladen!");
+    return printf("MySQL: %i EnterExits geladen!", rows);
 }
 
 stock addEnterExit(Float:enterX, Float:enterY, Float:enterZ, Float:enterA, enterInt, enterWorld, Float:exitX, Float:exitY, Float:exitZ, Float:exitA, exitInt, exitWorld, const enterExitName[32]) {
@@ -126,9 +126,9 @@ stock addEnterExit(Float:enterX, Float:enterY, Float:enterZ, Float:enterA, enter
 
     sEnterExits[i][sEnterExitPickup][0] = CreateDynamicPickup(ENTER_EXIT_PICKUP_MODEL, 1, sEnterExits[slot][sEnterPos][0], sEnterExits[slot][sEnterPos][1], sEnterExits[slot][sEnterPos][2], .worldid = sEnterExits[slot][sEnterExitWorldId][0], .interiorid = sEnterExits[slot][sEnterExitInteriorId][0]);
             sEnterExits[slot][sEnterExitPickup][1] = CreateDynamicPickup(ENTER_EXIT_PICKUP_MODEL, 1, sEnterExits[slot][sExitPos][0], sEnterExits[slot][sExitPos][1], sEnterExits[slot][sExitPos][2], .worldid = sEnterExits[slot][sEnterExitWorldId][1], .interiorid = sEnterExits[slot][sEnterExitInteriorId][1]);
-            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Geb‰ude zu betreten.", sEnterExits[slot][sEnterExitName]);
+            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Gebùude zu betreten.", sEnterExits[slot][sEnterExitName]);
             sEnterExits[slot][sEnterExitLabel][0] = CreateDynamic3DTextLabel(string, 0x008080FF, sEnterExits[slot][sEnterPos][0], sEnterExits[slot][sEnterPos][1], sEnterExits[slot][sEnterPos][2], 5.0, .worldid = sEnterExits[slot][sEnterExitWorldId][0], .interiorid = sEnterExits[slot][sEnterExitInteriorId][0]);
-            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Geb‰ude zu verlassen.", sEnterExits[slot][sEnterExitName]);
+            format(string, sizeof(string), "{FFFFFF}%s\nBenutze '{FF0000}Enter{FFFFFF}'\num das Gebùude zu verlassen.", sEnterExits[slot][sEnterExitName]);
             sEnterExits[slot][sEnterExitLabel][1] = CreateDynamic3DTextLabel(string, 0x008080FF, sEnterExits[slot][sExitPos][0], sEnterExits[slot][sExitPos][1], sEnterExits[slot][sExitPos][2], 5.0, .worldid = sEnterExits[slot][sEnterExitWorldId][1], .interiorid = sEnterExits[slot][sEnterExitInteriorId][1]);
 
     sEnterExits[slot][sEnterCreated] = true;

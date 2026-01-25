@@ -1,6 +1,6 @@
 /*
  * Rosalife-2025 Database Setup System
- * Erstellt und ¸berpr¸ft automatisch alle Datenbanktabellen
+ * Erstellt und ùberprùft automatisch alle Datenbanktabellen
  */
 
 // Forward declarations
@@ -10,6 +10,11 @@ forward Database_CreateTables();
 forward Database_VerifyTables();
 forward Database_CreateAdminAccount();
 forward Database_SetupComplete();
+forward Database_OnTableCreated(table_index, table_name[]);
+forward Database_OnDefaultDataInserted(data_type[]);
+forward Database_CheckAdminAccount();
+forward Database_OnAdminAccountCreated();
+forward Database_OnTableChecked(table_name[]);
 
 // Tabellen-Definitionen
 static const DatabaseTables[][][] = {
@@ -87,6 +92,30 @@ static const DatabaseTables[][][] = {
          `VIPExpire` int(11) NOT NULL DEFAULT 0,\
          `PlayTime` int(11) NOT NULL DEFAULT 0,\
          `LastLogin` varchar(32) DEFAULT NULL,\
+         `wpSlot1` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot2` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot3` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot4` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot5` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot6` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot7` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot8` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot9` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot10` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot11` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot12` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot1Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot2Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot3Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot4Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot5Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot6Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot7Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot8Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot9Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot10Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot11Ammu` int(11) NOT NULL DEFAULT 0,\
+         `wpSlot12Ammu` int(11) NOT NULL DEFAULT 0,\
          PRIMARY KEY (`ID`),\
          UNIQUE KEY `Name` (`Name`),\
          KEY `Online` (`Online`),\
@@ -97,31 +126,92 @@ static const DatabaseTables[][][] = {
     {"vehicles",
         "CREATE TABLE IF NOT EXISTS `vehicles` (\
          `ID` int(11) NOT NULL AUTO_INCREMENT,\
-         `DatabaseID` int(11) NOT NULL DEFAULT 0,\
-         `Model` int(11) NOT NULL DEFAULT 411,\
+         `ModelID` int(11) NOT NULL DEFAULT 411,\
          `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',\
-         `PosX` double NOT NULL DEFAULT 0,\
-         `PosY` double NOT NULL DEFAULT 0,\
-         `PosZ` double NOT NULL DEFAULT 0,\
-         `PosA` double NOT NULL DEFAULT 0,\
-         `Color1` int(11) NOT NULL DEFAULT 1,\
-         `Color2` int(11) NOT NULL DEFAULT 1,\
-         `Fraktion` int(11) NOT NULL DEFAULT 0,\
+         `PositionX` double NOT NULL DEFAULT 0,\
+         `PositionY` double NOT NULL DEFAULT 0,\
+         `PositionZ` double NOT NULL DEFAULT 0,\
+         `PositionA` double NOT NULL DEFAULT 0,\
+         `Farbe1` int(11) NOT NULL DEFAULT 1,\
+         `Farbe2` int(11) NOT NULL DEFAULT 1,\
          `Paintjob` int(11) NOT NULL DEFAULT -1,\
-         `Plate` varchar(12) NOT NULL DEFAULT 'ROSA2025',\
-         `Health` float NOT NULL DEFAULT 1000,\
-         `Fuel` float NOT NULL DEFAULT 100,\
-         `Locked` int(11) NOT NULL DEFAULT 1,\
-         `Impounded` int(11) NOT NULL DEFAULT 0,\
+         `NeonFarbe` int(11) NOT NULL DEFAULT 0,\
+         `Kennzeichen` varchar(12) NOT NULL DEFAULT 'ROSA2025',\
+         `Abgeschleppt` int(11) NOT NULL DEFAULT 0,\
+         `Parkkralle` int(11) NOT NULL DEFAULT 0,\
+         `Kilometer` int(11) NOT NULL DEFAULT 0,\
+         `Tank` float NOT NULL DEFAULT 100,\
+         `Preis` int(11) NOT NULL DEFAULT 0,\
          `Garage` int(11) NOT NULL DEFAULT 0,\
-         `Neon` int(11) NOT NULL DEFAULT 0,\
-         `NeonColor` varchar(12) NOT NULL DEFAULT '255,255,255',\
-         `Tuning` text DEFAULT NULL,\
-         `Created` timestamp NOT NULL DEFAULT current_timestamp(),\
+         `GPark` int(11) NOT NULL DEFAULT 0,\
+         `JobEXP` int(11) NOT NULL DEFAULT 0,\
+         `Spoiler` int(11) NOT NULL DEFAULT 0,\
+         `Hood` int(11) NOT NULL DEFAULT 0,\
+         `Roof` int(11) NOT NULL DEFAULT 0,\
+         `Sideskirt` int(11) NOT NULL DEFAULT 0,\
+         `Lamps` int(11) NOT NULL DEFAULT 0,\
+         `Nitro` int(11) NOT NULL DEFAULT 0,\
+         `Exhaust` int(11) NOT NULL DEFAULT 0,\
+         `Wheels` int(11) NOT NULL DEFAULT 0,\
+         `Stereo` int(11) NOT NULL DEFAULT 0,\
+         `Hydraulics` int(11) NOT NULL DEFAULT 0,\
+         `Front Bumper` int(11) NOT NULL DEFAULT 0,\
+         `Rear Bumper` int(11) NOT NULL DEFAULT 0,\
+         `Vent Right` int(11) NOT NULL DEFAULT 0,\
+         `Vent Left` int(11) NOT NULL DEFAULT 0,\
+         `Panels` int(11) NOT NULL DEFAULT 0,\
+         `Doors` int(11) NOT NULL DEFAULT 0,\
+         `Lights` int(11) NOT NULL DEFAULT 0,\
+         `Tires` int(11) NOT NULL DEFAULT 0,\
+         `Geld` int(11) NOT NULL DEFAULT 0,\
+         `Drogen` int(11) NOT NULL DEFAULT 0,\
+         `upgradeRespawn` int(11) NOT NULL DEFAULT 0,\
+         `Fraktion` int(11) NOT NULL DEFAULT 0,\
+         `Gruppe` int(11) NOT NULL DEFAULT 0,\
+         `Autohaus` int(11) NOT NULL DEFAULT 0,\
+         `Nebenjob` int(11) NOT NULL DEFAULT 0,\
+         `Fahrschule` int(11) NOT NULL DEFAULT 0,\
+         `Rang` int(11) NOT NULL DEFAULT 0,\
+         `TuningGemeldet` int(11) NOT NULL DEFAULT 0,\
          PRIMARY KEY (`ID`),\
          KEY `Besitzer` (`Besitzer`),\
          KEY `Fraktion` (`Fraktion`)\
          ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci"},
+    
+    {"carinfos",
+        "CREATE TABLE IF NOT EXISTS `carinfos` (\
+         `ModelID` int(11) NOT NULL,\
+         `TankArt` int(11) NOT NULL DEFAULT 1,\
+         `Verbrauch` float NOT NULL DEFAULT 1.0,\
+         `Liter` int(11) NOT NULL DEFAULT 50,\
+         PRIMARY KEY (`ModelID`)\
+         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci"},
+
+    {"player_jobskills",
+        "CREATE TABLE IF NOT EXISTS `player_jobskills` (\
+         `user_id` int(11) NOT NULL,\
+         `jobId` int(11) NOT NULL,\
+         `level` int(11) NOT NULL DEFAULT '0',\
+         `amount` int(11) NOT NULL DEFAULT '0',\
+         PRIMARY KEY (`user_id`, `jobId`)\
+         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci"},
+
+    {"accbans",
+        "CREATE TABLE IF NOT EXISTS `accbans` (\
+         `Name` varchar(24) NOT NULL,\
+         `Teammitglied` varchar(24) NOT NULL,\
+         `Bangrund` varchar(64) NOT NULL,\
+         `Uhrzeit` varchar(16) NOT NULL,\
+         `Datum` varchar(16) NOT NULL,\
+         PRIMARY KEY (`Name`)\
+         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci"},
+
+    {"accplaytime",
+        "CREATE TABLE IF NOT EXISTS `accplaytime` (\
+         `Name` varchar(24) NOT NULL,\
+         `PlayedTime` int(11) NOT NULL DEFAULT '0'\
+         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci"},
+
     
     {"houses",
         "CREATE TABLE IF NOT EXISTS `houses` (\
@@ -149,7 +239,7 @@ static const DatabaseTables[][][] = {
         "CREATE TABLE IF NOT EXISTS `businesses` (\
          `ID` int(11) NOT NULL AUTO_INCREMENT,\
          `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',\
-         `Name` varchar(64) NOT NULL DEFAULT 'Gesch‰ft',\
+         `Name` varchar(64) NOT NULL DEFAULT 'Geschùft',\
          `PosX` double NOT NULL DEFAULT 0,\
          `PosY` double NOT NULL DEFAULT 0,\
          `PosZ` double NOT NULL DEFAULT 0,\
@@ -363,7 +453,6 @@ static const DatabaseTables[][][] = {
 static const RequiredTableCount = sizeof(DatabaseTables);
 
 // Globale Variablen
-new g_DatabaseSetupProgress = 0;
 new g_DatabaseTablesCreated = 0;
 new g_DatabaseSetupComplete = false;
 
@@ -374,36 +463,37 @@ new g_DatabaseSetupComplete = false;
 public Database_Initialize()
 {
     printf("[DATABASE] Starte Datenbank-Setup...");
-    printf("[DATABASE] ‹berpr¸fe %d erforderliche Tabellen...", RequiredTableCount);
+    printf("[DATABASE] ùberprùfe %d erforderliche Tabellen...", RequiredTableCount);
     
-    // Timer f¸r asynchrone ‹berpr¸fung starten
+    // Timer fùr asynchrone ùberprùfung starten
     SetTimer("Database_CheckTables", 1000, false);
     return 1;
 }
 
 /*
- * ‹berpr¸ft ob alle Tabellen existieren
+ * ùberprùft ob alle Tabellen existieren
  */
 public Database_CheckTables()
 {
-    printf("[DATABASE] ‹berpr¸fe Tabellen-Existenz...");
+    printf("[DATABASE] ùberprùfe Tabellen-Existenz...");
     
-    // Z‰hle vorhandene Tabellen
-    mysql_tquery(g_SQLHandle, "SELECT COUNT(*) as table_count FROM information_schema.tables WHERE table_schema = DATABASE()", "Database_VerifyTables", "");
+    // Zùhle vorhandene Tabellen
+    mysql_tquery(sqlHandle, "SELECT COUNT(*) as table_count FROM information_schema.tables WHERE table_schema = DATABASE()", "Database_VerifyTables", "");
     return 1;
 }
 
 /*
- * ‹berpr¸ft die Tabellen und erstellt fehlende
+ * ùberprùft die Tabellen und erstellt fehlende
  */
 public Database_VerifyTables()
 {
-    new rows, fields;
-    cache_get_data(rows, fields, g_SQLHandle);
+    new rows;
+    cache_get_row_count(rows);
     
     if(rows > 0)
     {
-        new table_count = cache_get_field_content_int(0, "table_count", g_SQLHandle);
+        new table_count;
+        cache_get_value_name_int(0, "table_count", table_count);
         printf("[DATABASE] Gefunden: %d/%d Tabellen", table_count, RequiredTableCount);
         
         if(table_count >= RequiredTableCount)
@@ -420,7 +510,7 @@ public Database_VerifyTables()
     }
     else
     {
-        printf("[DATABASE] Konnte Tabellen nicht ¸berpr¸fen. Erstelle alle Tabellen...");
+        printf("[DATABASE] Konnte Tabellen nicht ùberprùfen. Erstelle alle Tabellen...");
         Database_CreateTables();
     }
     return 1;
@@ -440,7 +530,7 @@ public Database_CreateTables()
         format(query, sizeof(query), DatabaseTables[i][1]);
         
         printf("[DATABASE] Erstelle Tabelle: %s", DatabaseTables[i][0]);
-        mysql_tquery(g_SQLHandle, query, "Database_OnTableCreated", "ds", i, DatabaseTables[i][0]);
+        mysql_tquery(sqlHandle, query, "Database_OnTableCreated", "ds", i, DatabaseTables[i][0]);
     }
     return 1;
 }
@@ -471,8 +561,8 @@ Database_CreateDefaultData()
 {
     printf("[DATABASE] Erstelle Standard-Daten...");
     
-    // Server-Statistiken einf¸gen
-    mysql_tquery(g_SQLHandle, 
+    // Server-Statistiken einfùgen
+    mysql_tquery(sqlHandle, 
         "INSERT IGNORE INTO `server_stats` (`StatName`, `StatValue`) VALUES \
          ('total_players', 0), \
          ('total_money', 0), \
@@ -482,10 +572,10 @@ Database_CreateDefaultData()
          ('server_uptime', 0)",
         "Database_OnDefaultDataInserted", "s", "server_stats");
     
-    // Fraktions-R‰nge einf¸gen
-    mysql_tquery(g_SQLHandle,
+    // Fraktions-Rùnge einfùgen
+    mysql_tquery(sqlHandle,
         "INSERT IGNORE INTO `faction_ranks` (`Fraktion`, `Rank`, `RankName`, `Pay`) VALUES \
-         (1, 1, 'Anw‰rter', 100), (1, 2, 'Mitarbeiter', 200), (1, 3, 'Erfahrener Mitarbeiter', 300), \
+         (1, 1, 'Anwùrter', 100), (1, 2, 'Mitarbeiter', 200), (1, 3, 'Erfahrener Mitarbeiter', 300), \
          (1, 4, 'Abteilungsleiter', 400), (1, 5, 'Stellvertretender Leiter', 500), (1, 6, 'Leiter', 600), \
          (2, 1, 'Recruit', 200), (2, 2, 'Officer', 300), (2, 3, 'Sergeant', 400), \
          (2, 4, 'Lieutenant', 500), (2, 5, 'Captain', 600), (2, 6, 'Chief', 800)",
@@ -497,11 +587,11 @@ Database_CreateDefaultData()
 }
 
 /*
- * Callback nach Standard-Daten-Einf¸gung
+ * Callback nach Standard-Daten-Einfùgung
  */
 public Database_OnDefaultDataInserted(data_type[])
 {
-    printf("[DATABASE] Standard-Daten '%s' eingef¸gt", data_type);
+    printf("[DATABASE] Standard-Daten '%s' eingefùgt", data_type);
     return 1;
 }
 
@@ -512,30 +602,29 @@ Database_CreateAdminAccount()
 {
     printf("[DATABASE] Erstelle Admin-Account...");
     
-    // ‹berpr¸fen ob Admin-Account bereits existiert
-    mysql_tquery(g_SQLHandle, "SELECT ID FROM `accounts` WHERE Name = 'ShadowKev1999' LIMIT 1", "Database_CheckAdminAccount", "");
+    // ùberprùfen ob Admin-Account bereits existiert
+    mysql_tquery(sqlHandle, "SELECT ID FROM `accounts` WHERE Name = 'ShadowKev1999' LIMIT 1", "Database_CheckAdminAccount", "");
     return 1;
 }
 
 /*
- * ‹berpr¸ft ob Admin-Account existiert
+ * ùberprùft ob Admin-Account existiert
  */
 public Database_CheckAdminAccount()
 {
-    new rows, fields;
-    cache_get_data(rows, fields, g_SQLHandle);
+    new rows;
+    cache_get_row_count(rows);
     
     if(rows == 0)
     {
         // Admin-Account nicht vorhanden - erstellen
         new query[512];
-        mysql_escape_string(g_SQLHandle, "ShadowKev1999", query, sizeof(query));
         
         format(query, sizeof(query), 
             "INSERT INTO `accounts` (`Name`, `Passwort`, `EMail`, `Admin`, `Level`, `Bargeld`, `Bankkonto`, `Perso`, `Registerdatum`) \
              VALUES ('ShadowKev1999', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin@rosalife2025.de', 5, 10, 100000, 500000, 1, NOW())");
         
-        mysql_tquery(g_SQLHandle, query, "Database_OnAdminAccountCreated", "");
+        mysql_tquery(sqlHandle, query, "Database_OnAdminAccountCreated", "");
     }
     else
     {
@@ -551,7 +640,7 @@ public Database_CheckAdminAccount()
 public Database_OnAdminAccountCreated()
 {
     printf("[DATABASE] Admin-Account 'ShadowKev1999' erstellt");
-    printf("[DATABASE] Standard-Passwort: 'admin123' - BITTE ƒNDERN!");
+    printf("[DATABASE] Standard-Passwort: 'admin123' - BITTE ùNDERN!");
     Database_SetupComplete();
     return 1;
 }
@@ -561,26 +650,82 @@ public Database_OnAdminAccountCreated()
  */
 Database_SetupComplete()
 {
+    Database_UpdateSchema();
     g_DatabaseSetupComplete = true;
     printf("[DATABASE] ==================================");
     printf("[DATABASE] Datenbank-Setup abgeschlossen!");
     printf("[DATABASE] ==================================");
-    printf("[DATABASE] Alle Tabellen wurden ¸berpr¸ft/erstellt");
-    printf("[DATABASE] Standard-Daten wurden eingef¸gt");
+    printf("[DATABASE] Alle Tabellen wurden ùberprùft/erstellt");
+    printf("[DATABASE] Standard-Daten wurden eingefùgt");
     printf("[DATABASE] Admin-Account wurde vorbereitet");
-    printf("[DATABASE] Server ist bereit f¸r den Betrieb");
+    printf("[DATABASE] Server ist bereit fùr den Betrieb");
     printf("[DATABASE] ==================================");
     
     // Server-weiten Broadcast senden
     SendClientMessageToAll(0x00FF00FF, "[SERVER] Datenbank-Setup abgeschlossen. Server ist bereit!");
     
-    // Hier kˆnnen weitere Initialisierungen folgen
+    // Hier kùnnen weitere Initialisierungen folgen
     CallRemoteFunction("OnDatabaseSetupComplete", "");
     return 1;
 }
 
 /*
- * ‹berpr¸ft ob das Setup abgeschlossen ist
+ * Aktualisiert das Datenbankschema (z.B. fehlende Spalten)
+ */
+Database_UpdateSchema()
+{
+    printf("[DATABASE] Prfe auf fehlende Spalten in 'accounts'...");
+    mysql_tquery(sqlHandle, "SELECT count(*) as count FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'accounts' AND column_name = 'wpSlot1'", "Database_OnCheckSchema", "");
+    return 1;
+}
+
+forward Database_OnCheckSchema();
+public Database_OnCheckSchema()
+{
+    new rows;
+    cache_get_row_count(rows);
+    if(rows)
+    {
+        new count;
+        cache_get_value_name_int(0, "count", count);
+        if(count == 0)
+        {
+            printf("[DATABASE] Fge fehlende Waffenslots zu 'accounts' hinzu...");
+            new query[2048];
+            strcat(query, "ALTER TABLE `accounts` ");
+            strcat(query, "ADD COLUMN `wpSlot1` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot2` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot3` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot4` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot5` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot6` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot7` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot8` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot9` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot10` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot11` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot12` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot1Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot2Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot3Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot4Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot5Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot6Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot7Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot8Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot9Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot10Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot11Ammu` int(11) NOT NULL DEFAULT 0, ");
+            strcat(query, "ADD COLUMN `wpSlot12Ammu` int(11) NOT NULL DEFAULT 0");
+            
+            mysql_tquery(sqlHandle, query);
+        }
+    }
+    return 1;
+}
+
+/*
+ * berprft ob das Setup abgeschlossen ist
  * (kann von anderen Systemen verwendet werden)
  */
 stock IsDatabaseSetupComplete()
@@ -589,7 +734,7 @@ stock IsDatabaseSetupComplete()
 }
 
 /*
- * Manuelles Setup-Trigger (f¸r Admin-Befehle)
+ * Manuelles Setup-Trigger (fùr Admin-Befehle)
  */
 stock TriggerDatabaseSetup()
 {
@@ -605,41 +750,42 @@ stock TriggerDatabaseSetup()
 }
 
 /*
- * ‹berpr¸ft eine spezifische Tabelle
+ * berprft eine spezifische Tabelle
  */
-stock CheckTableExists(table_name[])
+stock CheckTableExists(const table_name[])
 {
     new query[256];
     format(query, sizeof(query), "SELECT COUNT(*) as exists FROM information_schema.tables WHERE table_schema = DATABASE() AND table_name = '%s'", table_name);
     
-    mysql_tquery(g_SQLHandle, query, "Database_OnTableChecked", "s", table_name);
+    mysql_tquery(sqlHandle, query, "Database_OnTableChecked", "s", table_name);
     return 1;
 }
 
 /*
- * Callback f¸r Tabellen-‹berpr¸fung
+ * Callback fùr Tabellen-ùberprùfung
  */
 public Database_OnTableChecked(table_name[])
 {
-    new rows, fields;
-    cache_get_data(rows, fields, g_SQLHandle);
+    new rows;
+    cache_get_row_count(rows);
     
     if(rows > 0)
     {
-        new exists = cache_get_field_content_int(0, "exists", g_SQLHandle);
+        new exists;
+        cache_get_value_name_int(0, "exists", exists);
         printf("[DATABASE] Tabelle '%s': %s", table_name, exists ? "VORHANDEN" : "FEHLEND");
     }
     return 1;
 }
 
 /*
- * CMD:setupdb - Admin-Befehl f¸r manuelles Setup
+ * CMD:setupdb - Admin-Befehl fùr manuelles Setup
  */
 CMD:setupdb(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 5)
     {
-        SendClientMessage(playerid, COLOR_RED, "[ERROR] Du benˆtigst Admin Level 5 f¸r diesen Befehl!");
+        SendClientMessage(playerid, COLOR_RED, "[ERROR] Du benùtigst Admin Level 5 fùr diesen Befehl!");
         return 1;
     }
     
@@ -652,29 +798,29 @@ CMD:setupdb(playerid, params[])
     SendClientMessage(playerid, COLOR_BLUE, "[INFO] Starte Datenbank-Setup...");
     TriggerDatabaseSetup();
     
-    SendClientMessage(playerid, COLOR_GREEN, "[SUCCESS] Datenbank-Setup wurde gestartet. ‹berpr¸fe Server-Konsole f¸r Details.");
+    SendClientMessage(playerid, COLOR_GREEN, "[SUCCESS] Datenbank-Setup wurde gestartet. ùberprùfe Server-Konsole fùr Details.");
     return 1;
 }
 
 /*
- * CMD:checkdb - Admin-Befehl zur Tabellen-‹berpr¸fung
+ * CMD:checkdb - Admin-Befehl zur Tabellen-ùberprùfung
  */
 CMD:checkdb(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 3)
     {
-        SendClientMessage(playerid, COLOR_RED, "[ERROR] Du benˆtigst Admin Level 3 f¸r diesen Befehl!");
+        SendClientMessage(playerid, COLOR_RED, "[ERROR] Du benùtigst Admin Level 3 fùr diesen Befehl!");
         return 1;
     }
     
-    SendClientMessage(playerid, COLOR_BLUE, "[INFO] ‹berpr¸fe Datenbanktabellen...");
+    SendClientMessage(playerid, COLOR_BLUE, "[INFO] ùberprùfe Datenbanktabellen...");
     
-    // ‹berpr¸fe alle Tabellen
+    // ùberprùfe alle Tabellen
     for(new i = 0; i < RequiredTableCount; i++)
     {
         CheckTableExists(DatabaseTables[i][0]);
     }
     
-    SendClientMessage(playerid, COLOR_GREEN, "[SUCCESS] Tabellen-‹berpr¸fung gestartet. ‹berpr¸fe Server-Konsole f¸r Ergebnisse.");
+    SendClientMessage(playerid, COLOR_GREEN, "[SUCCESS] Tabellen-ùberprùfung gestartet. ùberprùfe Server-Konsole fùr Ergebnisse.");
     return 1;
 }

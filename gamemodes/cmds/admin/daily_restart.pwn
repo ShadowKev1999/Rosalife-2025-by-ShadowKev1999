@@ -1,39 +1,39 @@
 /*
- * Rosalife 2025 - Täglicher Neustart Admin-Befehle
+ * Rosalife 2025 - Taeglicher Neustart Admin-Befehle
  * Erstellt von ShadowKev1999
  */
 
-// Befehl zum manuellen Auslösen des täglichen Neustarts
-pc_cmd_dailyrestart(playerid, params[])
+// Befehl zum manuellen Ausloesen des taeglichen Neustarts
+cmd:dailyrestart(playerid, params[])
 {
-    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt;
+    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt
     
     if(DailyRestartActive)
     {
-        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Der tägliche Neustart ist bereits aktiv!");
+        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Der taegliche Neustart ist bereits aktiv!");
         return 1;
     }
     
     new string[128];
-    format(string, sizeof(string), "{FFFF00}Möchtest du den täglichen Neustart jetzt manuell auslösen?\n\n{FFFFFF}Der Server wird in 2 Minuten neugestartet.");
-    ShowPlayerDialog(playerid, DIALOG_ADMIN_DAILY_RESTART, DIALOG_STYLE_MSGBOX, "{164863}redv-reallife.de: {FFFFFF}Täglicher Neustart", string, "Auslösen", "Abbrechen");
+    format(string, sizeof(string), "{FFFF00}Moechtest du den taeglichen Neustart jetzt manuell ausloesen?\n\n{FFFFFF}Der Server wird in 2 Minuten neugestartet.");
+    ShowPlayerDialog(playerid, DIALOG_ADMIN_DAILY_RESTART, DIALOG_STYLE_MSGBOX, "{164863}redv-reallife.de: {FFFFFF}Taeglicher Neustart", string, "Ausloesen", "Abbrechen");
     return 1;
 }
 
-// Befehl zum Abbrechen des täglichen Neustarts
-pc_cmd_canceldailyrestart(playerid, params[])
+// Befehl zum Abbrechen des taeglichen Neustarts
+cmd:canceldailyrestart(playerid, params[])
 {
-    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt;
+    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt
     
     if(!DailyRestartActive)
     {
-        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Der tägliche Neustart ist aktuell nicht aktiv!");
+        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Der taegliche Neustart ist aktuell nicht aktiv!");
         return 1;
     }
     
     if(!GMX_Data[restartActive])
     {
-        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Es läuft aktuell kein Neustart!");
+        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Es laeuft aktuell kein Neustart!");
         return 1;
     }
     
@@ -42,61 +42,46 @@ pc_cmd_canceldailyrestart(playerid, params[])
     GMX_Data[restartTime] = 0;
     GMX_Data[pendingRestartTime] = 0;
     format(GMX_Data[restartAdmin], MAX_PLAYER_NAME, "NIEMAND");
-    stop GMX_Data[restartTimer];
+    KillTimer(_:GMX_Data[restartTimer]);
     
-    // Daily Restart Flag zurücksetzen
+    // Daily Restart Flag zuruecksetzen
     DailyRestartActive = false;
     
-    SendClientMessageToAll(-1, "{FF8080}{FFFF00}TÄGLICHER RESTART: {FFFFFF}%s hat den täglichen Neustart abgebrochen. Du kannst nun deine Tätigkeit fortsetzen!", GetName(playerid));
-    SendClientMessage(playerid, COLOR_GREEN, "[SUCCESS] Täglicher Neustart wurde erfolgreich abgebrochen!");
-    
+    SendClientMessageToAll(-1, "{FF8080}{FFFF00}TAEGLICHER RESTART: {FFFFFF}%s hat den taeglichen Neustart abgebrochen. Du kannst nun deine Taetigkeit fortsetzen!", GetName(playerid));
     return 1;
 }
 
-// Befehl zum Setzen der täglichen Neustart-Zeit
-pc_cmd_setdailyrestarttime(playerid, params[])
+// Debug-Befehl um den Status zu pruefen
+cmd:dailyrestartstatus(playerid, params[])
 {
-    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt;
+    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt
     
-    new hour;
-    if(sscanf(params, "i", hour))
-    {
-        SendClientMessage(playerid, COLOR_YELLOW, "Benutze: {FFFFFF}/setdailyrestarttime [Stunde (0-23)]");
-        return 1;
-    }
-    
-    if(hour < 0 || hour > 23)
-    {
-        SendClientMessage(playerid, COLOR_ERRORTEXT, "[ERROR] Ungültige Stunde! Bitte eine Zahl zwischen 0 und 23 eingeben.");
-        return 1;
-    }
-    
-    SetDailyRestartHour(hour);
-    
-    new string[128];
-    format(string, sizeof(string), "{FFFF00}Täglicher Neustart wurde auf %02d:00 Uhr gesetzt.", hour);
-    SendClientMessage(playerid, COLOR_GREEN, string);
-    
-    return 1;
-}
-
-// Befehl zum Anzeigen des täglichen Neustart-Status
-pc_cmd_dailyrestartstatus(playerid, params[])
-{
-    if(SpielerInfo[playerid][sAdmin] < 3) return NichtBerechtigt;
-    
-    new string[256];
-    new hour, minute, second;
+    new string[256], hour, minute, second;
     gettime(hour, minute, second);
     
-    format(string, sizeof(string), "{FFFF00}=== TÄGLICHER RESTART STATUS ===\n\n{FFFFFF}Aktuelle Zeit: %02d:%02d:%02d\nEingestellte Restart-Zeit: %02d:00 Uhr\nStatus: %s\n\n{FFFF00}Nächster automatischer Restart: %s", 
+    format(string, sizeof(string), "DailyRestartActive: %s\nZeit: %02d:%02d:%02d\nZielzeit: %02d:00:00", 
+        DailyRestartActive ? "JA" : "NEIN",
         hour, minute, second,
-        GetDailyRestartHour(),
-        DailyRestartActive ? "{FF0000}Aktiv" : "{00FF00}Inaktiv",
-        DailyRestartActive ? "{FF0000}Jetzt läuft!" : "{00FF00}Morgen um eingestellter Zeit}"
-    );
+        DailyRestartHour);
+        
+    SendClientMessage(playerid, -1, string);
+    return 1;
+}
+
+// Debug-Befehl um die Neustart-Zeit zu aendern
+cmd:setdailyrestarttime(playerid, params[])
+{
+    if(SpielerInfo[playerid][sAdmin] < 5) return NichtBerechtigt
     
-    ShowPlayerDialog(playerid, DIALOG_ADMIN_DAILY_RESTART_STATUS, DIALOG_STYLE_MSGBOX, "{164863}redv-reallife.de: {FFFFFF}Täglicher Neustart Status", string, "Schließen", "");
+    new time;
+    if(sscanf(params, "i", time)) return SendUsage(playerid, "/setdailyrestarttime [Stunde (0-23)]");
     
+    if(time < 0 || time > 23) return SendError(playerid, "Bitte eine Stunde zwischen 0 und 23 angeben.");
+    
+    DailyRestartHour = time;
+    
+    new string[128];
+    format(string, sizeof(string), "Taegliche Neustart-Zeit auf %02d:00 Uhr gesetzt.", DailyRestartHour);
+    SendClientMessage(playerid, -1, string);
     return 1;
 }

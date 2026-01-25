@@ -47,13 +47,13 @@ stock SaveVehicleById(i)
 	strcat(stringzusammen,query);
 	strdel(query,0,sizeof(query));
 
-	mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%f', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
+	mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%d', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
 	FahrzeugInfo[i][fTuning][0],FahrzeugInfo[i][fTuning][1],FahrzeugInfo[i][fTuning][2],FahrzeugInfo[i][fTuning][3],FahrzeugInfo[i][fTuning][4],FahrzeugInfo[i][fTuning][5],FahrzeugInfo[i][fTuning][6],FahrzeugInfo[i][fTuning][7],
 	FahrzeugInfo[i][fTuning][8],FahrzeugInfo[i][fTuning][9],FahrzeugInfo[i][fTuningGemeldet]);
 	strcat(stringzusammen,query);
 	strdel(query,0,sizeof(query));
 
-	mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%f', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `JobEXP`='%d', `upgradeRespawn`='%d' WHERE `ID`='%d'",
+	mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%d', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `JobEXP`='%d', `upgradeRespawn`='%d' WHERE `ID`='%d'",
 	FahrzeugInfo[i][fTuning][10],FahrzeugInfo[i][fTuning][11],FahrzeugInfo[i][fTuning][12],FahrzeugInfo[i][fTuning][13],panels,doors,lights,tires,FahrzeugInfo[i][fkGeld],FahrzeugInfo[i][fkDrogen],FahrzeugInfo[i][fJobEXP],FahrzeugInfo[i][fkUpgradeRespawn],FahrzeugInfo[i][fDatabaseID]);
 	strcat(stringzusammen,query);
 	mysql_tquery(sqlHandle, stringzusammen);
@@ -82,13 +82,13 @@ stock SaveVehicles()
 		strcat(stringzusammen,query);
 		strdel(query,0,sizeof(query));
 
-		mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%f', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
+		mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%d', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
 	    FahrzeugInfo[i][fTuning][0],FahrzeugInfo[i][fTuning][1],FahrzeugInfo[i][fTuning][2],FahrzeugInfo[i][fTuning][3],FahrzeugInfo[i][fTuning][4],FahrzeugInfo[i][fTuning][5],FahrzeugInfo[i][fTuning][6],FahrzeugInfo[i][fTuning][7],
 		FahrzeugInfo[i][fTuning][8],FahrzeugInfo[i][fTuning][9],FahrzeugInfo[i][fTuningGemeldet]);
 		strcat(stringzusammen,query);
 		strdel(query,0,sizeof(query));
 
-		mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%f', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `JobEXP`='%d', `upgradeRespawn`='%d' WHERE `ID`='%d'",
+		mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%d', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `JobEXP`='%d', `upgradeRespawn`='%d' WHERE `ID`='%d'",
 	    FahrzeugInfo[i][fTuning][10],FahrzeugInfo[i][fTuning][11],FahrzeugInfo[i][fTuning][12],FahrzeugInfo[i][fTuning][13],panels,doors,lights,tires,FahrzeugInfo[i][fkGeld],FahrzeugInfo[i][fkDrogen],FahrzeugInfo[i][fJobEXP],FahrzeugInfo[i][fkUpgradeRespawn],FahrzeugInfo[i][fDatabaseID]);
 		strcat(stringzusammen,query);
 		mysql_tquery(sqlHandle, stringzusammen);
@@ -114,13 +114,13 @@ stock SavePrivatCarVehicle(vehicleid)
 	strcat(stringzusammen,query);
 	strdel(query,0,sizeof(query));
 
-	mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%f', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
+	mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%d', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
     FahrzeugInfo[vehicleid][fTuning][0],FahrzeugInfo[vehicleid][fTuning][1],FahrzeugInfo[vehicleid][fTuning][2],FahrzeugInfo[vehicleid][fTuning][3],FahrzeugInfo[vehicleid][fTuning][4],FahrzeugInfo[vehicleid][fTuning][5],FahrzeugInfo[vehicleid][fTuning][6],FahrzeugInfo[vehicleid][fTuning][7],
 	FahrzeugInfo[vehicleid][fTuning][8],FahrzeugInfo[vehicleid][fTuning][9],FahrzeugInfo[vehicleid][fTuningGemeldet]);
 	strcat(stringzusammen,query);
 	strdel(query,0,sizeof(query));
 
-	mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%f', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `upgradeRespawn` = '%d' WHERE `ID`='%d'",
+	mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%d', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `upgradeRespawn` = '%d' WHERE `ID`='%d'",
     FahrzeugInfo[vehicleid][fTuning][10],FahrzeugInfo[vehicleid][fTuning][11],FahrzeugInfo[vehicleid][fTuning][12],FahrzeugInfo[vehicleid][fTuning][13],panels,doors,lights,tires,FahrzeugInfo[vehicleid][fkGeld],FahrzeugInfo[vehicleid][fkDrogen],FahrzeugInfo[vehicleid][fkUpgradeRespawn],FahrzeugInfo[vehicleid][fDatabaseID]);
 	strcat(stringzusammen,query);
 	mysql_tquery(sqlHandle, stringzusammen);
@@ -148,13 +148,13 @@ stock SavePrivatCar(playerid)
 		strcat(stringzusammen,query);
 		strdel(query,0,sizeof(query));
 
-		mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%f', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
+		mysql_format(sqlHandle, query,sizeof query,"`Spoiler`='%d', `Hood`='%d', `Roof`='%d', `Sideskirt`='%d', `Lamps`='%d', `Nitro`='%d', `Exhaust`='%d', `Wheels`='%d', `Stereo`='%d', `Hydraulics`='%d', `TuningGemeldet`='%d',",
 	    FahrzeugInfo[i][fTuning][0],FahrzeugInfo[i][fTuning][1],FahrzeugInfo[i][fTuning][2],FahrzeugInfo[i][fTuning][3],FahrzeugInfo[i][fTuning][4],FahrzeugInfo[i][fTuning][5],FahrzeugInfo[i][fTuning][6],FahrzeugInfo[i][fTuning][7],
 		FahrzeugInfo[i][fTuning][8],FahrzeugInfo[i][fTuning][9],FahrzeugInfo[i][fTuningGemeldet]);
 		strcat(stringzusammen,query);
 		strdel(query,0,sizeof(query));
 
-		mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%f', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `upgradeRespawn` = '%d' WHERE `ID`='%d'",
+		mysql_format(sqlHandle, query,sizeof query,"`Front Bumper`='%d', `Rear Bumper`='%d', `Vent Right`='%d', `Vent Left`='%d', `Panels`='%d', `Doors`='%d', `Lights`='%d', `Tires`='%d', `Geld`='%d', `Drogen`='%d', `upgradeRespawn` = '%d' WHERE `ID`='%d'",
 	    FahrzeugInfo[i][fTuning][10],FahrzeugInfo[i][fTuning][11],FahrzeugInfo[i][fTuning][12],FahrzeugInfo[i][fTuning][13],panels,doors,lights,tires,FahrzeugInfo[i][fkGeld],FahrzeugInfo[i][fkDrogen],FahrzeugInfo[i][fkUpgradeRespawn],FahrzeugInfo[i][fDatabaseID]);
 		strcat(stringzusammen,query);
 		mysql_tquery(sqlHandle, stringzusammen);
@@ -276,7 +276,7 @@ stock AddOther(vehicleid)
 		}
 		else if(FahrzeugInfo[vehicleid][fNebenjob] == 3)
 		{
-			FahrzeugInfo[vehicleid][fLabel] = CreateDynamic3DTextLabel("K-Fahrer:\n{FE0000}Niemand{FFFFFF}\nM¸ll: {FF0000}0{FFFFFF} Liter", 0xFFFFFFFF, 0.0, 0.0, 0.0, 7.0, INVALID_PLAYER_ID, vehicleid);
+			FahrzeugInfo[vehicleid][fLabel] = CreateDynamic3DTextLabel("K-Fahrer:\n{FE0000}Niemand{FFFFFF}\nMùll: {FF0000}0{FFFFFF} Liter", 0xFFFFFFFF, 0.0, 0.0, 0.0, 7.0, INVALID_PLAYER_ID, vehicleid);
 			Attach3DTextLabelToVehicle(FahrzeugInfo[vehicleid][fLabel],vehicleid,0.0,0.0,0.2);
 			return 1;
 		}
@@ -294,7 +294,7 @@ stock AddOther(vehicleid)
 		}
 		else if(FahrzeugInfo[vehicleid][fNebenjob] == 6)
 		{
-			FahrzeugInfo[vehicleid][fLabel] = CreateDynamic3DTextLabel("M¸llmann:\n{FE0000}Niemand{FFFFFF}\nM¸ll: {FF0000}0{FFFFFF} Liter", 0xFFFFFFFF, 0.0, 0.0, 0.0, 10.0, INVALID_PLAYER_ID, vehicleid);
+			FahrzeugInfo[vehicleid][fLabel] = CreateDynamic3DTextLabel("Mùllmann:\n{FE0000}Niemand{FFFFFF}\nMùll: {FF0000}0{FFFFFF} Liter", 0xFFFFFFFF, 0.0, 0.0, 0.0, 10.0, INVALID_PLAYER_ID, vehicleid);
 			Attach3DTextLabelToVehicle(FahrzeugInfo[vehicleid][fLabel],vehicleid,0.0,0.0,0.2);
 			return 1;
 		}
@@ -616,6 +616,7 @@ stock LoadPrivatCar(playerid)
 				format(FahrzeugInfo[vehicleid][fKennzeichen], 10, Schild);
 				SetVehicleNumberPlate(vehicleid,FahrzeugInfo[vehicleid][fKennzeichen]);
 				FahrzeugInfo[vehicleid][fTank] = Tank;
+				if(FahrzeugInfo[vehicleid][fTank] <= 0.0) FahrzeugInfo[vehicleid][fTank] = 10.0;
 			}
 			else
 			{
@@ -672,6 +673,7 @@ stock LoadPrivatCar(playerid)
 				format(FahrzeugInfo[vehicleid][fKennzeichen], 10, Schild);
 				SetVehicleNumberPlate(vehicleid,FahrzeugInfo[vehicleid][fKennzeichen]);
 				FahrzeugInfo[vehicleid][fTank] = Tank;
+				if(FahrzeugInfo[vehicleid][fTank] <= 0.0) FahrzeugInfo[vehicleid][fTank] = 10.0;
 			}
 			if(NeonFarbe != 0)
 			{
@@ -741,7 +743,7 @@ stock LoadPrivatCar(playerid)
 		}
 		else
 		{
-		    format(string, 128, "SMS von 113 (SAPD): Sehr geeherte/r B¸rger/in, Ihr %s befindet sich in unserer Verwahrstelle.",FahrzeugName[ModelID-400]);
+		    format(string, 128, "SMS von 113 (SAPD): Sehr geeherte/r Bùrger/in, Ihr %s befindet sich in unserer Verwahrstelle.",FahrzeugName[ModelID-400]);
 			SendClientMessage(playerid,COLOR_INFO,string);
 		}
 	}
@@ -765,7 +767,7 @@ Vehicles_OnDialogResponse(playerid, dialogid, response, listitem) {
 
 			SetPVarInt(playerid, "RESPAWN_VEH_SELECTED", i);
 
-			ShowPlayerDialog(playerid, DIALOG_CAR_LIST_SELECT, DIALOG_STYLE_TABLIST_HEADERS, headerstring, mainstring, "Ausw‰hlen", "Zur¸ck");
+			ShowPlayerDialog(playerid, DIALOG_CAR_LIST_SELECT, DIALOG_STYLE_TABLIST_HEADERS, headerstring, mainstring, "Auswùhlen", "Zurùck");
 			return 1;
 		}
 
@@ -785,7 +787,7 @@ Vehicles_OnDialogResponse(playerid, dialogid, response, listitem) {
 					new vehID = getVehicleIdByDatabaseId(FahrzeugInfo[i][fDatabaseID]);
 
 					if(!IsValidVehicle(vehID))return SendClientMessage(playerid, COLOR_ERRORTEXT, "Das Fahrzeug existiert nicht.");
-					if(GetVehicleDriverEx(vehID) != -1)return SendClientMessage(playerid, COLOR_ERRORTEXT, "Es d¸rfen sich keine Personen im ausgew‰hlten Fahrzeug befinden.");
+					if(GetVehicleDriverEx(vehID) != -1)return SendClientMessage(playerid, COLOR_ERRORTEXT, "Es dùrfen sich keine Personen im ausgewùhlten Fahrzeug befinden.");
     				SetVehicleToRespawn(vehID);
 
 					FahrzeugInfo[i][fkUpgradeRespawn]--;
@@ -826,7 +828,7 @@ Vehicles_OnDialogResponse(playerid, dialogid, response, listitem) {
 
 					if(FahrzeugInfo[vehID][fGarage]) return SendClientMessage(playerid, COLOR_ERRORTEXT, "Dein Fahrzeug befindet sich in einer Garage und kann deshalb nicht respawned werden.");
 
-					if(GetPlayerMoneyEx(playerid) < 2500) return SendClientMessage(playerid, COLOR_ERRORTEXT, "Du hast nicht gen¸gend Geld (2500$).");
+					if(GetPlayerMoneyEx(playerid) < 2500) return SendClientMessage(playerid, COLOR_ERRORTEXT, "Du hast nicht genùgend Geld (2500$).");
 
 					SendClientMessage(playerid, COLOR_YELLOW, "Du hast erfolgreich 10 Fahrzeugrespawns erworben.");
 
@@ -862,12 +864,12 @@ showPlayerPrivateCarList(playerid) {
 		PrivateCarList[playerid][carCount] = i;
 		carCount++;
 		if(carCount == MAX_VEHICLE_PLAYER_LIST) {
-			SendClientMessage(playerid, COLOR_GREY, "Im Spiel kˆnnen nur "#MAX_VEHICLE_PLAYER_LIST" Fahrzeuge angezeigt werden, falls du weitere Fahrzeuge besitzt, nutze das User Control Panel.");
+			SendClientMessage(playerid, COLOR_GREY, "Im Spiel kùnnen nur "#MAX_VEHICLE_PLAYER_LIST" Fahrzeuge angezeigt werden, falls du weitere Fahrzeuge besitzt, nutze das User Control Panel.");
 			break;
 		}
 	}
 	if(!carCount) return SendClientMessage(playerid, COLOR_ERRORTEXT, "Du besitzt keine Fahrzeuge.");
-	ShowPlayerDialog(playerid, DIALOG_PLAYER_CAR_LIST, DIALOG_STYLE_TABLIST_HEADERS, "{9933FF}RSL: {FFFFFF}Meine Fahrzeuge", mainstring, "Schlieﬂen", "");
+	ShowPlayerDialog(playerid, DIALOG_PLAYER_CAR_LIST, DIALOG_STYLE_TABLIST_HEADERS, "{9933FF}RSL: {FFFFFF}Meine Fahrzeuge", mainstring, "Schlieùen", "");
 	return 1;
 }
 
@@ -897,7 +899,7 @@ public LoadVehicles()
 	    cache_get_value_name(i, "Farbe2",var); Color[1] = strval(var);
 	    cache_get_value_name(i, "Paintjob",var); Paintjob = strval(var);
 
-	    //Zugehˆrigkeitsvariablen
+	    //Zugehùrigkeitsvariablen
 	    cache_get_value_name(i, "Kennzeichen",Schild);
      	cache_get_value_name(i, "Fraktion",var); Fraktion = strval(var);
      	cache_get_value_name(i, "Gruppe",var); Gruppe = strval(var);

@@ -5,7 +5,9 @@
 #define RandomEx(%1,%2)				        (random(%2-%1)+%1)
 #define fRandomEx(%1,%2)			        (floatrandomEx(%2-%1)+%1)
 
-#define KEY_AIM                             (128)
+#if !defined KEY_AIM
+    #define KEY_AIM                             (128)
+#endif
 
 #define SendUsage(%0,%1)                    (SendClientMessage(%0,-1,"{FFAF00}[NUTZE]{FFFFFF} " # %1))
 #define SendError(%0,%1) 			        (SendClientMessage(%0,-1,"{F81414}[ERROR]{FFFFFF} " # %1))
@@ -19,15 +21,15 @@
 stock g_szSprintfBuffer[ 1024 ];
 
 #define INFO_STRING "* Benutze: {00CC00}"
-#define NoRights "Du besitzt nicht die benˆtigten Rechte."
-#define ERROR_ADMIN					"[{F70D0D}FEHLER{FFFFFF}] {EE600F}Du besitzt nicht die nˆtigen Berechtigungen f¸r diesen Befehl!"
+#define NoRights "Du besitzt nicht die benùtigten Rechte."
+#define ERROR_ADMIN					"[{F70D0D}FEHLER{FFFFFF}] {EE600F}Du besitzt nicht die nùtigen Berechtigungen fùr diesen Befehl!"
 
 //Schnell Defines - redv-reallife.de Reloaded
 #define NichtBerechtigt SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist dazu {CD262F}nicht{FFFFFF} berechtigt.");
-#define KeinPerso SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du benˆtigst einen Personalausweis.");
+#define KeinPerso SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bentigst einen Personalausweis.");
 #define AdminDienst SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist {CD262F}nicht{FFFFFF} im Admin-Dienst.");
 #define NichtOnline SendClientMessage(playerid,COLOR_RED,"{FFFFFF}Der angegebene Spieler ist {CD262F}nicht{FFFFFF} online.");
-#define KeineFunktion ShowPlayerDialog(playerid,9992,DIALOG_STYLE_MSGBOX,"{007DFF}"SERV_NAME"{FFFFFF} - Error 404","Diese Funktion wurde noch nicht fertiggestellt.\nSie wird in sp‰teren Updates verf¸gbar sein.","Weiter","");
+#define KeineFunktion ShowPlayerDialog(playerid,9992,DIALOG_STYLE_MSGBOX,"{007DFF}"SERV_NAME"{FFFFFF} - Error 404","Diese Funktion wurde noch nicht fertiggestellt.\nSie wird in spteren Updates verfgbar sein.","Weiter","");
 #define NichtNahe SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der angegebene Spieler ist {CD262F}nicht{FFFFFF} nah genug.");
 #define IstBot SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Die angegebene ID ist einem {CD262F}Bot{FFFFFF} zugewiesen.");
 #define KeinRang SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du kannst diesen Befehl mit deinem Rang {CD262F}nicht{FFFFFF} nutzen.");

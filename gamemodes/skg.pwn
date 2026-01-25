@@ -69,8 +69,6 @@ main()
 #include "vars/admin/admin.pwn"
 #include "vars/admin/coupons.pwn"
 #include "vars/admin/server_restart.pwn"
-#include "core/admin/daily_restart.pwn"
-#include "cmds/admin/daily_restart.pwn"
 
 #include "vars/events/eventboxes.pwn"
 #include "vars/events/halloween.pwn"
@@ -151,6 +149,7 @@ main()
 #include "core/admin/object_creator.pwn"
 #include "core/admin/coupons.pwn"
 #include "core/admin/server_restart.pwn"
+#include "core/admin/daily_restart.pwn"
 
 #include "core/events/eventboxes.pwn"
 #include "core/events/easter.pwn"
@@ -368,6 +367,8 @@ main()
 #include "mappings/vars.pwn"
 #include "mappings/functions.pwn"
 #include "mappings/_mappings.pwn"
+
+#include "core/database_setup.pwn"
 
 //PENDING CORE
 #include "pending/gamemode.pwn"
