@@ -1,12 +1,12 @@
 # Rosalife 2025 Server Dokumentation
 
-## ?? Übersicht
-Diese Dokumentation bietet einen detaillierten Einblick in die Spielsysteme, Jobs und Fraktionen des Rosalife 2025 Servers, basierend auf der aktuellen Codebasis.
+##  Übersicht
+Diese Dokumentation bietet einen detaillierten Einblick in die Spielsysteme, Jobs und Fraktionen des Rosalife  Servers, basierend auf der aktuellen Codebasis.
 
-## ?? Jobs & Berufe
+##  Jobs & Berufe
 Der Server verfügt über ein vielfältiges Jobsystem mit Erfahrungspunkten (EXP) und Level-Aufstiegen.
 
-### ?? Zivile Berufe
+###  Zivile Berufe
 Diese Jobs stehen jedem Bürger zur Verfügung, um legales Geld zu verdienen:
 
 - **Busfahrer:** Befördere Passagiere auf festgelegten Linien durch San Andreas.
@@ -21,15 +21,15 @@ Diese Jobs stehen jedem Bürger zur Verfügung, um legales Geld zu verdienen:
 - **Elektriker:** Warte und repariere elektrische Anlagen und Stromkästen.
 - **Geldlieferant (Bank Supplier):** Ein verantwortungsvoller Job, bei dem Bargeld zu Geldautomaten (ATMs) transportiert wird. *Achtung: Hohes Überfallrisiko!*
 
-### ?? Spezielle & Illegale Jobs
+###  Spezielle & Illegale Jobs
 - **Air Trafficking:** Ein Job für Piloten, die es mit dem Gesetz nicht so genau nehmen. Schmuggle illegale Fracht mit Flugzeugen (Dodo, Beagle, Nevada) und wirf Pakete präzise über Zielgebieten ab.
 
 ---
 
-## ?? Fraktionen
+##  Fraktionen
 Das Fraktionssystem ist das Herzstück des Roleplays und unterteilt sich in verschiedene Kategorien.
 
-### ?? Staatsfraktionen
+###  Staatsfraktionen
 Die Hüter von Gesetz und Ordnung:
 - **Regierung:** Die politische Führung.
 - **Polizei (LSPD / SFPD / LVPD):** Zuständig für Verbrechensbekämpfung, Verkehrskontrollen (Blitzer, Straßensperren) und Sicherheit.
@@ -38,10 +38,10 @@ Die Hüter von Gesetz und Ordnung:
 - **Rettungsdienst (Medics):** Versorgung von Verletzten und Krankentransport.
 - **Feuerwehr:** Bekämpfung von Bränden und Katastrophenschutz.
 
-### ?? Medien
+###  Medien
 - **San News (Interglobal Television):** Die Presse von San Andreas, zuständig für Nachrichten, Events und Live-Berichte.
 
-### ?? Gangs & Mafien
+###  Gangs & Mafien
 Kriminelle Organisationen, die um Macht, Geld und Gebiete kämpfen:
 - **Straßengangs:**
   - Grove Street Families (GSF)
@@ -58,7 +58,7 @@ Kriminelle Organisationen, die um Macht, Geld und Gebiete kämpfen:
 - **Spezial:**
   - **ICA (International Contract Agency):** Auftragskiller (Hitmen).
 
-### ?? Fraktions-Features
+###  Fraktions-Features
 - **Management-Panel:** Leader können Ränge, Gehälter, Skins und Fahrzeuge direkt im Spiel verwalten.
 - **Gangwars & Gebiete:** Gangs können um Gangzones kämpfen und diese erobern.
 - **Drogensystem:** Anbau, Herstellung und Handel von illegalen Substanzen.
@@ -67,33 +67,33 @@ Kriminelle Organisationen, die um Macht, Geld und Gebiete kämpfen:
 
 ---
 
-## ??? Allgemeine Systeme & Features
+##  Allgemeine Systeme & Features
 
-### ?? Wirtschaft & Business
+###  Wirtschaft & Business
 - **Dynamisches Haussystem:** Spieler können Häuser kaufen und diese mit einem detaillierten Möbelsystem individuell einrichten.
 - **Unternehmen (Biz):** Kaufbare Geschäfte wie Ammu-Nation, 24/7 Shops, Tankstellen, Bars und Imbisse, die passives Einkommen generieren.
 - **ATM-System:** Realistisches Bankautomatensystem, das von Geldlieferanten aufgefüllt werden muss.
 - **Schwarzmarkt:** Ein versteckter Ort für den Handel mit illegalen Gütern.
 
-### ?? Fahrzeuge
+###  Fahrzeuge
 - **Autohäuser:** Verschiedene Händler für Sportwagen, Kleinwagen, Motorräder etc.
 - **Fahrzeugsystem:** Umfasst Tankanzeige, Kofferraum-Inventar, Versicherung und Zulassung.
 - **Tuning:** Optische und technische Anpassungen für Fahrzeuge.
 
-### ?? Kommunikation
+###  Kommunikation
 - **Smartphone:** Modernes Handysystem mit Apps, Kontakten und Nachrichten.
 - **Funkmasten:** Ein realistisches System, das die Signalstärke beeinflusst.
 
-### ?? Freizeit & Events
+###  Freizeit & Events
 - **Casino:** Spiele Blackjack, Poker, Roulette oder an Spielautomaten.
 - **Airdrops:** Regelmäßige Abwürfe von Versorgungskisten mit wertvollem Loot in der Spielwelt.
 - **Freizeitaktivitäten:** Würfelspiele (Dice), Partysystem.
 
-### ?? Umwelt
+###  Umwelt
 - **Dynamisches Wetter:** Das Wetter ändert sich realistisch und beeinflusst die Atmosphäre.
 - **Straßenschilder:** Beschriftbare Schilder zur Orientierung.
 
-### ?? Kriminalität
+###  Kriminalität
 - **Bankraub:** Ein komplexes System, um die Zentralbank auszurauben.
 - **Dynamische Überfälle:** Kleinere Läden und Ziele können überfallen werden.
 - **Beweissicherung:** Die Polizei kann am Tatort Beweise (wie Patronenhülsen) finden und analysieren.
