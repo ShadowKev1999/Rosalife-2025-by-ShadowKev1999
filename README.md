@@ -1,4 +1,4 @@
-# Rosalife 2025 Server Dokumentation
+# Rosalife  Server Dokumentation
 
 ##  Übersicht
 Diese Dokumentation bietet einen detaillierten Einblick in die Spielsysteme, Jobs und Fraktionen des Rosalife  Servers, basierend auf der aktuellen Codebasis.
@@ -27,7 +27,7 @@ Diese Jobs stehen jedem Bürger zur Verfügung, um legales Geld zu verdienen:
 ---
 
 ##  Fraktionen
-Das Fraktionssystem ist das Herzstück des Roleplays und unterteilt sich in verschiedene Kategorien.
+Das Fraktionssystem ist das Herzstück des Realife und unterteilt sich in verschiedene Kategorien.
 
 ###  Staatsfraktionen
 Die Hüter von Gesetz und Ordnung:

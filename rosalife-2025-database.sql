@@ -470,4 +470,370 @@ INSERT IGNORE INTO `faction_ranks` (`Fraktion`, `Rank`, `RankName`, `Pay`) VALUE
 (2, 1, 'Recruit', 200), (2, 2, 'Officer', 300), (2, 3, 'Sergeant', 400),
 (2, 4, 'Lieutenant', 500), (2, 5, 'Captain', 600), (2, 6, 'Chief', 800);
 
+--
+-- Table structure for table `mapping_objects`
+--
+
+CREATE TABLE IF NOT EXISTS `mapping_objects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `modelid` int(11) DEFAULT NULL,
+  `X` DECIMAL(10,5) NOT NULL,
+  `Y` DECIMAL(10,5) NOT NULL,
+  `Z` DECIMAL(10,5) NOT NULL,
+  `RX` DECIMAL(10,5) NOT NULL,
+  `RY` DECIMAL(10,5) NOT NULL,
+  `RZ` DECIMAL(10,5) NOT NULL,
+  `worldid` int(11) NOT NULL,
+  `interiorid` int(11) NOT NULL,
+  `streamdistance` DECIMAL(10,5) NOT NULL,
+  `drawdistance` DECIMAL(10,5) NOT NULL,
+  `Material1` varchar(256) DEFAULT '|',
+  `Material2` varchar(256) DEFAULT '|',
+  `Material3` varchar(256) DEFAULT '|',
+  `MaterialText` varchar(256) DEFAULT NULL,
+  `kommentar` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `mapping_removes`
+--
+
+CREATE TABLE IF NOT EXISTS `mapping_removes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `modelid` int(11) DEFAULT NULL,
+  `centerX` DECIMAL(10,5) NOT NULL,
+  `centerY` DECIMAL(10,5) NOT NULL,
+  `centerZ` DECIMAL(10,5) NOT NULL,
+  `radius` DECIMAL(10,5) NOT NULL,
+  `kommentar` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `server_actors`
+--
+
+CREATE TABLE IF NOT EXISTS `server_actors` (
+  `id` INT(12) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(24) NOT NULL,
+  `x` FLOAT NOT NULL,
+  `y` FLOAT NOT NULL,
+  `z` FLOAT NOT NULL,
+  `a` FLOAT NOT NULL,
+  `animation` INT(12) NOT NULL,
+  `skin` INT(12) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `wood_trees`
+--
+
+CREATE TABLE IF NOT EXISTS `wood_trees` (
+  `ID` INT(12) NOT NULL,
+  `PosX` FLOAT NOT NULL,
+  `PosY` FLOAT NOT NULL,
+  `PosZ` FLOAT NOT NULL,
+  `RotX` FLOAT NOT NULL,
+  `RotY` FLOAT NOT NULL,
+  `RotZ` FLOAT NOT NULL,
+  UNIQUE KEY `ID` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `wood_buyers`
+--
+
+CREATE TABLE IF NOT EXISTS `wood_buyers` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Skin` int(11) NOT NULL,
+  `PosX` float NOT NULL,
+  `PosY` float NOT NULL,
+  `PosZ` float NOT NULL,
+  `PosA` float NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `atms`
+--
+
+CREATE TABLE IF NOT EXISTS `atms` (
+  `id` INT(12) NOT NULL,
+  `x` FLOAT NOT NULL,
+  `y` FLOAT NOT NULL,
+  `z` FLOAT NOT NULL,
+  `rx` FLOAT NOT NULL,
+  `ry` FLOAT NOT NULL,
+  `rz` FLOAT NOT NULL,
+  `money` INT(12) NOT NULL,
+  `state` INT(12) NOT NULL,
+  `interior` INT(12) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `server_busroutes`
+--
+
+CREATE TABLE IF NOT EXISTS `server_busroutes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `color` varchar(16) DEFAULT NULL,
+  `name` varchar(32) DEFAULT NULL,
+  `skill` int(11) DEFAULT NULL,
+  `bonusmoney` int(11) DEFAULT NULL,
+  `jobexpbonus` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `server_busroutes_cps`
+--
+
+CREATE TABLE IF NOT EXISTS `server_busroutes_cps` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `busRoute` int(11) DEFAULT NULL,
+  `checkpoint` varchar(256) DEFAULT '|',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `parties`
+--
+
+CREATE TABLE IF NOT EXISTS `parties` (
+  `id` INT(11) NOT NULL,
+  `name` VARCHAR(32) NOT NULL,
+  `memberlimit` INT(11) NOT NULL,
+  `vehiclelimit` INT(11) NOT NULL,
+  `founder` VARCHAR(24) NOT NULL,
+  `upgrades` VARCHAR(24) NOT NULL,
+  `rankName1` VARCHAR(24) NOT NULL,
+  `rankName2` VARCHAR(24) NOT NULL,
+  `rankName3` VARCHAR(24) NOT NULL,
+  `centralconfirmed` INT(11) NOT NULL,
+  `centralpos` VARCHAR(24) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `housefurnitures`
+--
+
+CREATE TABLE IF NOT EXISTS `housefurnitures` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `HouseID` int(11) NOT NULL,
+  `FurnitureID` tinyint(11) NOT NULL,
+  `FurnitureX` float NOT NULL,
+  `FurnitureY` float NOT NULL,
+  `FurnitureZ` float NOT NULL,
+  `FurnitureRX` float NOT NULL,
+  `FurnitureRY` float NOT NULL,
+  `FurnitureRZ` float NOT NULL,
+  `FurnitureVW` int(11) NOT NULL,
+  `FurnitureInt` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `races`
+--
+
+CREATE TABLE IF NOT EXISTS `races` (
+  `race` varchar(32) NOT NULL,
+  `X1` float(10,4) NOT NULL, `Y1` float(10,4) NOT NULL, `Z1` float(10,4) NOT NULL,
+  `X2` float(10,4) NOT NULL, `Y2` float(10,4) NOT NULL, `Z2` float(10,4) NOT NULL,
+  `X3` float(10,4) NOT NULL, `Y3` float(10,4) NOT NULL, `Z3` float(10,4) NOT NULL,
+  `X4` float(10,4) NOT NULL, `Y4` float(10,4) NOT NULL, `Z4` float(10,4) NOT NULL,
+  `X5` float(10,4) NOT NULL, `Y5` float(10,4) NOT NULL, `Z5` float(10,4) NOT NULL,
+  `X6` float(10,4) NOT NULL, `Y6` float(10,4) NOT NULL, `Z6` float(10,4) NOT NULL,
+  `X7` float(10,4) NOT NULL, `Y7` float(10,4) NOT NULL, `Z7` float(10,4) NOT NULL,
+  `X8` float(10,4) NOT NULL, `Y8` float(10,4) NOT NULL, `Z8` float(10,4) NOT NULL,
+  `X9` float(10,4) NOT NULL, `Y9` float(10,4) NOT NULL, `Z9` float(10,4) NOT NULL,
+  `X10` float(10,4) NOT NULL, `Y10` float(10,4) NOT NULL, `Z10` float(10,4) NOT NULL,
+  `X11` float(10,4) NOT NULL, `Y11` float(10,4) NOT NULL, `Z11` float(10,4) NOT NULL,
+  `X12` float(10,4) NOT NULL, `Y12` float(10,4) NOT NULL, `Z12` float(10,4) NOT NULL,
+  `X13` float(10,4) NOT NULL, `Y13` float(10,4) NOT NULL, `Z13` float(10,4) NOT NULL,
+  `X14` float(10,4) NOT NULL, `Y14` float(10,4) NOT NULL, `Z14` float(10,4) NOT NULL,
+  `X15` float(10,4) NOT NULL, `Y15` float(10,4) NOT NULL, `Z15` float(10,4) NOT NULL,
+  `X16` float(10,4) NOT NULL, `Y16` float(10,4) NOT NULL, `Z16` float(10,4) NOT NULL,
+  `X17` float(10,4) NOT NULL, `Y17` float(10,4) NOT NULL, `Z17` float(10,4) NOT NULL,
+  `X18` float(10,4) NOT NULL, `Y18` float(10,4) NOT NULL, `Z18` float(10,4) NOT NULL,
+  `X19` float(10,4) NOT NULL, `Y19` float(10,4) NOT NULL, `Z19` float(10,4) NOT NULL,
+  `X20` float(10,4) NOT NULL, `Y20` float(10,4) NOT NULL, `Z20` float(10,4) NOT NULL,
+  `X21` float(10,4) NOT NULL, `Y21` float(10,4) NOT NULL, `Z21` float(10,4) NOT NULL,
+  `X22` float(10,4) NOT NULL, `Y22` float(10,4) NOT NULL, `Z22` float(10,4) NOT NULL,
+  `X23` float(10,4) NOT NULL, `Y23` float(10,4) NOT NULL, `Z23` float(10,4) NOT NULL,
+  `X24` float(10,4) NOT NULL, `Y24` float(10,4) NOT NULL, `Z24` float(10,4) NOT NULL,
+  `X25` float(10,4) NOT NULL, `Y25` float(10,4) NOT NULL, `Z25` float(10,4) NOT NULL,
+  `X26` float(10,4) NOT NULL, `Y26` float(10,4) NOT NULL, `Z26` float(10,4) NOT NULL,
+  `X27` float(10,4) NOT NULL, `Y27` float(10,4) NOT NULL, `Z27` float(10,4) NOT NULL,
+  `X28` float(10,4) NOT NULL, `Y28` float(10,4) NOT NULL, `Z28` float(10,4) NOT NULL,
+  `X29` float(10,4) NOT NULL, `Y29` float(10,4) NOT NULL, `Z29` float(10,4) NOT NULL,
+  `X30` float(10,4) NOT NULL, `Y30` float(10,4) NOT NULL, `Z30` float(10,4) NOT NULL,
+  `X31` float(10,4) NOT NULL, `Y31` float(10,4) NOT NULL, `Z31` float(10,4) NOT NULL,
+  `X32` float(10,4) NOT NULL, `Y32` float(10,4) NOT NULL, `Z32` float(10,4) NOT NULL,
+  `X33` float(10,4) NOT NULL, `Y33` float(10,4) NOT NULL, `Z33` float(10,4) NOT NULL,
+  `X34` float(10,4) NOT NULL, `Y34` float(10,4) NOT NULL, `Z34` float(10,4) NOT NULL,
+  `X35` float(10,4) NOT NULL, `Y35` float(10,4) NOT NULL, `Z35` float(10,4) NOT NULL,
+  PRIMARY KEY (`race`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `serverlog_easter`
+--
+
+CREATE TABLE IF NOT EXISTS `serverlog_easter` (
+  `logID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `content` varchar(128) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`logID`),
+  KEY `userID` (`userID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `eastereggs`
+--
+
+CREATE TABLE IF NOT EXISTS `eastereggs` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `model` int(12) NOT NULL,
+  `x` float NOT NULL,
+  `y` float NOT NULL,
+  `z` float NOT NULL,
+  `rx` float NOT NULL DEFAULT '0.000',
+  `ry` float NOT NULL DEFAULT '0.000',
+  `rz` float NOT NULL DEFAULT '0.000',
+  `lastPick` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `stores`
+--
+
+CREATE TABLE IF NOT EXISTS `stores` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
+  `Preis` int(11) NOT NULL DEFAULT 0,
+  `Kasse` int(11) NOT NULL DEFAULT 0,
+  `Navi` int(11) NOT NULL DEFAULT 0,
+  `Handy` int(11) NOT NULL DEFAULT 0,
+  `Telefonbuch` int(11) NOT NULL DEFAULT 0,
+  `Repairkit` int(11) NOT NULL DEFAULT 0,
+  `Kamera` int(11) NOT NULL DEFAULT 0,
+  `Pos_X` float NOT NULL DEFAULT 0,
+  `Pos_Y` float NOT NULL DEFAULT 0,
+  `Pos_Z` float NOT NULL DEFAULT 0,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `gruppen`
+--
+
+CREATE TABLE IF NOT EXISTS `gruppen` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(32) NOT NULL,
+  `Kennzeichen` varchar(32) NOT NULL,
+  `Kasse` int(11) NOT NULL DEFAULT 0,
+  `GehaltUpgrade` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `hauser`
+--
+
+CREATE TABLE IF NOT EXISTS `hauser` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
+  `Preis` int(11) NOT NULL DEFAULT 0,
+  `Ort` int(11) NOT NULL DEFAULT 0,
+  `Typ` int(11) NOT NULL DEFAULT 0,
+  `Interior` int(11) NOT NULL DEFAULT 0,
+  `Locked` int(11) NOT NULL DEFAULT 0,
+  `Mietbar` int(11) NOT NULL DEFAULT 0,
+  `Miete` int(11) NOT NULL DEFAULT 0,
+  `Health` int(11) NOT NULL DEFAULT 0,
+  `Pos_X` float NOT NULL DEFAULT 0,
+  `Pos_Y` float NOT NULL DEFAULT 0,
+  `Pos_Z` float NOT NULL DEFAULT 0,
+  `IPos_X` float NOT NULL DEFAULT 0,
+  `IPos_Y` float NOT NULL DEFAULT 0,
+  `IPos_Z` float NOT NULL DEFAULT 0,
+  `Gruppe` int(11) NOT NULL DEFAULT 0,
+  `GruppenAnzeige` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `garagen`
+--
+
+CREATE TABLE IF NOT EXISTS `garagen` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
+  `Preis` int(11) NOT NULL DEFAULT 0,
+  `Ort` int(11) NOT NULL DEFAULT 0,
+  `Locked` int(11) NOT NULL DEFAULT 0,
+  `Mietbar` int(11) NOT NULL DEFAULT 0,
+  `Miete` int(11) NOT NULL DEFAULT 0,
+  `Pos_X` float NOT NULL DEFAULT 0,
+  `Pos_Y` float NOT NULL DEFAULT 0,
+  `Pos_Z` float NOT NULL DEFAULT 0,
+  `OPos_X` float NOT NULL DEFAULT 0,
+  `OPos_Y` float NOT NULL DEFAULT 0,
+  `OPos_Z` float NOT NULL DEFAULT 0,
+  `OPos_A` float NOT NULL DEFAULT 0,
+  `Fahrzeug1` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug2` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug3` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug4` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug5` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug6` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug7` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug8` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug9` int(11) NOT NULL DEFAULT 0,
+  `Fahrzeug10` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
+--
+-- Table structure for table `tankstellen`
+--
+
+CREATE TABLE IF NOT EXISTS `tankstellen` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Besitzer` varchar(24) NOT NULL DEFAULT 'Server',
+  `Beschreibung` varchar(64) DEFAULT NULL,
+  `Preis` int(11) NOT NULL DEFAULT 0,
+  `Kasse` int(11) NOT NULL DEFAULT 0,
+  `Benzin` int(11) NOT NULL DEFAULT 0,
+  `Benzin Preis` int(11) NOT NULL DEFAULT 0,
+  `Diesel` int(11) NOT NULL DEFAULT 0,
+  `Diesel Preis` int(11) NOT NULL DEFAULT 0,
+  `Kerosin` int(11) NOT NULL DEFAULT 0,
+  `Kerosin Preis` int(11) NOT NULL DEFAULT 0,
+  `Benzin Liter` int(11) NOT NULL DEFAULT 0,
+  `Diesel Liter` int(11) NOT NULL DEFAULT 0,
+  `Kerosin Liter` int(11) NOT NULL DEFAULT 0,
+  `TPos_X1` float NOT NULL DEFAULT 0,
+  `TPos_Y1` float NOT NULL DEFAULT 0,
+  `TPos_Z1` float NOT NULL DEFAULT 0,
+  `TPos_X2` float NOT NULL DEFAULT 0,
+  `TPos_Y2` float NOT NULL DEFAULT 0,
+  `TPos_Z2` float NOT NULL DEFAULT 0,
+  `EPos_X` float NOT NULL DEFAULT 0,
+  `EPos_Y` float NOT NULL DEFAULT 0,
+  `EPos_Z` float NOT NULL DEFAULT 0,
+  `S_PosX` float NOT NULL DEFAULT 0,
+  `S_PosY` float NOT NULL DEFAULT 0,
+  `S_PosZ` float NOT NULL DEFAULT 0,
+  `S_PosR` float NOT NULL DEFAULT 0,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_german2_ci;
+
 COMMIT;
