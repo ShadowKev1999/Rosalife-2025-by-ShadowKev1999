@@ -3,6 +3,11 @@
 ##  Übersicht
 Diese Dokumentation bietet einen detaillierten Einblick in die Spielsysteme, Jobs und Fraktionen des Rosalife  Servers, basierend auf der aktuellen Codebasis.
 
+## kontaktdaten
+
+discord server: https://discord.gg/7AJkfGZ9eT
+discor name zum adden: ShadowKev1999
+
 ##  Jobs & Berufe
 Der Server verfügt über ein vielfältiges Jobsystem mit Erfahrungspunkten (EXP) und Level-Aufstiegen.
 
