@@ -3,7 +3,7 @@ stock createObjectTable() {
     strcat(query,"CREATE TABLE IF NOT EXISTS `mapping_objects` (`id` int(11) NOT NULL AUTO_INCREMENT,`modelid` int(11) DEFAULT NULL,`X` DECIMAL(10,5) NOT NULL,`Y` DECIMAL(10,5) NOT NULL,`Z` DECIMAL(10,5) NOT NULL,`RX` DECIMAL(10,5) NOT NULL,`RY` DECIMAL(10,5) NOT NULL,`RZ` DECIMAL(10,5) NOT NULL,");
     strcat(query,"`worldid` int(11) NOT NULL, `interiorid` int(11) NOT NULL, `streamdistance` DECIMAL(10,5) NOT NULL, `drawdistance` DECIMAL(10,5) NOT NULL,");
     strcat(query,"`Material1` varchar(256) DEFAULT '|',`Material2` varchar(256) DEFAULT '|',`Material3` varchar(256) DEFAULT '|',");
-	strcat(query,"`MaterialText` varchar(256) DEFAULT NULL,`kommentar` varchar(30) DEFAULT NULL,PRIMARY KEY (`id`))ENGINE=InnoDB DEFAULT CHARSET=latin1;");
+	strcat(query,"`MaterialText0` varchar(256) DEFAULT NULL,`MaterialText1` varchar(256) DEFAULT NULL,`kommentar` varchar(30) DEFAULT NULL,PRIMARY KEY (`id`))ENGINE=InnoDB DEFAULT CHARSET=latin1;");
  	mysql_pquery(sqlHandle, query);
 
     strdel(query,0,sizeof(query));
@@ -31,30 +31,30 @@ stock RemoveBuildingEx(modelid, Float:centerX, Float:centerY, Float:centerZ, Flo
 
 //Um Objekte mit Datenbank-Eintrag zu erstellen
 stock CreateObjectEx(oid, Float:X, Float:Y, Float:Z, Float:rX, Float:rY, Float:rZ, worldid = -1, interiorid = -1, Float:streamdistance = STREAMER_OBJECT_SD, Float:drawdistance = STREAMER_OBJECT_DD, Kommentar[]=""){
-	new query[800];
+	//new query[800];
 	new objid = CreateDynamicObject(oid, X, Y, Z, rX, rY, rZ, worldid, interiorid, .streamdistance = streamdistance, .drawdistance = drawdistance);
-	format(query, 800, "INSERT INTO `mapping_objects` (`ModelID`, `X`, `Y`, `Z`, `RX`, `RY`, `RZ`, `worldid`, `interiorid`, `streamdistance`, `drawdistance`, `kommentar`) VALUES ('%d','%f','%f','%f','%f','%f','%f','%i','%i','%f','%f','%s')",oid,X,Y,Z,rX,rY,rZ,worldid, interiorid, streamdistance, drawdistance, Kommentar);
-	new Cache:result = mysql_query(sqlHandle, query);
-	Streamer_SetIntData(STREAMER_TYPE_OBJECT, objid, E_STREAMER_EXTRA_ID, 1234567+cache_insert_id());
-    cache_delete(result);
+	//format(query, 800, "INSERT INTO `mapping_objects` (`ModelID`, `X`, `Y`, `Z`, `RX`, `RY`, `RZ`, `worldid`, `interiorid`, `streamdistance`, `drawdistance`, `kommentar`) VALUES ('%d','%f','%f','%f','%f','%f','%f','%i','%i','%f','%f','%s')",oid,X,Y,Z,rX,rY,rZ,worldid, interiorid, streamdistance, drawdistance, Kommentar);
+	//new Cache:result = mysql_query(sqlHandle, query);
+	//Streamer_SetIntData(STREAMER_TYPE_OBJECT, objid, E_STREAMER_EXTRA_ID, 1234567+cache_insert_id());
+    //cache_delete(result);
     return objid;
 }
 
-//Um den Material-Text von einem Objekt zu ‰ndern
+//Um den Material-Text von einem Objekt zu ùndern
 stock SetObjectMaterialTextEx(i, materialindex, const text[], materialsize = OBJECT_MATERIAL_SIZE_256x256, const fontface[] = "Arial", fontsize = 24, bold = 1, fontcolor = COLOR_WHITE, backcolor = 0, textalignment = 0){
-	new query[800];
+	//new query[800];
     SetDynamicObjectMaterialText(i, materialindex, text, materialsize, fontface, fontsize, bold, fontcolor, backcolor, textalignment);
-	format(query, 800, "UPDATE `mapping_objects` SET MaterialText%i='%d|%s|%d|%s|%d|%d|%d|%d|%d' WHERE id='%d'", materialindex, materialindex, text, materialsize, fontface, fontsize, bold, fontcolor, backcolor, textalignment ,Streamer_GetIntData(STREAMER_TYPE_OBJECT, i, E_STREAMER_EXTRA_ID)-1234567);
- 	mysql_tquery(sqlHandle, query);
+	//format(query, 800, "UPDATE `mapping_objects` SET MaterialText%i='%d|%s|%d|%s|%d|%d|%d|%d|%d' WHERE id='%d'", materialindex, materialindex, text, materialsize, fontface, fontsize, bold, fontcolor, backcolor, textalignment ,Streamer_GetIntData(STREAMER_TYPE_OBJECT, i, E_STREAMER_EXTRA_ID)-1234567);
+ 	//mysql_tquery(sqlHandle, query);
  	return 1;
 }
 
 //Um ein ServerObjekt zu texturieren
 stock SetObjectMaterialEx(i, materialindex, modelidd, txdname[], texturename[], materialcolor){
-	new query[800], query2[200], string[200];
-	ObjektInfo[ObjDbId] = Streamer_GetIntData(STREAMER_TYPE_OBJECT, i, E_STREAMER_EXTRA_ID)-1234567;
+	//new query[800], query2[200], string[200];
+	//ObjektInfo[ObjDbId] = Streamer_GetIntData(STREAMER_TYPE_OBJECT, i, E_STREAMER_EXTRA_ID)-1234567;
     SetDynamicObjectMaterial(i, materialindex, modelidd, txdname, texturename, materialcolor);
-    format(query, 800, "SELECT * FROM `mapping_objects` WHERE id='%d'", ObjektInfo[ObjDbId]);
+    /*format(query, 800, "SELECT * FROM `mapping_objects` WHERE id='%d'", ObjektInfo[ObjDbId]);
     new Cache:result = mysql_query(sqlHandle, query);
     //strdel(query,0,sizeof(query));
     for(new e=1; e<4; e++){
@@ -84,7 +84,7 @@ stock SetObjectMaterialEx(i, materialindex, modelidd, txdname[], texturename[], 
 	 		return 1;
 		}
 	}
-	cache_delete(result);
+	cache_delete(result);*/
 	return 1;
 }
 

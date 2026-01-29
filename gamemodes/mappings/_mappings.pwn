@@ -14,7 +14,7 @@
 #include "mappings/maps/furniture_office.pwn"
 
 #include "mappings/maps/cityhall_lossantos.pwn"
-//#include "mappings/maps/cityhall_int_risq.pwn"
+#include "mappings/maps/cityhall_int_risq.pwn"
 
 stock MappingsInit() {
     createObjectTable();
@@ -35,7 +35,7 @@ stock MappingsInit() {
     Init_BoatShopMap();
     Eddy_Init();
     CityHall_LosSantos_Init();
-//    CityHall_Int_Risq_Init();
+    CityHall_Int_Risq_Init();
     //KevinsHouse_Init();
 
     LosSantos_AirportInt_init();

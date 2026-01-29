@@ -76,7 +76,7 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": ["ColAndreas", "mysql", "samp_bcrypt", "sscanf", "streamer", "uuid"],
+        "legacy_plugins": ["ColAndreas", "mysql", "samp_bcrypt", "streamer", "uuid"],
         "main_scripts": [
             "skg"
         ],

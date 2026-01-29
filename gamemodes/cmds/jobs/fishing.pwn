@@ -13,7 +13,7 @@ CMD:sellfish(playerid, params[])
 	if(SpielerInfo[playerid][sFischGewicht] < 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Fische zum verkaufen.");
 	GivePlayerMoneyEx(playerid,SpielerInfo[playerid][sFischGewicht] * 25);
 	new string[128];
-	format(string,sizeof(string),"[Info]: {FFFFFF}Du hast dein gefangenes Fischgewicht von %d Kilo für $%d verkauft.",SpielerInfo[playerid][sFischGewicht],SpielerInfo[playerid][sFischGewicht] * 25);
+	format(string,sizeof(string),"[Info]: {FFFFFF}Du hast dein gefangenes Fischgewicht von %d Kilo fr $%d verkauft.",SpielerInfo[playerid][sFischGewicht],SpielerInfo[playerid][sFischGewicht] * 25);
 	SendClientMessage(playerid,COLOR_SUPER,string);
 	SpielerInfo[playerid][sFischGewicht] = 0;
 	return 1;
@@ -29,7 +29,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 1).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 1).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
    	}
@@ -41,7 +41,7 @@ CMD:angeln(playerid, params[])
      	SetCameraBehindPlayer(playerid);
       	ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
        	ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 2).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 2).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -53,7 +53,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
        	ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 3).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 3).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -65,7 +65,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 4).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 4).");
 	   	FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
   		return 1;
    	}
@@ -77,7 +77,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
        	ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 5).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 5).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -89,7 +89,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 6).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 6).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -101,7 +101,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 7).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 7).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -113,7 +113,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 8).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 8).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -125,7 +125,7 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 9).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 9).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
@@ -137,11 +137,11 @@ CMD:angeln(playerid, params[])
        	SetCameraBehindPlayer(playerid);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
         ApplyAnimation(playerid, "SAMP", "FishingIdle", 3.0,true,true,false,false,0);
-   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhören (Angel 10).");
+   		SendClientMessage(playerid, COLOR_INFO, "[Info]: {FFFFFF}Benutze '/stopangeln' um mit dem Angeln aufzuhren (Angel 10).");
    		FischTimer[playerid] = SetTimerEx("SpielerFischt",10000,true,"i",playerid);
    		return 1;
     }
     else SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du stehst an keiner Angel am Steg von Los Santos.");
     return 1;
 }
-alias:angeln("fishing")
+//alias:angeln("fishing")
