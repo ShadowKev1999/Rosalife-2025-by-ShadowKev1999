@@ -25,7 +25,6 @@
 #include <winteredition>
 
 #include "core/server/config.pwn"
-//#include "core/server/anticheat.pwn"
 
 new MySQL:sqlHandle;
 
@@ -81,6 +80,8 @@ main()
 #include "vars/player/experience.pwn"
 #include "vars/player/player_location.pwn"
 #include "vars/player/player_title.pwn"
+
+#include "core/server/anticheat_system.pwn"
 
 #include "vars/faction/factions.pwn"
 #include "vars/faction/drugs.pwn"

@@ -30,7 +30,8 @@ stock RemoveBuildingEx(modelid, Float:centerX, Float:centerY, Float:centerZ, Flo
 }
 
 //Um Objekte mit Datenbank-Eintrag zu erstellen
-stock CreateObjectEx(oid, Float:X, Float:Y, Float:Z, Float:rX, Float:rY, Float:rZ, worldid = -1, interiorid = -1, Float:streamdistance = STREAMER_OBJECT_SD, Float:drawdistance = STREAMER_OBJECT_DD, Kommentar[]=""){
+stock CreateObjectEx(oid, Float:X, Float:Y, Float:Z, Float:rX, Float:rY, Float:rZ, worldid = -1, interiorid = -1, Float:streamdistance = STREAMER_OBJECT_SD, Float:drawdistance = STREAMER_OBJECT_DD, const Kommentar[]=""){
+	if (Kommentar[0]) {}
 	//new query[800];
 	new objid = CreateDynamicObject(oid, X, Y, Z, rX, rY, rZ, worldid, interiorid, .streamdistance = streamdistance, .drawdistance = drawdistance);
 	//format(query, 800, "INSERT INTO `mapping_objects` (`ModelID`, `X`, `Y`, `Z`, `RX`, `RY`, `RZ`, `worldid`, `interiorid`, `streamdistance`, `drawdistance`, `kommentar`) VALUES ('%d','%f','%f','%f','%f','%f','%f','%i','%i','%f','%f','%s')",oid,X,Y,Z,rX,rY,rZ,worldid, interiorid, streamdistance, drawdistance, Kommentar);
@@ -50,7 +51,7 @@ stock SetObjectMaterialTextEx(i, materialindex, const text[], materialsize = OBJ
 }
 
 //Um ein ServerObjekt zu texturieren
-stock SetObjectMaterialEx(i, materialindex, modelidd, txdname[], texturename[], materialcolor){
+stock SetObjectMaterialEx(i, materialindex, modelidd, const txdname[], const texturename[], materialcolor){
 	//new query[800], query2[200], string[200];
 	//ObjektInfo[ObjDbId] = Streamer_GetIntData(STREAMER_TYPE_OBJECT, i, E_STREAMER_EXTRA_ID)-1234567;
     SetDynamicObjectMaterial(i, materialindex, modelidd, txdname, texturename, materialcolor);

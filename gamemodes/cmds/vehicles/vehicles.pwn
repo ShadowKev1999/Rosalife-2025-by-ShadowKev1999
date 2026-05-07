@@ -3,7 +3,7 @@ CMD:lock(playerid, params[])
 {
     new tmpcar = GetPlayerVehicleID(playerid);
 	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist in keinem Fahrzeug.");
- 	if(GetPlayerVehicleID(playerid) == WaffenTransporter)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der Materialien-Transporter besitzt keine Schlösser!");
+ 	if(GetPlayerVehicleID(playerid) == WaffenTransporter)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der Materialien-Transporter besitzt keine Schlï¿½sser!");
 	if(DOOR[tmpcar] == true)
  	{
   		GetVehicleParamsEx(tmpcar,engine,lights,alarm,doors,bonnet,boot,objective);
@@ -50,11 +50,11 @@ CMD:lock(playerid, params[])
 CMD:fahrzeug(playerid, params[])
 {
 	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du befindest dich in keinem Fahrzeug.");
- 	if(IsAFahrrad(GetPlayerVehicleID(playerid)))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Im Fahrrad nicht möglich.");
+ 	if(IsAFahrrad(GetPlayerVehicleID(playerid)))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Im Fahrrad nicht mï¿½glich.");
   	if(GetPlayerState(playerid) != PLAYER_STATE_DRIVER)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist nicht der Fahrer des Fahrzeuges.");
    	new veh = GetPlayerVehicleID(playerid), string[264];
-    format(string,sizeof(string),"{FFFFFF}Motor:		[%s{FFFFFF}]\nLicht:		[%s{FFFFFF}]\nTüren:		[%s{FFFFFF}]\nMotorhaube:	[%s{FFFFFF}]\nKofferraum:	[%s{FFFFFF}]\nRadio:		[%s{FFFFFF}]\nNeon:		[%s{FFFFFF}]",FahrzeugStatus(1,veh),FahrzeugStatus(2,veh),FahrzeugStatus(3,veh),FahrzeugStatus(4,veh),FahrzeugStatus(5,veh),FahrzeugStatus(6,veh),FahrzeugStatus(7,veh));
-	ShowPlayerDialog(playerid,DIALOG_FAHRZEUG,DIALOG_STYLE_LIST,"{007DFF}"SERV_NAME"{FFFFFF} - Fahrzeugverwaltung",string,"Bestätigen","Abbrechen");
+    format(string,sizeof(string),"{FFFFFF}Motor:		[%s{FFFFFF}]\nLicht:		[%s{FFFFFF}]\nTï¿½ren:		[%s{FFFFFF}]\nMotorhaube:	[%s{FFFFFF}]\nKofferraum:	[%s{FFFFFF}]\nRadio:		[%s{FFFFFF}]\nNeon:		[%s{FFFFFF}]",FahrzeugStatus(1,veh),FahrzeugStatus(2,veh),FahrzeugStatus(3,veh),FahrzeugStatus(4,veh),FahrzeugStatus(5,veh),FahrzeugStatus(6,veh),FahrzeugStatus(7,veh));
+	ShowPlayerDialog(playerid,DIALOG_FAHRZEUG,DIALOG_STYLE_LIST,"{007DFF}"SERV_NAME"{FFFFFF} - Fahrzeugverwaltung",string,"Bestï¿½tigen","Abbrechen");
  	return 1;
 }
 CMD:carradio(playerid, params[])
@@ -67,7 +67,7 @@ CMD:carradio(playerid, params[])
 		OpenVehicleRadios(playerid);
  		return 1;
 	}
-	else SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Nur der Fahrer und der Beifahrer können das Radio bedienen.");
+	else SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Nur der Fahrer und der Beifahrer kï¿½nnen das Radio bedienen.");
 	return 1;
 }
 CMD:neonschalter(playerid, params[])
@@ -76,12 +76,12 @@ CMD:neonschalter(playerid, params[])
  	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du befindest dich in keinem Fahrzeug.");
   	if(IsAFahrrad(tmpcar))return 1;
    	if(GetPlayerState(playerid) != PLAYER_STATE_DRIVER)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist nicht der Fahrer des Fahrzeuges.");
-	if(FahrzeugInfo[tmpcar][fFraktion] > 0 && FahrzeugInfo[tmpcar][fFraktion] != SpielerInfo[playerid][sFraktion])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fGruppe] > 0 && FahrzeugInfo[tmpcar][fGruppe] != SpielerInfo[playerid][sGruppe])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fNebenjob] > 0 && FahrzeugInfo[tmpcar][fNebenjob] != SpielerInfo[playerid][sNebenjob])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fBesitzerID] > 0 && FahrzeugInfo[tmpcar][fBesitzerID] != playerid && SpielerInfo[playerid][sZweitKey] != FahrzeugInfo[tmpcar][fDatabaseID])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fSupmobil] != 0 && SpielerInfo[playerid][sAdmin] == 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fBankrob] != 0 && FahrzeugInfo[tmpcar][fBankrob] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fFraktion] > 0 && FahrzeugInfo[tmpcar][fFraktion] != SpielerInfo[playerid][sFraktion])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fGruppe] > 0 && FahrzeugInfo[tmpcar][fGruppe] != SpielerInfo[playerid][sGruppe])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fNebenjob] > 0 && FahrzeugInfo[tmpcar][fNebenjob] != SpielerInfo[playerid][sNebenjob])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fBesitzerID] > 0 && FahrzeugInfo[tmpcar][fBesitzerID] != playerid && SpielerInfo[playerid][sZweitKey] != FahrzeugInfo[tmpcar][fDatabaseID])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fSupmobil] != 0 && SpielerInfo[playerid][sAdmin] == 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fBankrob] != 0 && FahrzeugInfo[tmpcar][fBankrob] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
 	if(Neon[tmpcar] == true)
 	{
  		PlayerTextDrawHide(playerid, Tacho[playerid][10]);
@@ -120,17 +120,17 @@ CMD:motor(playerid, params[])
  	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du befindest dich in keinem Fahrzeug.");
   	if(IsAFahrrad(tmpcar))return 1;
    	if(GetPlayerState(playerid) != PLAYER_STATE_DRIVER)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist nicht der Fahrer des Fahrzeuges.");
-	if(FahrzeugInfo[tmpcar][fFraktion] > 0 && FahrzeugInfo[tmpcar][fFraktion] != SpielerInfo[playerid][sFraktion])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fFraktion] > 0 && FahrzeugInfo[tmpcar][fFraktion] != SpielerInfo[playerid][sFraktion])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
 	if(FahrzeugInfo[tmpcar][fFraktion] > 0 && FahrzeugInfo[tmpcar][fRang] > SpielerInfo[playerid][sRank])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt nicht den erforderlichen Rank.");
-	if(FahrzeugInfo[tmpcar][fGruppe] > 0 && FahrzeugInfo[tmpcar][fGruppe] != SpielerInfo[playerid][sGruppe])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fGruppe] > 0 && FahrzeugInfo[tmpcar][fGruppe] != SpielerInfo[playerid][sGruppe])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
 	if(FahrzeugInfo[tmpcar][fGruppe] > 0 && FahrzeugInfo[tmpcar][fRang] > SpielerInfo[playerid][sGRank])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt nicht den erforderlichen Rank.");
-	if(FahrzeugInfo[tmpcar][fNebenjob] > 0 && FahrzeugInfo[tmpcar][fNebenjob] != SpielerInfo[playerid][sNebenjob])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fBesitzerID] > 0 && FahrzeugInfo[tmpcar][fBesitzerID] != playerid && SpielerInfo[playerid][sZweitKey] != FahrzeugInfo[tmpcar][fDatabaseID])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fSupmobil] != 0 && SpielerInfo[playerid][sAdmin] == 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
-	if(FahrzeugInfo[tmpcar][fBankrob] != 0 && FahrzeugInfo[tmpcar][fBankrob] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlüssel für dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fNebenjob] > 0 && FahrzeugInfo[tmpcar][fNebenjob] != SpielerInfo[playerid][sNebenjob])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fBesitzerID] > 0 && FahrzeugInfo[tmpcar][fBesitzerID] != playerid && SpielerInfo[playerid][sZweitKey] != FahrzeugInfo[tmpcar][fDatabaseID])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fSupmobil] != 0 && SpielerInfo[playerid][sAdmin] == 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
+	if(FahrzeugInfo[tmpcar][fBankrob] != 0 && FahrzeugInfo[tmpcar][fBankrob] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du besitzt keine Schlï¿½ssel fï¿½r dieses Fahrzeug.");
 	if(FahrzeugInfo[tmpcar][fParkkralle] == 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Das Fahrzeug hat eine Parkkralle am Reifen.");
 	if(FahrzeugInfo[tmpcar][fTank] <= 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Das Fahrzeug hat keinen Tank mehr.");
-	if(FahrzeugInfo[tmpcar][fNebenjob] == 5 && GetPVarInt(playerid,"BusfahrerArbeitet") < 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Wähle zuerst eine Linie aus.");
+	if(FahrzeugInfo[tmpcar][fNebenjob] == 5 && GetPVarInt(playerid,"BusfahrerArbeitet") < 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Wï¿½hle zuerst eine Linie aus.");
 	if(Motor[tmpcar] == true)
 	{
  		PlayerTextDrawHide(playerid, Tacho[playerid][10]);
@@ -165,7 +165,7 @@ CMD:motor(playerid, params[])
 	}
 	else if(Motor[tmpcar] == false)
 	{
-		if(FahrzeugInfo[tmpcar][fImportCar] == 0 || FahrzeugInfo[tmpcar][fKurrierCar] == 0 && tmpcar != WaffenTransporter && tmpcar != BankRobVan)
+		if(FahrzeugInfo[tmpcar][fImportCar] == 0 && FahrzeugInfo[tmpcar][fKurrierCar] == 0 && tmpcar != WaffenTransporter && tmpcar != BankRobVan)
   		{
     		GetVehicleHealth(tmpcar, Health);
 		    if(Health <= 350)return GameTextForPlayer(playerid,"Motor ~r~zerstoert",3000,6);
@@ -184,10 +184,10 @@ CMD:motor(playerid, params[])
 		PlayerTextDrawShow(playerid, Tacho[playerid][10]);
 		GameTextForPlayer(playerid,"Motor ~g~eingeschaltet",3000,6);
 		Motor[tmpcar] = true;
-		if(GetPVarInt(playerid,"CopMaske") == 1){format(string,sizeof(string),"Unbekannter betätigt die Zündung.");}
-		else if(GetPVarInt(playerid,"FraktionsMaske") == 1){format(string,sizeof(string),"Unbekannter betätigt die Zündung.");}
-		else if(GetPVarInt(playerid,"GruppenMaske") == 1){format(string,sizeof(string),"Unbekannter betätigt die Zündung.");}
-		else{format(string,128,"%s betätigt die Zündung.",SpielerInfo[playerid][sName]);}
+		if(GetPVarInt(playerid,"CopMaske") == 1){format(string,sizeof(string),"Unbekannter betï¿½tigt die Zï¿½ndung.");}
+		else if(GetPVarInt(playerid,"FraktionsMaske") == 1){format(string,sizeof(string),"Unbekannter betï¿½tigt die Zï¿½ndung.");}
+		else if(GetPVarInt(playerid,"GruppenMaske") == 1){format(string,sizeof(string),"Unbekannter betï¿½tigt die Zï¿½ndung.");}
+		else{format(string,128,"%s betï¿½tigt die Zï¿½ndung.",SpielerInfo[playerid][sName]);}
 		SetPlayerChatBubble(playerid, string, COLOR_PURPLE, 12.0, 3000);
 		return 1;
 	}
@@ -200,7 +200,7 @@ CMD:licht(playerid, params[])
 	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du befindest dich in keinem Fahrzeug.");
 	new PLAYER_STATE:State=GetPlayerState(playerid);
 	if(State!=PLAYER_STATE_DRIVER)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist nicht der Fahrer dieses Fahrzeugs.");
-	if(Motor[tmpcar] == false)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Um das Licht einschalten zu können, muss als erstes der Motor gestartet werden.");
+	if(Motor[tmpcar] == false)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Um das Licht einschalten zu kï¿½nnen, muss als erstes der Motor gestartet werden.");
 	if(Licht[tmpcar] == true)
 	{
  		PlayerTextDrawHide(playerid, Tacho[playerid][11]);
@@ -224,7 +224,7 @@ CMD:licht(playerid, params[])
 CMD:fenster(playerid, params[]) {
 	new window[9],string[128],bool:w_driver,bool:w_passenger,bool:w_backleft,bool:w_backright,veh = GetPlayerVehicleID(playerid),Float:x,Float:y,Float:z, tmpcar = GetPlayerVehicleID(playerid);
 	if(!IsPlayerInAnyVehicle(playerid) || GetVehicleModel(tmpcar) == 478)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du befindest dich in keinem Fahrzeug.");
-	if(!IsACar(GetVehicleModel(veh))) return SendClientMessage(playerid, COLOR_RED, "[INFO] {FFFFFF}Du kannst das Fenster nur in Autos öffnen.");
+	if(!IsACar(GetVehicleModel(veh))) return SendClientMessage(playerid, COLOR_RED, "[INFO] {FFFFFF}Du kannst das Fenster nur in Autos ï¿½ffnen.");
 	if(GetPlayerState(playerid) != PLAYER_STATE_DRIVER) return SendClientMessage(playerid, COLOR_RED, "[INFO] {FFFFFF}Du musst der Fahrer des Fahrzeuges sein!");
 	if(sscanf(params,"s[9]",window)) return SendClientMessage(playerid, COLOR_BLUE, INFO_STRING"/Fenster [Alle | Vorne | VLinks | VRechts | Hinten | HLinks | HRechts]");
 	GetVehicleParamsCarWindows(veh,w_driver,w_passenger,w_backleft,w_backright);
@@ -235,7 +235,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,true,true,true,true);
 	    }
-	    format(string,sizeof(string),"* %s hat alle Fenster vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat alle Fenster vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	    return SetVehicleParamsCarWindows(veh,false,false,false,false);
 	}
@@ -245,7 +245,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,true,true,w_backleft,w_backright);
 	    }
-	    format(string,sizeof(string),"* %s hat das Vordere Fenster vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat das Vordere Fenster vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	    return SetVehicleParamsCarWindows(veh,false,false,w_backleft,w_backright);
 	}
@@ -255,7 +255,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,true,w_passenger,w_backleft,w_backright);
 	    }
-	    format(string,sizeof(string),"* %s hat das Vordere Fenster Links vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat das Vordere Fenster Links vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	    return SetVehicleParamsCarWindows(veh,false,w_passenger,w_backleft,w_backright);
 	}
@@ -265,7 +265,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,w_driver,true,w_backleft,w_backright);
 	    }
-	    format(string,sizeof(string),"* %s hat das Vordere Fenster Rechts vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat das Vordere Fenster Rechts vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	    return SetVehicleParamsCarWindows(veh,w_driver,false,w_backleft,w_backright);
 	}
@@ -275,7 +275,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,w_driver,w_passenger,true,true);
 	    }
-	    format(string,sizeof(string),"* %s hat das Hintere Fenster vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat das Hintere Fenster vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	    return SetVehicleParamsCarWindows(veh,w_driver,w_passenger,false,false);
 	}
@@ -285,7 +285,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,w_driver,w_passenger,true,w_backright);
 	    }
-	    format(string,sizeof(string),"* %s hat das Hintere Fenster Links vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat das Hintere Fenster Links vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 		SetVehicleParamsCarWindows(veh,w_driver,w_passenger,false,w_backright);
 	}
@@ -295,7 +295,7 @@ CMD:fenster(playerid, params[]) {
 	        SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 	        return SetVehicleParamsCarWindows(veh,w_driver,w_passenger,w_backleft,true);
 	    }
-	    format(string,sizeof(string),"* %s hat das Hintere Fenster Rechts vom Fahrzeug geöffnet.",SpielerInfo[playerid][sName]);
+	    format(string,sizeof(string),"* %s hat das Hintere Fenster Rechts vom Fahrzeug geï¿½ffnet.",SpielerInfo[playerid][sName]);
      	SendRoundMessage(x, y, z, COLOR_PURPLE, string);
 		SetVehicleParamsCarWindows(veh,w_driver,w_passenger,w_backleft,false);
 	}
@@ -389,7 +389,7 @@ CMD:sirene(playerid, params[])
 		{
 			if(GetVehicleModel(tmpcar) == 560)
 			{
-   				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene für dieses Fahrzeug.");
+   				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene fï¿½r dieses Fahrzeug.");
 			    if(GetVehicleParamsSirenState(tmpcar) == 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Benutze die H - Taste um die Sirene einzuschalten!");
 				FahrzeugInfo[tmpcar][fSirene][0] = CreateDynamicObject(19288,0,0,-1000,0,0,0,-1,-1,-1,100,100);
 				FahrzeugInfo[tmpcar][fSirene][1] = CreateDynamicObject(19419,0,0,0,0,0,0,-1,-1,-1,100,100);
@@ -407,7 +407,7 @@ CMD:sirene(playerid, params[])
 			}
 			else if(GetVehicleModel(tmpcar) == 426)
 			{
-   				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene für dieses Fahrzeug.");
+   				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene fï¿½r dieses Fahrzeug.");
 				FahrzeugInfo[tmpcar][fSirene][0] = CreateDynamicObject(19288,0,0,0,0,0,0,-1,-1,-1,100,100);
 				FahrzeugInfo[tmpcar][fSirene][1] = CreateDynamicObject(19419,0,0,0,0,0,0,-1,-1,-1,100,100);
 				FahrzeugInfo[tmpcar][fSirene][2] = CreateDynamicObject(19288,0,0,0,0,0,0,-1,-1,-1,100,100);
@@ -442,7 +442,7 @@ CMD:sirene(playerid, params[])
 			}
 			else if(GetVehicleModel(tmpcar) == 579)
 			{
-   				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene für dieses Fahrzeug.");
+   				if(SpielerInfo[playerid][sFraktion] == 7)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Sirene fï¿½r dieses Fahrzeug.");
 			    FahrzeugInfo[tmpcar][fSirene][0] = CreateDynamicObject(18646, 0.00700, -0.25640, 1.24680,   0.00000, 0.00000, 0.00000);
 			    AttachDynamicObjectToVehicle(FahrzeugInfo[tmpcar][fSirene][0], tmpcar, 0.00700, -0.25640, 1.24680, 0, 0, 0);
    				FahrzeugInfo[tmpcar][fSireneBool] = true;
@@ -485,17 +485,17 @@ CMD:givecarkey(playerid,params[])
 {
 	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist in keinem Fahrzeug.");
 	new tmpcar = GetPlayerVehicleID(playerid);
-	if(FahrzeugInfo[tmpcar][fBesitzerID] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Dieses Fahrzeug gehört nicht dir.");
+	if(FahrzeugInfo[tmpcar][fBesitzerID] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Dieses Fahrzeug gehï¿½rt nicht dir.");
 	new pID;
 	if(sscanf(params,"u",pID))return SendClientMessage(playerid,COLOR_YELLOW,"Benutze: {FFFFFF}/givecarkey [SpielerID]");
 	if(!IsPlayerConnectedEx(pID))return NichtOnline
 	if(GetDistanceBetweenPlayersEx(playerid, pID) >= 7)return NichtNahe
- 	if(SpielerInfo[pID][sZweitKey] > 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der Spieler hat bereits Zweitschlüssel für ein Fahrzeug.");
+ 	if(SpielerInfo[pID][sZweitKey] > 0)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der Spieler hat bereits Zweitschlï¿½ssel fï¿½r ein Fahrzeug.");
 	SpielerInfo[pID][sZweitKey] = FahrzeugInfo[tmpcar][fDatabaseID];
 	new string[128];
-	format(string,sizeof(string),"[Info]: {FFFFFF}Du hast %s einen Zweitschlüssel zu deinem Fahrzeug gegeben.",SpielerInfo[pID][sName]);
+	format(string,sizeof(string),"[Info]: {FFFFFF}Du hast %s einen Zweitschlï¿½ssel zu deinem Fahrzeug gegeben.",SpielerInfo[pID][sName]);
 	SendClientMessage(playerid,COLOR_SUPER,string);
-	format(string,sizeof(string),"[Info]: {FFFFFF}%s hat dir einen Zweitschlüssel für sein Fahrzeug gegeben.",SpielerInfo[playerid][sName]);
+	format(string,sizeof(string),"[Info]: {FFFFFF}%s hat dir einen Zweitschlï¿½ssel fï¿½r sein Fahrzeug gegeben.",SpielerInfo[playerid][sName]);
 	SendClientMessage(pID,COLOR_SUPER,string);
 	return 1;
 }
@@ -504,24 +504,24 @@ CMD:takecarkey(playerid,params[])
 {
 	if(!IsPlayerInAnyVehicle(playerid))return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du bist in keinem Fahrzeug.");
 	new tmpcar = GetPlayerVehicleID(playerid);
-	if(FahrzeugInfo[tmpcar][fBesitzerID] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Dieses Fahrzeug gehört nicht dir.");
+	if(FahrzeugInfo[tmpcar][fBesitzerID] != playerid)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Dieses Fahrzeug gehï¿½rt nicht dir.");
 	new pID;
 	if(sscanf(params,"u",pID))return SendClientMessage(playerid,COLOR_YELLOW,"Benutze: {FFFFFF}/givecarkey [SpielerID]");
 	if(!IsPlayerConnectedEx(playerid))return NichtOnline
-	if(SpielerInfo[pID][sZweitKey] != FahrzeugInfo[tmpcar][fDatabaseID])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der Spieler hat keine Zweitschlüssel zu deinem Fahrzeug.");
+	if(SpielerInfo[pID][sZweitKey] != FahrzeugInfo[tmpcar][fDatabaseID])return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Der Spieler hat keine Zweitschlï¿½ssel zu deinem Fahrzeug.");
 	new string[128];
-	format(string,sizeof(string),"[Info]: {FFFFFF}Du hast %s den Zweitschlüssel zu deinem Fahrzeug weggenommen.",SpielerInfo[pID][sName]);
+	format(string,sizeof(string),"[Info]: {FFFFFF}Du hast %s den Zweitschlï¿½ssel zu deinem Fahrzeug weggenommen.",SpielerInfo[pID][sName]);
 	SendClientMessage(playerid,COLOR_RED,string);
-	format(string,sizeof(string),"[Info]: {FFFFFF}%s hat dir den Zweitschlüssel für sein Fahrzeug weggenommen.",SpielerInfo[playerid][sName]);
+	format(string,sizeof(string),"[Info]: {FFFFFF}%s hat dir den Zweitschlï¿½ssel fï¿½r sein Fahrzeug weggenommen.",SpielerInfo[playerid][sName]);
 	SendClientMessage(pID,COLOR_RED,string);
 	return 1;
 }
 
 CMD:throwcarkey(playerid,params[])
 {
-	if(SpielerInfo[playerid][sZweitKey] < 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Zweitschlüssel zur irgendeinem Fahrzeug.");
+	if(SpielerInfo[playerid][sZweitKey] < 1)return SendClientMessage(playerid,COLOR_RED,"[Info]: {FFFFFF}Du hast keine Zweitschlï¿½ssel zur irgendeinem Fahrzeug.");
 	SpielerInfo[playerid][sZweitKey] = 0;
-	SendClientMessage(playerid,COLOR_SUPER,"[Info]: {FFFFFF}Du hast die Zweitschlüssel weggeworfen.");
+	SendClientMessage(playerid,COLOR_SUPER,"[Info]: {FFFFFF}Du hast die Zweitschlï¿½ssel weggeworfen.");
 	return 1;
 }
 
@@ -536,6 +536,6 @@ COMMAND:vehupgrades(playerid, params[]) {
 
 	ShowPlayerDialog(playerid, DIALOG_CAR_UPGRADE_SHOP, DIALOG_STYLE_TABLIST_HEADERS, "{9933FF}RSL: {FFFFFF}Fahrzeugupgrades",
 	"Upgrade\tKosten\n10x Fahrzeugrespawn\t2500$",
-	"Auswählen", "Abbrechen");
+	"Auswï¿½hlen", "Abbrechen");
 	return 1;
 }

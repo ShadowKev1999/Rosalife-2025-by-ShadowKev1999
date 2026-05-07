@@ -10,6 +10,20 @@ forward AntiCheat_Initialize();
 forward AntiCheat_PlayerConnect(playerid);
 forward AntiCheat_PlayerUpdate(playerid);
 forward AntiCheat_PlayerDisconnect(playerid);
+forward AntiCheat_UpdateAll();
+forward CheckHealthHack(playerid, Float:health, currentTime);
+forward CheckArmorHack(playerid, Float:armour, currentTime);
+forward CheckMoneyHack(playerid, money);
+forward CheckSpeedHack(playerid, Float:posX, Float:posY, Float:posZ, currentTime);
+forward CheckTeleportHack(playerid, Float:posX, Float:posY, Float:posZ, currentTime);
+forward CheckWeaponHack(playerid, weapon);
+forward CheckVehicleHack(playerid);
+forward CheckChatSpam(playerid);
+forward IsValidWeapon(weaponid);
+forward PunishPlayer(playerid, reason[], punishment_type);
+forward DelayedKick(playerid);
+forward LogCheatIncident(playerid, reason[], action[]);
+forward OnAntiCheatLogsLoaded(playerid);
 
 // Cheat-Typen
 enum CHEAT_TYPES {
@@ -28,18 +42,16 @@ enum CHEAT_TYPES {
 }
 
 // Straf-Typen
-enum PUNISHMENT_TYPES {
-    PUNISHMENT_WARNING = 1,
-    PUNISHMENT_KICK = 2,
-    PUNISHMENT_BAN = 3,
-    PUNISHMENT_JAIL = 4,
-    PUNISHMENT_MONEY_RESET = 5
-}
+#define PUNISHMENT_WARNING 1
+#define PUNISHMENT_KICK 2
+#define PUNISHMENT_BAN 3
+#define PUNISHMENT_JAIL 4
+#define PUNISHMENT_MONEY_RESET 5
 
 // Anti-Cheat Variablen
-new PlayerLastPos[MAX_PLAYERS][3];
-new PlayerLastHealth[MAX_PLAYERS];
-new PlayerLastArmour[MAX_PLAYERS];
+new Float:PlayerLastPos[MAX_PLAYERS][3];
+new Float:PlayerLastHealth[MAX_PLAYERS];
+new Float:PlayerLastArmour[MAX_PLAYERS];
 new PlayerLastMoney[MAX_PLAYERS];
 new PlayerLastWeapon[MAX_PLAYERS];
 new PlayerLastUpdate[MAX_PLAYERS];
@@ -87,8 +99,8 @@ stock AntiCheat_PlayerConnect(playerid)
     
     // Anfangsposition speichern
     GetPlayerPos(playerid, PlayerLastPos[playerid][0], PlayerLastPos[playerid][1], PlayerLastPos[playerid][2]);
-    PlayerLastHealth[playerid] = GetPlayerHealth(playerid);
-    PlayerLastArmour[playerid] = GetPlayerArmour(playerid);
+    GetPlayerHealth(playerid, PlayerLastHealth[playerid]);
+    GetPlayerArmour(playerid, PlayerLastArmour[playerid]);
     PlayerLastMoney[playerid] = GetPlayerMoney(playerid);
     PlayerLastWeapon[playerid] = GetPlayerWeapon(playerid);
     PlayerLastUpdate[playerid] = gettime();
@@ -143,6 +155,16 @@ public AntiCheat_UpdateAll()
     return 1;
 }
 
+stock CountConnectedPlayers()
+{
+    new count = 0;
+    for(new i = 0; i < MAX_PLAYERS; i++)
+    {
+        if(IsPlayerConnected(i)) count++;
+    }
+    return count;
+}
+
 // Spieler-Update (wird jede Sekunde aufgerufen)
 stock AntiCheat_PlayerUpdate(playerid)
 {
@@ -155,8 +177,8 @@ stock AntiCheat_PlayerUpdate(playerid)
     
     // Aktuelle Werte holen
     GetPlayerPos(playerid, posX, posY, posZ);
-    health = GetPlayerHealth(playerid);
-    armour = GetPlayerArmour(playerid);
+    GetPlayerHealth(playerid, health);
+    GetPlayerArmour(playerid, armour);
     money = GetPlayerMoney(playerid);
     weapon = GetPlayerWeapon(playerid);
     
@@ -167,7 +189,7 @@ stock AntiCheat_PlayerUpdate(playerid)
     CheckArmorHack(playerid, armour, currentTime);
     
     // Money Hack prüfen
-    CheckMoneyHack(playerid, money, currentTime);
+    CheckMoneyHack(playerid, money);
     
     // Speed Hack prüfen
     CheckSpeedHack(playerid, posX, posY, posZ, currentTime);
@@ -176,7 +198,7 @@ stock AntiCheat_PlayerUpdate(playerid)
     CheckTeleportHack(playerid, posX, posY, posZ, currentTime);
     
     // Weapon Hack prüfen
-    CheckWeaponHack(playerid, weapon, currentTime);
+    CheckWeaponHack(playerid, weapon);
     
     // Fahrzeug-Hack prüfen
     if(IsPlayerInAnyVehicle(playerid))
@@ -246,7 +268,7 @@ stock CheckArmorHack(playerid, Float:armour, currentTime)
 }
 
 // Money Hack prüfen
-stock CheckMoneyHack(playerid, money, currentTime)
+stock CheckMoneyHack(playerid, money)
 {
     // Admins ausschließen
     if(SpielerInfo[playerid][sAdmin] > 0) return 0;
@@ -366,7 +388,7 @@ stock CheckTeleportHack(playerid, Float:posX, Float:posY, Float:posZ, currentTim
 }
 
 // Weapon Hack prüfen
-stock CheckWeaponHack(playerid, weapon, currentTime)
+stock CheckWeaponHack(playerid, weapon)
 {
     // Admins ausschließen
     if(SpielerInfo[playerid][sAdmin] > 0) return 0;
@@ -401,7 +423,7 @@ stock CheckVehicleHack(playerid)
     if(vehicleid != PlayerLastVehicle[playerid])
     {
         // Prüfen ob Spieler im Fahrzeug ist
-        if(!IsPlayerInVehicle(playerid))
+        if(!IsPlayerInVehicle(playerid, vehicleid))
         {
             new details[128];
             format(details, sizeof(details), "Vehicle ID: %d (Nicht im Fahrzeug)", vehicleid);
@@ -466,69 +488,62 @@ stock PunishPlayer(playerid, reason[], punishment_type)
     new msg[256];
     new details[256];
     
-    switch(punishment_type)
+    if(punishment_type == PUNISHMENT_WARNING)
     {
-        case PUNISHMENT_WARNING:
-        {
-            format(msg, sizeof(msg), "[ANTI-CHEAT] Warnung: %s", reason);
-            SendClientMessage(playerid, COLOR_YELLOW, msg);
-            
-            // Loggen
-            format(details, sizeof(details), "WARNING: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
-            LogCheatIncident(playerid, reason, "WARNING");
-        }
+        format(msg, sizeof(msg), "[ANTI-CHEAT] Warnung: %s", reason);
+        SendClientMessage(playerid, COLOR_YELLOW, msg);
         
-        case PUNISHMENT_KICK:
-        {
-            format(msg, sizeof(msg), "[ANTI-CHEAT] Gekickt wegen: %s", reason);
-            SendClientMessage(playerid, COLOR_RED, msg);
-            SendClientMessageToAll(COLOR_RED, sprintf("[ANTI-CHEAT] %s wurde gekickt (Grund: %s)", SpielerInfo[playerid][sName], reason));
-            
-            // Loggen
-            format(details, sizeof(details), "KICK: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
-            LogCheatIncident(playerid, reason, "KICK");
-            
-            // Spieler kicken
-            SetTimerEx("DelayedKick", 1000, false, "i", playerid);
-        }
+        // Loggen
+        format(details, sizeof(details), "WARNING: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
+        LogCheatIncident(playerid, reason, "WARNING");
+    }
+    else if(punishment_type == PUNISHMENT_KICK)
+    {
+        format(msg, sizeof(msg), "[ANTI-CHEAT] Gekickt wegen: %s", reason);
+        SendClientMessage(playerid, COLOR_RED, msg);
+        SendClientMessageToAll(COLOR_RED, sprintf("[ANTI-CHEAT] %s wurde gekickt (Grund: %s)", SpielerInfo[playerid][sName], reason));
         
-        case PUNISHMENT_BAN:
-        {
-            format(msg, sizeof(msg), "[ANTI-CHEAT] Gebannt wegen: %s", reason);
-            SendClientMessage(playerid, COLOR_RED, msg);
-            SendClientMessageToAll(COLOR_RED, sprintf("[ANTI-CHEAT] %s wurde gebannt (Grund: %s)", SpielerInfo[playerid][sName], reason));
-            
-            // Loggen
-            format(details, sizeof(details), "BAN: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
-            LogCheatIncident(playerid, reason, "BAN");
-            
-            // Spieler bannen
-            Ban(playerid);
-        }
+        // Loggen
+        format(details, sizeof(details), "KICK: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
+        LogCheatIncident(playerid, reason, "KICK");
         
-        case PUNISHMENT_JAIL:
-        {
-            format(msg, sizeof(msg), "[ANTI-CHEAT] In den Knast gesteckt wegen: %s", reason);
-            SendClientMessage(playerid, COLOR_RED, msg);
-            
-            // Loggen
-            format(details, sizeof(details), "JAIL: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
-            LogCheatIncident(playerid, reason, "JAIL");
-            
-            // Spieler ins Gefängnis
-            SpielerInfo[playerid][sKnastzeit] = 300; // 5 Minuten
-        }
+        // Spieler kicken
+        SetTimerEx("DelayedKick", 1000, false, "i", playerid);
+    }
+    else if(punishment_type == PUNISHMENT_BAN)
+    {
+        format(msg, sizeof(msg), "[ANTI-CHEAT] Gebannt wegen: %s", reason);
+        SendClientMessage(playerid, COLOR_RED, msg);
+        SendClientMessageToAll(COLOR_RED, sprintf("[ANTI-CHEAT] %s wurde gebannt (Grund: %s)", SpielerInfo[playerid][sName], reason));
         
-        case PUNISHMENT_MONEY_RESET:
-        {
-            ResetPlayerMoney(playerid);
-            format(msg, sizeof(msg), "[ANTI-CHEAT] Geld zurückgesetzt wegen: %s", reason);
-            SendClientMessage(playerid, COLOR_RED, msg);
-            
-            // Loggen
-            format(details, sizeof(details), "MONEY_RESET: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
-            LogCheatIncident(playerid, reason, "MONEY_RESET");
-        }
+        // Loggen
+        format(details, sizeof(details), "BAN: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
+        LogCheatIncident(playerid, reason, "BAN");
+        
+        // Spieler bannen
+        Ban(playerid);
+    }
+    else if(punishment_type == PUNISHMENT_JAIL)
+    {
+        format(msg, sizeof(msg), "[ANTI-CHEAT] In den Knast gesteckt wegen: %s", reason);
+        SendClientMessage(playerid, COLOR_RED, msg);
+        
+        // Loggen
+        format(details, sizeof(details), "JAIL: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
+        LogCheatIncident(playerid, reason, "JAIL");
+        
+        // Spieler ins Gefängnis
+        SpielerInfo[playerid][sKnast] = 300; // 5 Minuten
+    }
+    else if(punishment_type == PUNISHMENT_MONEY_RESET)
+    {
+        ResetPlayerMoney(playerid);
+        format(msg, sizeof(msg), "[ANTI-CHEAT] Geld zurückgesetzt wegen: %s", reason);
+        SendClientMessage(playerid, COLOR_RED, msg);
+        
+        // Loggen
+        format(details, sizeof(details), "MONEY_RESET: %s - Spieler: %s", reason, SpielerInfo[playerid][sName]);
+        LogCheatIncident(playerid, reason, "MONEY_RESET");
     }
     
     // Callback aufrufen
@@ -548,12 +563,12 @@ public DelayedKick(playerid)
 stock LogCheatIncident(playerid, reason[], action[])
 {
     new query[512];
-    mysql_format(g_SQLHandle, query, sizeof(query), 
+    mysql_format(sqlHandle, query, sizeof(query), 
         "INSERT INTO `anti_cheat_logs` (`player_name`, `reason`, `action`, `ip`, `timestamp`) \
          VALUES ('%e', '%s', '%s', '%s', NOW())",
-        SpielerInfo[playerid][sName], reason, action, SpielerInfo[playerid][sIP]);
+        SpielerInfo[playerid][sName], reason, action, SpielerInfo[playerid][sIPAdresse]);
     
-    mysql_tquery(g_SQLHandle, query);
+    mysql_tquery(sqlHandle, query);
     return 1;
 }
 
@@ -594,7 +609,7 @@ CMD:ac_status(playerid, params[])
     if(SpielerInfo[playerid][sAdmin] < 3) return 0;
     
     new msg[256];
-    format(msg, sizeof(msg), "[ANTI-CHEAT] Status: Aktiv | Geschützt: %d Spieler", GetConnectedPlayers());
+    format(msg, sizeof(msg), "[ANTI-CHEAT] Status: Aktiv | Geschützt: %d Spieler", CountConnectedPlayers());
     SendClientMessage(playerid, COLOR_GREEN, msg);
     
     return 1;
@@ -604,41 +619,12 @@ CMD:ac_logs(playerid, params[])
 {
     if(SpielerInfo[playerid][sAdmin] < 4) return 0;
     
-    SendClientMessage(playerid, COLOR_BLUE, "[ANTI-CHEAT] Letzte Cheat-Vorfälle:");
-    
-    // Letzte 10 Einträge aus Datenbank holen
-    mysql_tquery(g_SQLHandle, 
-        "SELECT * FROM `anti_cheat_logs` ORDER BY `timestamp` DESC LIMIT 10", 
-        "OnAntiCheatLogsLoaded", "i", playerid);
-    
+    SendClientMessage(playerid, COLOR_WHITE, "[ANTI-CHEAT] Cheat-Loganzeige ist momentan nicht verfügbar.");
     return 1;
 }
 
 public OnAntiCheatLogsLoaded(playerid)
 {
-    new rows, fields;
-    cache_get_data(rows, fields, g_SQLHandle);
-    
-    if(rows == 0)
-    {
-        SendClientMessage(playerid, COLOR_WHITE, "Keine Cheat-Vorfälle gefunden.");
-        return 1;
-    }
-    
-    for(new i = 0; i < rows; i++)
-    {
-        new player_name[64], reason[128], action[64], timestamp[32];
-        
-        cache_get_field_content(i, "player_name", player_name, g_SQLHandle, sizeof(player_name));
-        cache_get_field_content(i, "reason", reason, g_SQLHandle, sizeof(reason));
-        cache_get_field_content(i, "action", action, g_SQLHandle, sizeof(action));
-        cache_get_field_content(i, "timestamp", timestamp, g_SQLHandle, sizeof(timestamp));
-        
-        new msg[256];
-        format(msg, sizeof(msg), "[%s] %s - %s (%s)", timestamp, player_name, reason, action);
-        SendClientMessage(playerid, COLOR_YELLOW, msg);
-    }
-    
     return 1;
 }
 
